@@ -52,7 +52,7 @@ function PackageManagerTabs() {
                   'inline-flex items-center justify-center whitespace-nowrap py-1.5 transition-all text-xs ' +
                   (active === pm
                     ? 'text-foreground border-foreground border-b-2'
-                    : 'text-foreground/50 hover:text-foreground border-b-2 border-transparent')
+                    : 'text-muted-foreground hover:text-foreground border-b-2 border-transparent')
                 }
               >
                 {pm}
@@ -87,16 +87,16 @@ function FileTree() {
         <ul className="text-sm">
           <li>
             <div className="flex items-center gap-1.5 h-[28px] px-4 text-foreground/60 hover:bg-muted cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-foreground/40 rotate-90"><path d="m9 18 6-6-6-6" /></svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-foreground/40"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-muted-foreground rotate-90"><path d="m9 18 6-6-6-6" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-muted-foreground"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></svg>
               <span className="truncate text-sm text-foreground/80">lib</span>
             </div>
             <ul>
               <li>
                 <div className="flex items-center gap-1.5 h-[28px] pl-9 text-foreground/60 hover:bg-muted cursor-pointer relative">
                   <div className="absolute left-[23px] h-full w-px bg-border" />
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-foreground/40 rotate-90"><path d="m9 18 6-6-6-6" /></svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-foreground/40"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-muted-foreground rotate-90"><path d="m9 18 6-6-6-6" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-muted-foreground"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></svg>
                   <span className="truncate text-sm text-foreground/80">supabase</span>
                 </div>
                 <ul>
@@ -150,7 +150,7 @@ function FileTree() {
             className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border text-foreground bg-muted hover:bg-muted border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-ring text-xs py-1 h-[26px] px-1.5"
             tabIndex={0}
           >
-            <span className="inline-flex items-center justify-center shrink-0 [&_svg]:h-[14px] [&_svg]:w-[14px] text-foreground/50">
+            <span className="inline-flex items-center justify-center shrink-0 [&_svg]:h-[14px] [&_svg]:w-[14px] text-muted-foreground">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-copy">
                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
                 <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
@@ -176,7 +176,7 @@ export function ClientDocPage() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
             <path d="m9 18 6-6-6-6" />
           </svg>
-          <div className="text-foreground/40">Supabase Client Libraries</div>
+          <div className="text-muted-foreground">Supabase Client Libraries</div>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-5">
@@ -236,7 +236,7 @@ export function ClientDocPage() {
               </pre>
               <button
                 type="button"
-                className="justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-ring text-base md:text-sm leading-4 z-10 h-6 w-6 text-foreground/50 hover:bg-muted hover:text-foreground p-0 absolute right-4 top-4"
+                className="justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-ring text-base md:text-sm leading-4 z-10 h-6 w-6 text-muted-foreground hover:bg-muted hover:text-foreground p-0 absolute right-4 top-4"
                 tabIndex={0}
               >
                 <span className="truncate">

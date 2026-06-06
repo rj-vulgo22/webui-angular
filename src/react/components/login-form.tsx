@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
@@ -12,12 +14,20 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { loginSchema, type LoginFormData } from '@/lib/auth-schemas'
 
 export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginFormData>({
+    resolver: zodResolver(loginSchema),
+  })
+
   let supabase: ReturnType<typeof createClient>
   try {
     supabase = createClient()
@@ -25,16 +35,15 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
     supabase = null as never
   }
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault()
+  const handleLogin = async (data: LoginFormData) => {
     setIsLoading(true)
     setError(null)
 
     try {
       if (!supabase) throw new Error('Supabase not configured')
       const { error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
+        email: data.email,
+        password: data.password,
       })
       if (error) throw error
       location.href = '/protected'
@@ -53,7 +62,7 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
           <CardDescription>Enter your email below to login to your account</CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleSubmit(handleLogin)}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
                 <Label htmlFor="email">Email</Label>
@@ -61,10 +70,11 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
                   id="email"
                   type="email"
                   placeholder="m@example.com"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  {...register('email')}
                 />
+                {errors.email?.message && (
+                  <p className="text-sm text-red-500">{errors.email.message}</p>
+                )}
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
@@ -79,10 +89,11 @@ export function LoginForm({ className, ...props }: React.ComponentPropsWithoutRe
                 <Input
                   id="password"
                   type="password"
-                  required
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  {...register('password')}
                 />
+                {errors.password?.message && (
+                  <p className="text-sm text-red-500">{errors.password.message}</p>
+                )}
               </div>
               {error && <p className="text-sm text-red-500">{error}</p>}
               <Button type="submit" className="w-full" disabled={isLoading}>

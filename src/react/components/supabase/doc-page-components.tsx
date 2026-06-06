@@ -29,7 +29,7 @@ export function SectionLink({ id }: { id: string }) {
 
 export function FolderIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-foreground/40">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-muted-foreground">
       <path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" />
     </svg>
   )
@@ -46,7 +46,7 @@ export function FileIcon() {
 
 export function ChevronRightIcon({ open }: { open: boolean }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={'lucide lucide-chevron-right text-foreground/40 ' + (open ? 'rotate-90' : '')}>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className={'lucide lucide-chevron-right text-muted-foreground ' + (open ? 'rotate-90' : '')}>
       <path d="m9 18 6-6-6-6" />
     </svg>
   )
@@ -113,7 +113,7 @@ export function PackageManagerTabs({ installCommands }: { installCommands: Recor
                   'inline-flex items-center justify-center whitespace-nowrap py-1.5 transition-all text-xs ' +
                   (active === pm
                     ? 'text-foreground border-foreground border-b-2'
-                    : 'text-foreground/50 hover:text-foreground border-b-2 border-transparent')
+                    : 'text-muted-foreground hover:text-foreground border-b-2 border-transparent')
                 }
               >
                 {pm}
@@ -145,7 +145,7 @@ export function CopyButton({ className }: { className?: string }) {
   return (
     <button
       type="button"
-      className={'justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-ring text-base md:text-sm leading-4 z-10 h-6 w-6 text-foreground/50 hover:bg-muted hover:text-foreground p-0 absolute right-4 top-4 ' + (className ?? '')}
+      className={'justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-ring text-base md:text-sm leading-4 z-10 h-6 w-6 text-muted-foreground hover:bg-muted hover:text-foreground p-0 absolute right-4 top-4 ' + (className ?? '')}
       tabIndex={0}
     >
       <span className="truncate">
@@ -177,7 +177,7 @@ export function FileTreeSection({ fileTree, activePath, note }: { fileTree: Tree
   return (
     <div className="flex mt-4 border rounded-lg overflow-hidden h-auto not-prose">
       <div className="w-64 py-2 border-r bg-muted/30 overflow-y-auto shrink-0">
-        {note && <div className="px-4 pb-2 text-xs text-foreground/40 font-medium">{note}</div>}
+        {note && <div className="px-4 pb-2 text-xs text-muted-foreground font-medium">{note}</div>}
         <ul className="text-sm">
           {fileTree.map((node, i) => (
             <FileTreeItem key={i} node={node} depth={0} activePath={activePath} />

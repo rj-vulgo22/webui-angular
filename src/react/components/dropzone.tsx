@@ -141,6 +141,7 @@ const DropzoneContent = ({ className }: { className?: string }) => {
 
             {!loading && !isSuccessfullyUploaded && (
               <Button
+                aria-label={`Remove ${file.name}`}
                 size="icon"
                 variant="link"
                 className="shrink-0 justify-self-end text-muted-foreground hover:text-foreground"

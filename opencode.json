@@ -25,6 +25,26 @@
       "type": "local",
       "command": ["npx", "-y", "shadcn@latest", "mcp"],
       "enabled": true
+    },
+    "lsp": {
+      "type": "local",
+      "command": ["npx", "-y", "@anthropic-ai/cli-code", "--stdio", "--lsp"],
+      "enabled": true
+    },
+    "eslint": {
+      "type": "local",
+      "command": ["npx", "-y", "eslint_mcp"],
+      "enabled": true
+    },
+    "json-schema": {
+      "type": "local",
+      "command": ["npx", "-y", "@mcp-schema/json-schema-server"],
+      "enabled": true
+    },
+    "playwright-chrome": {
+      "type": "local",
+      "command": ["npx", "-y", "@playwright/mcp", "--browser=chromium"],
+      "enabled": true
     }
   }
 }

@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
@@ -12,27 +13,30 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import {
+  updatePasswordSchema,
+  type UpdatePasswordFormData,
+} from '@/lib/auth-schemas'
 
 export function UpdatePasswordForm({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState<string | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  const supabase = createClient()
 
-  const handleForgotPassword = async (e: React.FormEvent) => {
-    const supabase = createClient()
-    e.preventDefault()
-    setIsLoading(true)
-    setError(null)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    setError,
+  } = useForm<UpdatePasswordFormData>({ resolver: zodResolver(updatePasswordSchema) })
 
+  const onSubmit = async (data: UpdatePasswordFormData) => {
     try {
-      const { error } = await supabase.auth.updateUser({ password })
+      const { error } = await supabase.auth.updateUser({ password: data.password })
       if (error) throw error
-      // Update this route to redirect to an authenticated route. The user already has an active session.
       location.href = '/protected'
     } catch (error: unknown) {
-      setError(error instanceof Error ? error.message : 'An error occurred')
-    } finally {
-      setIsLoading(false)
+      setError('password', {
+        message: error instanceof Error ? error.message : 'An error occurred',
+      })
     }
   }
 
@@ -44,7 +48,7 @@ export function UpdatePasswordForm({ className, ...props }: React.ComponentProps
           <CardDescription>Please enter your new password below.</CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleForgotPassword}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-6">
               <div className="grid gap-2">
                 <Label htmlFor="password">New password</Label>
@@ -52,14 +56,14 @@ export function UpdatePasswordForm({ className, ...props }: React.ComponentProps
                   id="password"
                   type="password"
                   placeholder="New password"
-                  required
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  {...register('password')}
                 />
+                {errors.password && (
+                  <p className="text-sm text-red-500">{errors.password.message}</p>
+                )}
               </div>
-              {error && <p className="text-sm text-red-500">{error}</p>}
-              <Button type="submit" className="w-full" disabled={isLoading}>
-                {isLoading ? 'Saving...' : 'Save new password'}
+              <Button type="submit" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? 'Saving...' : 'Save new password'}
               </Button>
             </div>
           </form>

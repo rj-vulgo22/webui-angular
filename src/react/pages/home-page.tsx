@@ -47,7 +47,7 @@ export function HomePage() {
                 </div>
               </div>
               <HorizontalGridLine />
-              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-foreground/40 tracking-wider relative flex justify-between items-center">
+              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-muted-foreground tracking-wider relative flex justify-between items-center">
                 <span>File Upload</span>
                 <span className="text-foreground/20 underline decoration-1 underline-offset-4">Go to block<ChevronRight className="inline h-3 w-3 ml-1" /></span>
               </div>
@@ -61,7 +61,7 @@ export function HomePage() {
                           <Upload size={20} className="text-foreground/60" />
                           <p className="text-sm">Upload files</p>
                           <p className="text-xs text-foreground/60">Drag and drop or <span className="underline cursor-pointer transition hover:text-foreground">select files</span> to upload</p>
-                          <p className="text-xs text-foreground/40">Maximum file size: 5 MB</p>
+                          <p className="text-xs text-muted-foreground">Maximum file size: 5 MB</p>
                         </div>
                       </div>
                     </div>
@@ -69,7 +69,7 @@ export function HomePage() {
                 </div>
               </div>
               <HorizontalGridLine />
-              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-foreground/40 tracking-wider relative flex justify-between items-center">
+              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-muted-foreground tracking-wider relative flex justify-between items-center">
                 <span>Supabase Products</span>
                 <span className="text-foreground/20">Platform</span>
               </div>
@@ -92,30 +92,30 @@ export function HomePage() {
                 </div>
               </div>
               <HorizontalGridLine />
-              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-foreground/40 tracking-wider relative flex justify-between items-center">
+              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-muted-foreground tracking-wider relative flex justify-between items-center">
                 <span>Realtime Chat</span>
                 <span className="text-foreground/20 underline decoration-1 underline-offset-4">Go to block<ChevronRight className="inline h-3 w-3 ml-1" /></span>
               </div>
               <HorizontalGridLine />
               <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 relative">
                 <div className="-mt-4 grid md:flex rounded-lg overflow-hidden">
-                  <div className="flex-1 border-r min-h-[300px] bg-muted/30 flex items-center justify-center text-sm text-foreground/40">Chat Preview A</div>
-                  <div className="flex-1 min-h-[300px] bg-muted/30 flex items-center justify-center text-sm text-foreground/40">Chat Preview B</div>
+                  <div className="flex-1 border-r min-h-[300px] bg-muted/30 flex items-center justify-center text-sm text-muted-foreground">Chat Preview A</div>
+                  <div className="flex-1 min-h-[300px] bg-muted/30 flex items-center justify-center text-sm text-muted-foreground">Chat Preview B</div>
                 </div>
               </div>
               <HorizontalGridLine />
-              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-foreground/40 tracking-wider relative flex justify-between items-center">
+              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-6 text-xs uppercase font-mono text-muted-foreground tracking-wider relative flex justify-between items-center">
                 <span>Infinite Query Hook</span>
                 <span className="text-foreground/20 underline decoration-1 underline-offset-4">Go to block<ChevronRight className="inline h-3 w-3 ml-1" /></span>
               </div>
               <HorizontalGridLine />
               <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 relative">
                 <div className="-mt-4">
-                  <div className="w-full rounded-lg overflow-hidden border bg-muted/30 min-h-[200px] flex items-center justify-center text-sm text-foreground/40">Infinite Query Hook Demo</div>
+                  <div className="w-full rounded-lg overflow-hidden border bg-muted/30 min-h-[200px] flex items-center justify-center text-sm text-muted-foreground">Infinite Query Hook Demo</div>
                 </div>
               </div>
               <HorizontalGridLine />
-              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-12 text-xs uppercase font-mono text-foreground/40 tracking-wider relative flex justify-between items-center">
+              <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 pt-16 pb-12 text-xs uppercase font-mono text-muted-foreground tracking-wider relative flex justify-between items-center">
                 <span>Dark Mode</span>
                 <span className="text-foreground/20">data-theme="dark"</span>
               </div>
@@ -133,7 +133,7 @@ export function HomePage() {
               <HorizontalGridLine />
               <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 py-12">
                 <div className="flex flex-col items-center text-center gap-4">
-                  <p className="text-sm text-foreground/40 font-mono">Built with shadcn/ui base-nova · Inter Variable · Supabase HSL Theme</p>
+                  <p className="text-sm text-muted-foreground font-mono">Built with shadcn/ui base-nova · Inter Variable · Supabase HSL Theme</p>
                   <p className="text-xs text-foreground/30">Inspired by radix-ui.com/themes and ui.shadcn.com</p>
                 </div>
               </div>

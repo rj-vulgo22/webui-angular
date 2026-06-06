@@ -1,0 +1,9 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@sentry/cli'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
+  - msw
+
+shamefullyHoist: true

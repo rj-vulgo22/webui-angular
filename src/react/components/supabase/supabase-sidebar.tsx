@@ -58,7 +58,7 @@ function NavLink({ item, currentPath, navigate }: { item: NavItem; currentPath: 
     <a
       className={
         'relative flex items-center justify-between h-6 text-sm transition-all ' +
-        (isActive ? 'text-foreground bg-muted' : 'text-foreground/50 hover:bg-muted hover:text-foreground')
+        (isActive ? 'text-foreground bg-muted' : 'text-muted-foreground hover:bg-muted hover:text-foreground')
       }
       href={item.href || '#'}
       onClick={(e) => {
@@ -96,13 +96,13 @@ function SidebarContent({ onNavigate, onClose, onSearch }: { onNavigate?: () => 
         <button
           type="button"
           onClick={() => onSearch?.()}
-          className="cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border border-border focus-visible:outline-ring data-[state=open]:border-border px-2.5 py-1 relative h-8 w-full justify-start rounded-[0.5rem] bg-background text-sm font-normal text-foreground/50 shadow-none sm:pr-12 hover:border-foreground/30 hover:bg-muted"
+          className="cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border border-border focus-visible:outline-ring data-[state=open]:border-border px-2.5 py-1 relative h-8 w-full justify-start rounded-[0.5rem] bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 hover:border-foreground/30 hover:bg-muted"
           tabIndex={0}
         >
           <span className="truncate">
             <span className="hidden lg:inline-flex">Search UI Library...</span>
             <span className="inline-flex lg:hidden">Search...</span>
-            <kbd className="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded-sm border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex text-foreground/50">
+            <kbd className="pointer-events-none absolute right-[0.3rem] top-[0.3rem] hidden h-5 select-none items-center gap-1 rounded-sm border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex text-muted-foreground">
               <span className="text-sm">⌘</span>K
             </kbd>
           </span>
@@ -111,7 +111,7 @@ function SidebarContent({ onNavigate, onClose, onSearch }: { onNavigate?: () => 
 
       {navItems.map((section) => (
         <div key={section.title} className={section.title === 'AI Skills' ? 'pb-6 flex-1' : 'pb-6'}>
-          <div className="font-mono uppercase text-xs text-foreground/40 mb-2 px-6 tracking-widest">
+          <div className="font-mono uppercase text-xs text-muted-foreground mb-2 px-6 tracking-widest">
             {section.title}
           </div>
           {section.items && (
@@ -146,7 +146,7 @@ export function SupabaseSidebar() {
           onClick={() => setMobileMenuOpen(true)}
           className="md:hidden relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border text-foreground bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring text-xs px-2.5 py-1 h-[26px]"
         >
-          <span className="inline-flex items-center justify-center shrink-0 [&_svg]:h-[14px] [&_svg]:w-[14px] text-foreground/50">
+          <span className="inline-flex items-center justify-center shrink-0 [&_svg]:h-[14px] [&_svg]:w-[14px] text-muted-foreground">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu">
               <line x1="4" x2="20" y1="12" y2="12" />
               <line x1="4" x2="20" y1="6" y2="6" />

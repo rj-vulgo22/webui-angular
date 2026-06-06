@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
+import { forgotPasswordSchema, type ForgotPasswordFormData } from '@/lib/auth-schemas'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -14,20 +17,23 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 
 export function ForgotPasswordForm({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
-  const [email, setEmail] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleForgotPassword = async (e: React.FormEvent) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ForgotPasswordFormData>({ resolver: zodResolver(forgotPasswordSchema) })
+
+  const onSubmit = async (data: ForgotPasswordFormData) => {
     const supabase = createClient()
-    e.preventDefault()
     setIsLoading(true)
     setError(null)
 
     try {
-      // The url which will be included in the email. This URL needs to be configured in your redirect URLs in the Supabase dashboard at https://supabase.com/dashboard/project/_/auth/url-configuration
-      const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      const { error } = await supabase.auth.resetPasswordForEmail(data.email, {
         redirectTo: 'http://localhost:3000/update-password',
       })
       if (error) throw error
@@ -63,7 +69,7 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleForgotPassword}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-6">
                 <div className="grid gap-2">
                   <Label htmlFor="email">Email</Label>
@@ -71,10 +77,11 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
                     id="email"
                     type="email"
                     placeholder="m@example.com"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    {...register('email')}
                   />
+                  {errors.email && (
+                    <p className="text-sm text-red-500">{errors.email.message}</p>
+                  )}
                 </div>
                 {error && <p className="text-sm text-red-500">{error}</p>}
                 <Button type="submit" className="w-full" disabled={isLoading}>

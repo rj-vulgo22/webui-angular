@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 import { cn } from '@/lib/utils'
 import { createClient } from '@/lib/supabase/client'
@@ -12,30 +14,37 @@ import {
 } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { signUpSchema, type SignUpFormData } from '@/lib/auth-schemas'
 
 export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutRef<'div'>) {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [repeatPassword, setRepeatPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [success, setSuccess] = useState(false)
 
-  const handleSignUp = async (e: React.FormEvent) => {
-    const supabase = createClient()
-    e.preventDefault()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<SignUpFormData>({
+    resolver: zodResolver(signUpSchema),
+  })
+
+  let supabase: ReturnType<typeof createClient>
+  try {
+    supabase = createClient()
+  } catch {
+    supabase = null as never
+  }
+
+  const handleSignUp = async (data: SignUpFormData) => {
+    setIsLoading(true)
     setError(null)
 
-    if (password !== repeatPassword) {
-      setError('Passwords do not match')
-      return
-    }
-    setIsLoading(true)
-
     try {
+      if (!supabase) throw new Error('Supabase not configured')
       const { error } = await supabase.auth.signUp({
-        email,
-        password,
+        email: data.email,
+        password: data.password,
       })
       if (error) throw error
       setSuccess(true)
@@ -68,7 +77,7 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
             <CardDescription>Create a new account</CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleSignUp}>
+            <form onSubmit={handleSubmit(handleSignUp)}>
               <div className="flex flex-col gap-6">
                 <div className="grid gap-2">
                   <Label htmlFor="email">Email</Label>
@@ -76,10 +85,11 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
                     id="email"
                     type="email"
                     placeholder="m@example.com"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    {...register('email')}
                   />
+                  {errors.email?.message && (
+                    <p className="text-sm text-red-500">{errors.email.message}</p>
+                  )}
                 </div>
                 <div className="grid gap-2">
                   <div className="flex items-center">
@@ -88,10 +98,11 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
                   <Input
                     id="password"
                     type="password"
-                    required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    {...register('password')}
                   />
+                  {errors.password?.message && (
+                    <p className="text-sm text-red-500">{errors.password.message}</p>
+                  )}
                 </div>
                 <div className="grid gap-2">
                   <div className="flex items-center">
@@ -100,10 +111,11 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
                   <Input
                     id="repeat-password"
                     type="password"
-                    required
-                    value={repeatPassword}
-                    onChange={(e) => setRepeatPassword(e.target.value)}
+                    {...register('repeatPassword')}
                   />
+                  {errors.repeatPassword?.message && (
+                    <p className="text-sm text-red-500">{errors.repeatPassword.message}</p>
+                  )}
                 </div>
                 {error && <p className="text-sm text-red-500">{error}</p>}
                 <Button type="submit" className="w-full" disabled={isLoading}>

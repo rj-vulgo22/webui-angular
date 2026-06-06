@@ -30,7 +30,7 @@ export function IntroductionDocPage() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
             <path d="m9 18 6-6-6-6" />
           </svg>
-          <div className="text-foreground/40">Introduction</div>
+          <div className="text-muted-foreground">Introduction</div>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-5">
@@ -82,30 +82,30 @@ export function IntroductionDocPage() {
               </li>
             </ul>
 
-            <h3 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="extensible-components">
+            <h2 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="extensible-components">
               <SectionLink id="extensible-components" /> Extensible components
-            </h3>
+            </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Our components are designed to be easily extensible. You can modify the code to fit your needs and use it as a starting point for your own components. You can change any of the code to fit your needs and use it as a starting point for your own components. The important part is that the code is designed to make the hard parts easy, and leave the easy parts for you.
             </p>
 
-            <h3 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="composable-components">
+            <h2 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="composable-components">
               <SectionLink id="composable-components" /> Composable components
-            </h3>
+            </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Our components are designed to be easily composable. You can combine them to create new components that are tailored to your needs. If you want to change the design or behavior of a component, you can easily do so in your own codebase.
             </p>
 
-            <h3 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="supabase-clients">
+            <h2 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="supabase-clients">
               <SectionLink id="supabase-clients" /> Supabase clients
-            </h3>
+            </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The Supabase clients are the backbone of your apps. They are designed to be easily integrated with your existing Supabase project. We provide both client-side and server-side clients for several major frameworks, and the code is designed to be easily integrated with your existing codebase.
             </p>
 
-            <h3 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="scaffolding-for-hard-problems">
+            <h2 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="scaffolding-for-hard-problems">
               <SectionLink id="scaffolding-for-hard-problems" /> Scaffolding for hard problems
-            </h3>
+            </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Setting up something like Auth should be easy, so we've done the hard work for you. Our components are designed to be easily integrated with your new or existing Supabase projects. Installing them drops the files into place so you can get the hard parts out of the way quickly.
             </p>

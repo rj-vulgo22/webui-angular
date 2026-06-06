@@ -21,7 +21,7 @@ const faqItems: FaqItem[] = [
           </p>
           <button
             type="button"
-            className="justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-border text-base md:text-sm leading-4 relative z-10 h-6 w-6 text-foreground/50 hover:bg-muted hover:text-foreground p-0 shrink-0"
+            className="justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring data-[state=open]:border-border data-[state=open]:outline-border text-base md:text-sm leading-4 relative z-10 h-6 w-6 text-muted-foreground hover:bg-muted hover:text-foreground p-0 shrink-0"
             tabIndex={0}
           >
             <span className="truncate">
@@ -159,7 +159,7 @@ function FaqAccordion({ items }: { items: FaqItem[] }) {
         const isOpen = openIndex === i
         return (
           <div key={i} className="border-b">
-            <h3 className="flex">
+            <h2 className="flex">
               <button
                 type="button"
                 onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -181,7 +181,7 @@ function FaqAccordion({ items }: { items: FaqItem[] }) {
                   <path d="m6 9 6 6 6-6" />
                 </svg>
               </button>
-            </h3>
+            </h2>
             {isOpen && (
               <div className="overflow-hidden text-sm transition-all data-[state=open]:animate-accordion-down">
                 {item.answer}
@@ -203,7 +203,7 @@ export function FaqDocPage() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
             <path d="m9 18 6-6-6-6" />
           </svg>
-          <div className="text-foreground/40">FAQ</div>
+          <div className="text-muted-foreground">FAQ</div>
         </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-5">
