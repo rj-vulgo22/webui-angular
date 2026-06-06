@@ -1,11 +1,11 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { DemoPage } from '../react/pages/demo-page';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.html',
+  template: '<div reactHost [reactComponent]="DemoPage"></div>',
   standalone: false,
-  styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('webui-angular');
+  protected readonly DemoPage = DemoPage;
 }
