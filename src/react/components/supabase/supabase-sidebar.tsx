@@ -185,12 +185,12 @@ export function SupabaseSidebar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black/50 lg:hidden" onClick={closeMobile} />
+        <div className="fixed inset-0 z-[55] bg-black/50 lg:hidden" onClick={closeMobile} />
       )}
 
       <aside className={[
-        'fixed z-30 top-0 h-screen w-full max-w-[260px] shrink-0 bg-200 border-r border-muted/50 transition-transform',
-        'lg:sticky lg:block lg:max-w-none',
+        'fixed z-[60] top-0 h-screen w-full max-w-[260px] shrink-0 bg-200 transition-transform',
+        'lg:sticky lg:block lg:max-w-none lg:z-30 lg:border-r lg:border-muted/50',
         mobileMenuOpen ? 'translate-x-0' : '-translate-x-full',
         'lg:translate-x-0',
       ].join(' ')}>
