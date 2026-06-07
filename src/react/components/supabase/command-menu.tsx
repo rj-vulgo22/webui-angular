@@ -15,6 +15,7 @@ import {
 
 const navItems = [
   { label: 'Introduction', href: '/introduction' },
+  { label: 'Accessibility', href: '/accessibility' },
   { label: 'Quick Start', href: '/quickstart' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Client', href: '/client' },

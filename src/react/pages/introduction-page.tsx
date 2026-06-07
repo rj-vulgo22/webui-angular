@@ -21,6 +21,7 @@ const queryClient = new QueryClient({
   },
 })
 
+const AccessibilityDocPage = lazy(() => import('./accessibility-doc-page').then(m => ({ default: m.AccessibilityDocPage })))
 const QuickStartDocPage = lazy(() => import('./quickstart-doc-page').then(m => ({ default: m.QuickStartDocPage })))
 const FaqDocPage = lazy(() => import('./faq-doc-page').then(m => ({ default: m.FaqDocPage })))
 const ClientDocPage = lazy(() => import('./client-doc-page').then(m => ({ default: m.ClientDocPage })))
@@ -74,6 +75,8 @@ function PageRouter() {
     <Suspense fallback={<PageFallback />}>
       {(() => {
         switch (currentPath) {
+          case '/accessibility':
+            return <AccessibilityDocPage />
           case '/quickstart':
             return <QuickStartDocPage />
           case '/faq':
