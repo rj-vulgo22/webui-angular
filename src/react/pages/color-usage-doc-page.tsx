@@ -60,7 +60,7 @@ function TextSwatches({ groups }: { groups: SwatchGroup }) {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-6">
       {groups.colors.map((c) => (
-        <div key={c.name} className="rounded-lg border p-4 text-center">
+        <div key={c.name} className="rounded-lg border p-4 text-center" style={c.bg ? { backgroundColor: c.bg } : {}}>
           <p className="text-sm font-medium" style={c.text ? { color: c.text } : {}}>{c.label || c.name}</p>
           <p className="text-xs text-muted-foreground mt-1">{c.name}</p>
         </div>
@@ -141,14 +141,14 @@ export function ColorUsageDocPage() {
             <TextSwatches groups={{
               label: 'Text',
               colors: [
-                { name: 'text', text: 'var(--foreground)', label: 'Postgres' },
-                { name: 'text-light', text: '#6b7280', label: 'Postgres' },
-                { name: 'text-lighter', text: '#9ca3af', label: 'Postgres' },
-                { name: 'text-muted', text: '#9ca3af', label: 'Postgres' },
-                { name: 'text-contrast', text: '#fff', label: 'Postgres', bg: '#111' },
-                { name: 'text-destructive', text: '#ef4444', label: 'Postgres' },
-                { name: 'text-warning', text: '#f59e0b', label: 'Postgres' },
-                { name: 'text-brand', text: '#3ECF8E', label: 'Postgres' },
+                { name: 'text', text: 'hsl(var(--foreground))', label: 'Postgres' },
+                { name: 'text-light', text: 'hsl(var(--foreground-light))', label: 'Postgres' },
+                { name: 'text-lighter', text: 'hsl(var(--foreground-lighter))', label: 'Postgres' },
+                { name: 'text-muted', text: 'hsl(var(--muted-foreground))', label: 'Postgres' },
+                { name: 'text-contrast', text: 'hsl(var(--foreground-contrast))', label: 'Postgres', bg: 'hsl(var(--foreground))' },
+                { name: 'text-destructive', text: 'hsl(var(--destructive))', label: 'Postgres' },
+                { name: 'text-warning', text: 'hsl(var(--warning))', label: 'Postgres' },
+                { name: 'text-brand', text: 'hsl(var(--primary))', label: 'Postgres' },
               ]
             }} />
 
@@ -159,24 +159,24 @@ export function ColorUsageDocPage() {
             <BgSwatches groups={{
               label: 'Background',
               colors: [
-                { name: 'bg-200', bg: '#e5e7eb' },
-                { name: 'bg', bg: '#f9fafb' },
-                { name: 'bg-alternative-200', bg: '#d1d5db' },
-                { name: 'bg-alternative', bg: '#e5e7eb' },
-                { name: 'bg-selection', bg: '#bfdbfe' },
-                { name: 'bg-control', bg: '#fff' },
-                { name: 'bg-surface-75', bg: '#f3f4f6' },
-                { name: 'bg-surface-100', bg: '#fff' },
-                { name: 'bg-surface-200', bg: '#f9fafb' },
-                { name: 'bg-surface-300', bg: '#f3f4f6' },
-                { name: 'bg-surface-400', bg: '#e5e7eb' },
-                { name: 'bg-overlay', bg: '#f9fafb' },
-                { name: 'bg-overlay-hover', bg: '#f3f4f6' },
-                { name: 'bg-muted', bg: '#f3f4f6' },
-                { name: 'bg-button', bg: '#111' },
-                { name: 'bg-dialog', bg: '#fff' },
-                { name: 'bg-dash-sidebar', bg: '#111' },
-                { name: 'bg-dash-canvas', bg: '#f3f4f6' },
+                { name: 'bg-200', bg: 'hsl(var(--bg-200))' },
+                { name: 'bg', bg: 'hsl(var(--background))' },
+                { name: 'bg-alternative-200', bg: 'hsl(var(--bg-alternative-200))' },
+                { name: 'bg-alternative', bg: 'hsl(var(--bg-alternative))' },
+                { name: 'bg-selection', bg: 'hsl(var(--bg-selection))' },
+                { name: 'bg-control', bg: 'hsl(var(--bg-control))' },
+                { name: 'bg-surface-75', bg: 'hsl(var(--bg-surface-75))' },
+                { name: 'bg-surface-100', bg: 'hsl(var(--bg-surface-100))' },
+                { name: 'bg-surface-200', bg: 'hsl(var(--bg-surface-200))' },
+                { name: 'bg-surface-300', bg: 'hsl(var(--bg-surface-300))' },
+                { name: 'bg-surface-400', bg: 'hsl(var(--bg-surface-400))' },
+                { name: 'bg-overlay', bg: 'hsl(var(--bg-overlay))' },
+                { name: 'bg-overlay-hover', bg: 'hsl(var(--bg-overlay-hover))' },
+                { name: 'bg-muted', bg: 'hsl(var(--bg-muted))' },
+                { name: 'bg-button', bg: 'hsl(var(--bg-button))' },
+                { name: 'bg-dialog', bg: 'hsl(var(--bg-dialog))' },
+                { name: 'bg-dash-sidebar', bg: 'hsl(var(--bg-studio))' },
+                { name: 'bg-dash-canvas', bg: 'hsl(var(--bg-canvas))' },
               ]
             }} />
 
@@ -317,16 +317,16 @@ export function ColorUsageDocPage() {
             <BorderSwatches tight groups={{
               label: 'Border',
               colors: [
-                { name: 'border', border: '#e5e7eb' },
-                { name: 'border-muted', border: '#f3f4f6' },
-                { name: 'border-secondary', border: '#d1d5db' },
-                { name: 'border-overlay', border: '#e5e7eb' },
-                { name: 'border-control', border: '#d1d5db' },
-                { name: 'border-alternative', border: '#9ca3af' },
-                { name: 'border-strong', border: '#9ca3af' },
-                { name: 'border-stronger', border: '#6b7280' },
-                { name: 'border-button', border: '#6b7280' },
-                { name: 'border-button-hover', border: '#374151' },
+                { name: 'border', border: 'hsl(var(--border))' },
+                { name: 'border-muted', border: 'hsl(var(--border-muted))' },
+                { name: 'border-secondary', border: 'hsl(var(--border-secondary))' },
+                { name: 'border-overlay', border: 'hsl(var(--border-overlay))' },
+                { name: 'border-control', border: 'hsl(var(--border-control))' },
+                { name: 'border-alternative', border: 'hsl(var(--border-alternative))' },
+                { name: 'border-strong', border: 'hsl(var(--border-strong))' },
+                { name: 'border-stronger', border: 'hsl(var(--border-stronger))' },
+                { name: 'border-button', border: 'hsl(var(--border-button))' },
+                { name: 'border-button-hover', border: 'hsl(var(--border-button-hover))' },
               ]
             }} />
 
@@ -340,33 +340,33 @@ export function ColorUsageDocPage() {
             <BgSwatches tight groups={{
               label: 'Other Colors',
               colors: [
-                { name: 'bg-destructive-200', bg: '#fecaca' },
-                { name: 'bg-destructive-300', bg: '#fca5a5' },
-                { name: 'bg-destructive-400', bg: '#f87171' },
-                { name: 'bg-destructive-500', bg: '#ef4444' },
-                { name: 'bg-destructive-600', bg: '#dc2626' },
-                { name: 'bg-destructive', bg: '#ef4444' },
-                { name: 'bg-warning-200', bg: '#fde68a' },
-                { name: 'bg-warning-300', bg: '#fcd34d' },
-                { name: 'bg-warning-400', bg: '#fbbf24' },
-                { name: 'bg-warning-500', bg: '#f59e0b' },
-                { name: 'bg-warning-600', bg: '#d97706' },
-                { name: 'bg-warning', bg: '#f59e0b' },
-                { name: 'bg-brand-200', bg: '#a7f3d0' },
-                { name: 'bg-brand-300', bg: '#6ee7b7' },
-                { name: 'bg-brand-400', bg: '#34d399' },
-                { name: 'bg-brand-500', bg: '#10b981' },
-                { name: 'bg-brand-600', bg: '#059669' },
-                { name: 'bg-brand', bg: '#3ECF8E' },
-                { name: 'bg-brand-link', bg: '#3ECF8E' },
-                { name: 'bg-_secondary-200', bg: '#e0e7ff' },
-                { name: 'bg-_secondary-400', bg: '#818cf8' },
-                { name: 'bg-_secondary', bg: '#6366f1' },
-                { name: 'bg-code_block-1', bg: '#1e293b' },
-                { name: 'bg-code_block-2', bg: '#1e3a5f' },
-                { name: 'bg-code_block-3', bg: '#312e81' },
-                { name: 'bg-code_block-4', bg: '#374151' },
-                { name: 'bg-code_block-5', bg: '#1e1b4b' },
+                { name: 'bg-destructive-200', bg: 'hsl(var(--destructive-200))' },
+                { name: 'bg-destructive-300', bg: 'hsl(var(--destructive-300))' },
+                { name: 'bg-destructive-400', bg: 'hsl(var(--destructive-400))' },
+                { name: 'bg-destructive-500', bg: 'hsl(var(--destructive-500))' },
+                { name: 'bg-destructive-600', bg: 'hsl(var(--destructive-600))' },
+                { name: 'bg-destructive', bg: 'hsl(var(--destructive))' },
+                { name: 'bg-warning-200', bg: 'hsl(var(--warning-200))' },
+                { name: 'bg-warning-300', bg: 'hsl(var(--warning-300))' },
+                { name: 'bg-warning-400', bg: 'hsl(var(--warning-400))' },
+                { name: 'bg-warning-500', bg: 'hsl(var(--warning-500))' },
+                { name: 'bg-warning-600', bg: 'hsl(var(--warning-600))' },
+                { name: 'bg-warning', bg: 'hsl(var(--warning))' },
+                { name: 'bg-brand-200', bg: 'hsl(var(--brand-200))' },
+                { name: 'bg-brand-300', bg: 'hsl(var(--brand-300))' },
+                { name: 'bg-brand-400', bg: 'hsl(var(--brand-400))' },
+                { name: 'bg-brand-500', bg: 'hsl(var(--brand-500))' },
+                { name: 'bg-brand-600', bg: 'hsl(var(--brand-600))' },
+                { name: 'bg-brand', bg: 'hsl(var(--brand-default))' },
+                { name: 'bg-brand-link', bg: 'hsl(var(--brand-link))' },
+                { name: 'bg-_secondary-200', bg: 'hsl(var(--secondary-200))' },
+                { name: 'bg-_secondary-400', bg: 'hsl(var(--secondary-400))' },
+                { name: 'bg-_secondary', bg: 'hsl(var(--secondary-default))' },
+                { name: 'bg-code_block-1', bg: 'hsl(var(--code-block-1))' },
+                { name: 'bg-code_block-2', bg: 'hsl(var(--code-block-2))' },
+                { name: 'bg-code_block-3', bg: 'hsl(var(--code-block-3))' },
+                { name: 'bg-code_block-4', bg: 'hsl(var(--code-block-4))' },
+                { name: 'bg-code_block-5', bg: 'hsl(var(--code-block-5))' },
               ]
             }} />
 
