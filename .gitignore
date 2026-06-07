@@ -57,5 +57,5 @@ shimmer-test.png
 # Cursor editor config
 .cursor/
 
-# PostCSS generated
-postcss.config.json
+# Generated CSS (Tailwind CLI pre-compilation)
+src/styles.compiled.css
