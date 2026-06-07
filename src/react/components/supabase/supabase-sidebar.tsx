@@ -19,6 +19,7 @@ const navItems: NavItem[] = [
     items: [
       { title: 'Introduction', href: '/introduction' },
       { title: 'Accessibility', href: '/accessibility' },
+      { title: 'Color Usage', href: '/color-usage' },
       { title: 'Quick Start', href: '/quickstart' },
       { title: 'FAQ', href: '/faq' },
     ],

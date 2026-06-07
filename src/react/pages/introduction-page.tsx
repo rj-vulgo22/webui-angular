@@ -22,6 +22,7 @@ const queryClient = new QueryClient({
 })
 
 const AccessibilityDocPage = lazy(() => import('./accessibility-doc-page').then(m => ({ default: m.AccessibilityDocPage })))
+const ColorUsageDocPage = lazy(() => import('./color-usage-doc-page').then(m => ({ default: m.ColorUsageDocPage })))
 const QuickStartDocPage = lazy(() => import('./quickstart-doc-page').then(m => ({ default: m.QuickStartDocPage })))
 const FaqDocPage = lazy(() => import('./faq-doc-page').then(m => ({ default: m.FaqDocPage })))
 const ClientDocPage = lazy(() => import('./client-doc-page').then(m => ({ default: m.ClientDocPage })))
@@ -77,6 +78,8 @@ function PageRouter() {
         switch (currentPath) {
           case '/accessibility':
             return <AccessibilityDocPage />
+          case '/color-usage':
+            return <ColorUsageDocPage />
           case '/quickstart':
             return <QuickStartDocPage />
           case '/faq':
