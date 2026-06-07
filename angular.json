@@ -52,7 +52,7 @@
               "sourceMap": {
                 "scripts": true,
                 "styles": false,
-                "hidden": true
+                "hidden": false
               },
               "budgets": [
                 {
