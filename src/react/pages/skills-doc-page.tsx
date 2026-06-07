@@ -115,19 +115,19 @@ export function SkillsDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               For the full list of available skills, installation options, and usage guidance, see the{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/getting-started/ai-skills">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/getting-started/ai-skills">
                 Agent Skills documentation
               </a>.
             </p>
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://github.com/supabase/agent-skills">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://github.com/supabase/agent-skills">
                   Agent Skills Repository
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://agentskills.io/home">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://agentskills.io/home">
                   Agent Skills Documentation
                 </a>
               </li>

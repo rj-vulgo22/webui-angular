@@ -13,7 +13,7 @@ export interface TreeNode {
 export function SectionLink({ id }: { id: string }) {
   return (
     <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2 subheading-anchor"
+      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
       aria-label="Link to section"
       href={'#' + id}
     >
@@ -101,7 +101,7 @@ export function PackageManagerTabs({ installCommands }: { installCommands: Recor
   return (
     <div className="mt-4">
       <div className="group relative rounded-lg bg-muted px-4 py-2 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#bbb] dark:via-white to-transparent opacity-10 shimmer-sweep" />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-muted-foreground/15 dark:via-foreground/20 to-transparent opacity-10 shimmer-sweep" />
         <div className="flex flex-col">
           <div className="flex items-center border-b gap-2 relative mb-2 z-10">
             {PACKAGE_MANAGERS.map((pm) => (
@@ -122,7 +122,7 @@ export function PackageManagerTabs({ installCommands }: { installCommands: Recor
           </div>
           <div className="flex items-center">
             <div className="flex-1 font-mono text-sm text-foreground relative z-10">
-              <span className="mr-2 text-[#888] select-none">$</span>
+              <span className="mr-2 text-muted-foreground select-none">$</span>
               {installCommands[active]}
             </div>
             <button
@@ -187,32 +187,32 @@ export function FileTreeSection({ fileTree, activePath, note }: { fileTree: Tree
       <div className="group relative w-full max-w-[90vw] md:max-w-none overflow-auto">
         <pre className="p-4 w-full h-full max-w-none font-mono text-xs rounded-none border-none bg-muted/30" style={{ lineHeight: 1.4 }}>
           <code>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">1</span><span style={{ color: '#569cd6' }}>import</span> {'{'} Card, CardContent, CardHeader, CardTitle {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@/components/ui/card'</span></div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">2</span></div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">3</span><span style={{ color: '#569cd6' }}>export</span> <span style={{ color: '#569cd6' }}>default</span> <span style={{ color: '#569cd6' }}>async</span> <span style={{ color: '#569cd6' }}>function</span> <span style={{ color: '#3ECF8E' }}>Page</span>({'{'} searchParams {'}'}: {'{'} searchParams: Promise&lt;{'{'} error: string {'}'}&gt; {'}'}) {'{'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">4</span>  <span style={{ color: '#569cd6' }}>const</span> params = <span style={{ color: '#569cd6' }}>await</span> searchParams</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">5</span></div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">6</span>  <span style={{ color: '#569cd6' }}>return</span> (</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">7</span>    {'<'}div className=<span style={{ color: '#ce9178' }}>"flex min-h-svh w-full items-center justify-center p-6 md:p-10"</span>{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">8</span>      {'<'}div className=<span style={{ color: '#ce9178' }}>"w-full max-w-sm"</span>{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">9</span>        {'<'}div className=<span style={{ color: '#ce9178' }}>"flex flex-col gap-6"</span>{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">10</span>          {'<'}Card{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">11</span>            {'<'}CardHeader{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">12</span>              {'<'}CardTitle className=<span style={{ color: '#ce9178' }}>"text-2xl"</span>{'>'}Sorry, something went wrong.{'<'}/CardTitle{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">13</span>            {'<'}/CardHeader{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">14</span>            {'<'}CardContent{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">15</span>              {'{'}params?.error ? (</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">16</span>                {'<'}p className=<span style={{ color: '#ce9178' }}>"text-sm text-muted-foreground"</span>{'>'}Code error: {'{'}params.error{'}'}{'<'}/p{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">17</span>              ) : (</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">18</span>                {'<'}p className=<span style={{ color: '#ce9178' }}>"text-sm text-muted-foreground"</span>{'>'}An unspecified error occurred.{'<'}/p{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">19</span>              {'}'})</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">20</span>            {'<'}/CardContent{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">21</span>          {'<'}/Card{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">22</span>        {'<'}/div{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">23</span>      {'<'}/div{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">24</span>    {'<'}/div{'>'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">25</span>  )</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">26</span>{'}'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">1</span><span style={{ color: '#569cd6' }}>import</span> {'{'} Card, CardContent, CardHeader, CardTitle {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@/components/ui/card'</span></div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">2</span></div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">3</span><span style={{ color: '#569cd6' }}>export</span> <span style={{ color: '#569cd6' }}>default</span> <span style={{ color: '#569cd6' }}>async</span> <span style={{ color: '#569cd6' }}>function</span> <span style={{ color: '#3ECF8E' }}>Page</span>({'{'} searchParams {'}'}: {'{'} searchParams: Promise&lt;{'{'} error: string {'}'}&gt; {'}'}) {'{'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">4</span>  <span style={{ color: '#569cd6' }}>const</span> params = <span style={{ color: '#569cd6' }}>await</span> searchParams</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">5</span></div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">6</span>  <span style={{ color: '#569cd6' }}>return</span> (</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">7</span>    {'<'}div className=<span style={{ color: '#ce9178' }}>"flex min-h-svh w-full items-center justify-center p-6 md:p-10"</span>{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">8</span>      {'<'}div className=<span style={{ color: '#ce9178' }}>"w-full max-w-sm"</span>{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">9</span>        {'<'}div className=<span style={{ color: '#ce9178' }}>"flex flex-col gap-6"</span>{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">10</span>          {'<'}Card{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">11</span>            {'<'}CardHeader{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">12</span>              {'<'}CardTitle className=<span style={{ color: '#ce9178' }}>"text-2xl"</span>{'>'}Sorry, something went wrong.{'<'}/CardTitle{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">13</span>            {'<'}/CardHeader{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">14</span>            {'<'}CardContent{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">15</span>              {'{'}params?.error ? (</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">16</span>                {'<'}p className=<span style={{ color: '#ce9178' }}>"text-sm text-muted-foreground"</span>{'>'}Code error: {'{'}params.error{'}'}{'<'}/p{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">17</span>              ) : (</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">18</span>                {'<'}p className=<span style={{ color: '#ce9178' }}>"text-sm text-muted-foreground"</span>{'>'}An unspecified error occurred.{'<'}/p{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">19</span>              {'}'})</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">20</span>            {'<'}/CardContent{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">21</span>          {'<'}/Card{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">22</span>        {'<'}/div{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">23</span>      {'<'}/div{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">24</span>    {'<'}/div{'>'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">25</span>  )</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">26</span>{'}'}</div>
           </code>
         </pre>
         <CopyButton />

@@ -400,53 +400,53 @@ export function PlatformKitDocPage() {
               <div className="group relative w-full max-w-[90vw] md:max-w-none overflow-auto">
                 <pre className="p-4 w-full h-full max-w-none font-mono text-xs rounded-none border-none bg-muted/30" style={{ lineHeight: 1.4 }}>
                   <code>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">1</span><span style={{ color: '#569cd6' }}>import</span> {'{'} NextResponse {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'next/server'</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">2</span><span style={{ color: '#569cd6' }}>import</span> OpenAI <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'openai'</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">3</span><span style={{ color: '#569cd6' }}>import</span> createClient <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'openapi-fetch'</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">4</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">5</span><span style={{ color: '#569cd6' }}>import</span> <span style={{ color: '#569cd6' }}>type</span> {'{'} paths {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@/platform/platform-kit-nextjs/lib/management-api-schema'</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">6</span><span style={{ color: '#569cd6' }}>import</span> {'{'} listTablesSql {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@/platform/platform-kit-nextjs/lib/pg-meta'</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">7</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">8</span><span style={{ color: '#569cd6' }}>const</span> openai = <span style={{ color: '#569cd6' }}>new</span> OpenAI({'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">9</span>  apiKey: process.env.OPENAI_API_KEY,</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">10</span>{'}'})</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">11</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">12</span><span style={{ color: '#569cd6' }}>const</span> client = createClient{'<'}paths{'>'}({'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">13</span>  baseUrl: <span style={{ color: '#ce9178' }}>'https://api.supabase.com'</span>,</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">14</span>  headers: {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">15</span>    Authorization: <span style={{ color: '#ce9178' }}>{'`Bearer ${process.env.SUPABASE_MANAGEMENT_API_TOKEN}`'}</span>,</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">16</span>  {'}'},</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">17</span>{'}'})</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">18</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">19</span><span style={{ color: '#57a64a' }}>// Function to get database schema</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">20</span><span style={{ color: '#569cd6' }}>async</span> <span style={{ color: '#569cd6' }}>function</span> <span style={{ color: '#3ECF8E' }}>getDbSchema</span>(projectRef: string) {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">21</span>  <span style={{ color: '#569cd6' }}>const</span> token = process.env.SUPABASE_MANAGEMENT_API_TOKEN</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">22</span>  <span style={{ color: '#569cd6' }}>if</span> (!token) {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">23</span>    <span style={{ color: '#569cd6' }}>throw</span> <span style={{ color: '#569cd6' }}>new</span> Error(<span style={{ color: '#ce9178' }}>'Supabase Management API token is not configured.'</span>)</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">24</span>  {'}'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">25</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">26</span>  <span style={{ color: '#569cd6' }}>const</span> sql = listTablesSql()</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">27</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">28</span>  <span style={{ color: '#569cd6' }}>const</span> {'{'} data, error {'}'} = <span style={{ color: '#569cd6' }}>await</span> client.POST(<span style={{ color: '#ce9178' }}>'{'/v1/projects/{ref}/database/query'}'</span>, {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">29</span>    params: {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">30</span>      path: {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">31</span>        ref: projectRef,</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">32</span>      {'}'},</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">33</span>    {'}'},</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">34</span>    body: {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">35</span>      query: sql,</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">36</span>      read_only: <span style={{ color: '#569cd6' }}>true</span>,</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">37</span>    {'}'},</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">38</span>  {'}'})</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">39</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">40</span>  <span style={{ color: '#569cd6' }}>if</span> (error) {'{'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">41</span>    <span style={{ color: '#569cd6' }}>throw</span> error</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">42</span>  {'}'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">43</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">44</span>  <span style={{ color: '#569cd6' }}>return</span> data <span style={{ color: '#569cd6' }}>as</span> any</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">45</span>{'}'}</div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">46</span></div>
-                    <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">47</span><span style={{ color: '#57a64a' }}>// ... (truncated for display)</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">1</span><span style={{ color: '#569cd6' }}>import</span> {'{'} NextResponse {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'next/server'</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">2</span><span style={{ color: '#569cd6' }}>import</span> OpenAI <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'openai'</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">3</span><span style={{ color: '#569cd6' }}>import</span> createClient <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'openapi-fetch'</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">4</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">5</span><span style={{ color: '#569cd6' }}>import</span> <span style={{ color: '#569cd6' }}>type</span> {'{'} paths {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@/platform/platform-kit-nextjs/lib/management-api-schema'</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">6</span><span style={{ color: '#569cd6' }}>import</span> {'{'} listTablesSql {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@/platform/platform-kit-nextjs/lib/pg-meta'</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">7</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">8</span><span style={{ color: '#569cd6' }}>const</span> openai = <span style={{ color: '#569cd6' }}>new</span> OpenAI({'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">9</span>  apiKey: process.env.OPENAI_API_KEY,</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">10</span>{'}'})</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">11</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">12</span><span style={{ color: '#569cd6' }}>const</span> client = createClient{'<'}paths{'>'}({'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">13</span>  baseUrl: <span style={{ color: '#ce9178' }}>'https://api.supabase.com'</span>,</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">14</span>  headers: {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">15</span>    Authorization: <span style={{ color: '#ce9178' }}>{'`Bearer ${process.env.SUPABASE_MANAGEMENT_API_TOKEN}`'}</span>,</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">16</span>  {'}'},</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">17</span>{'}'})</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">18</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">19</span><span style={{ color: '#57a64a' }}>// Function to get database schema</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">20</span><span style={{ color: '#569cd6' }}>async</span> <span style={{ color: '#569cd6' }}>function</span> <span style={{ color: '#3ECF8E' }}>getDbSchema</span>(projectRef: string) {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">21</span>  <span style={{ color: '#569cd6' }}>const</span> token = process.env.SUPABASE_MANAGEMENT_API_TOKEN</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">22</span>  <span style={{ color: '#569cd6' }}>if</span> (!token) {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">23</span>    <span style={{ color: '#569cd6' }}>throw</span> <span style={{ color: '#569cd6' }}>new</span> Error(<span style={{ color: '#ce9178' }}>'Supabase Management API token is not configured.'</span>)</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">24</span>  {'}'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">25</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">26</span>  <span style={{ color: '#569cd6' }}>const</span> sql = listTablesSql()</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">27</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">28</span>  <span style={{ color: '#569cd6' }}>const</span> {'{'} data, error {'}'} = <span style={{ color: '#569cd6' }}>await</span> client.POST(<span style={{ color: '#ce9178' }}>'{'/v1/projects/{ref}/database/query'}'</span>, {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">29</span>    params: {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">30</span>      path: {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">31</span>        ref: projectRef,</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">32</span>      {'}'},</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">33</span>    {'}'},</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">34</span>    body: {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">35</span>      query: sql,</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">36</span>      read_only: <span style={{ color: '#569cd6' }}>true</span>,</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">37</span>    {'}'},</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">38</span>  {'}'})</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">39</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">40</span>  <span style={{ color: '#569cd6' }}>if</span> (error) {'{'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">41</span>    <span style={{ color: '#569cd6' }}>throw</span> error</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">42</span>  {'}'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">43</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">44</span>  <span style={{ color: '#569cd6' }}>return</span> data <span style={{ color: '#569cd6' }}>as</span> any</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">45</span>{'}'}</div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">46</span></div>
+                    <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">47</span><span style={{ color: '#57a64a' }}>// ... (truncated for display)</span></div>
                   </code>
                 </pre>
                 <CopyButton />
@@ -562,7 +562,7 @@ export function PlatformKitDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/reference/api/introduction">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/reference/api/introduction">
                   Supabase Management API
                 </a>
               </li>

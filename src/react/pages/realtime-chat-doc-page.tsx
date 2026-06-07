@@ -158,7 +158,7 @@ export function RealtimeChatDocPage() {
               <SectionLink id="folder-structure" /> Folder structure
             </h2>
 
-            <FileTreeSection fileTree={fileTree} note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
+            <FileTreeSection fileTree={fileTree} note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-primary">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
 
             <div className="mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4 text-foreground/70 bg-muted/20 relative">
               <pre className="px-4">
@@ -326,12 +326,12 @@ export function RealtimeChatDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/realtime/broadcast">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/realtime/broadcast">
                   Realtime Broadcast
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/realtime/authorization">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/realtime/authorization">
                   Realtime authorization
                 </a>
               </li>

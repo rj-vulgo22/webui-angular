@@ -119,7 +119,7 @@ export function PasswordBasedAuthDocPage() {
               <SectionLink id="folder-structure" /> Folder structure
             </h2>
 
-            <FileTreeSection fileTree={fileTree} activePath="route.ts" note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
+            <FileTreeSection fileTree={fileTree} activePath="route.ts" note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-primary">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
 
             <h2 className="font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl tracking-tight first:mt-0" id="usage">
               <SectionLink id="usage" /> Usage
@@ -145,11 +145,11 @@ export function PasswordBasedAuthDocPage() {
               <li className="mt-2">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   If you're using supabase.com, you can find these values in the{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs">
                     Connect modal
                   </a>{' '}
                   under App Frameworks or in your project's{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/settings/api">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/settings/api">
                     API settings
                   </a>.
                 </p>
@@ -173,7 +173,7 @@ export function PasswordBasedAuthDocPage() {
               <li className="mt-2">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   Add an{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/templates">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/templates">
                     email template for sign-up
                   </a>{' '}
                   to the Supabase project. Your signup email template should contain at least the following HTML:
@@ -193,7 +193,7 @@ export function PasswordBasedAuthDocPage() {
                   <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">{'{{ .SiteURL }}'}</code>,
                   <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">{'{{ .TokenHash }}'}</code>, and{' '}
                   <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">{'{{ .RedirectTo }}'}</code>, refer to our{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/auth/auth-email-templates">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/auth/auth-email-templates">
                     Email Templates guide
                   </a>.
                 </p>
@@ -201,7 +201,7 @@ export function PasswordBasedAuthDocPage() {
               <li className="mt-2">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   Add an{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/templates">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/templates">
                     email template for reset password
                   </a>{' '}
                   to the Supabase project. Your reset password email template should contain at least the following HTML:
@@ -227,7 +227,7 @@ export function PasswordBasedAuthDocPage() {
               <li className="mt-2">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   Set the site URL in the{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/url-configuration">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/url-configuration">
                     URL Configuration
                   </a>{' '}
                   settings in the Supabase Dashboard.
@@ -236,7 +236,7 @@ export function PasswordBasedAuthDocPage() {
               <li className="mt-2">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   Set up the Next.js route that users will visit to reset or update their password. Go to the{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/url-configuration">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/auth/url-configuration">
                     URL Configuration
                   </a>{' '}
                   settings and add the <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">forgot-password</code> route to the list of Redirect URLs. It should look something like: <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">http://example.com/auth/forgot-password</code>.
@@ -259,27 +259,27 @@ export function PasswordBasedAuthDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/auth/passwords?queryGroups=flow&flow=pkce">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/auth/passwords?queryGroups=flow&flow=pkce">
                   Password-based authentication (PKCE flow)
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/auth/debugging/error-codes">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/auth/debugging/error-codes">
                   Authentication error codes
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/auth/auth-email-templates">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/auth/auth-email-templates">
                   Email templates
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/local-development/customizing-email-templates">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/local-development/customizing-email-templates">
                   Email templates for local development
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/auth/auth-smtp">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/auth/auth-smtp">
                   Custom SMTP
                 </a>
               </li>

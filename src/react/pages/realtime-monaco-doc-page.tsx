@@ -145,7 +145,7 @@ export function RealtimeMonacoDocPage() {
               <SectionLink id="folder-structure" /> Folder structure
             </h2>
 
-            <FileTreeSection fileTree={fileTree} note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
+            <FileTreeSection fileTree={fileTree} note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-primary">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
 
             <div className="mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4 text-foreground/70 bg-muted/20 relative">
               <pre className="px-4">
@@ -167,14 +167,14 @@ export function RealtimeMonacoDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The Realtime Monaco component provides a collaborative code editor powered by{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://microsoft.github.io/monaco-editor/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://microsoft.github.io/monaco-editor/">
                 Monaco
               </a>{' '}
               and{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://yjs.dev/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://yjs.dev/">
                 Yjs
               </a>. It uses{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
                 @supabase-labs/y-supabase
               </a>{' '}
               under the hood to sync document state across clients through Supabase Realtime.
@@ -198,7 +198,7 @@ export function RealtimeMonacoDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The component creates a{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://yjs.dev/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://yjs.dev/">
                 Yjs
               </a>{' '}
               document and connects it to a Supabase Realtime channel using <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">SupabaseProvider</code> from <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">@supabase-labs/y-supabase</code>. A <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">MonacoBinding</code> from <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">y-monaco</code> bridges the Yjs document with the Monaco editor model, keeping them in sync.
@@ -325,7 +325,7 @@ export function RealtimeMonacoDocPage() {
                   <tr className="m-0 border-t p-0 even:bg-muted">
                     <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right"><code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">language?</code></td>
                     <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right"><code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">string</code></td>
-                    <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">Monaco <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://code.visualstudio.com/docs/languages/identifiers">language identifier</a> (e.g. <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">typescript</code>, <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">python</code>). Defaults to <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">javascript</code>.</td>
+                    <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">Monaco <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://code.visualstudio.com/docs/languages/identifiers">language identifier</a> (e.g. <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">typescript</code>, <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">python</code>). Defaults to <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">javascript</code>.</td>
                   </tr>
                   <tr className="m-0 border-t p-0 even:bg-muted">
                     <td className="border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right"><code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">height?</code></td>
@@ -411,22 +411,22 @@ export function RealtimeMonacoDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/realtime/broadcast">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/realtime/broadcast">
                   Realtime Broadcast
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/realtime/authorization">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/realtime/authorization">
                   Realtime authorization
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
                   @supabase-labs/y-supabase
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://docs.yjs.dev/">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://docs.yjs.dev/">
                   Yjs documentation
                 </a>
               </li>

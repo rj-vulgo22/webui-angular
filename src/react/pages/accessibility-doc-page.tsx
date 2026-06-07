@@ -16,7 +16,7 @@ const sections = [
 function SectionLink({ id }: { id: string }) {
   return (
     <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2 subheading-anchor"
+      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
       aria-label="Link to section"
       href={'#' + id}
     >
@@ -46,7 +46,7 @@ function CodeLine({ num, children }: { num?: number; children?: ReactNode }) {
   return (
     <div>
       {num !== undefined && (
-        <span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">{num}</span>
+        <span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">{num}</span>
       )}
       {children || '\u00A0'}
     </div>
@@ -113,8 +113,8 @@ export function AccessibilityDocPage() {
               About to push some code? At a minimum, check your work against this list:
             </p>
             <ul className="my-6 ml-6 list-disc text-foreground/70">
-              <li className="mt-2">Are interactive page elements <a href="#focus-management" className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]">keyboard-focusable</a>?</li>
-              <li className="mt-2">Are all elements announcable by a <a href="#screen-readers" className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]">screen reader</a>?</li>
+              <li className="mt-2">Are interactive page elements <a href="#focus-management" className="underline decoration-1 underline-offset-4 hover:decoration-primary">keyboard-focusable</a>?</li>
+              <li className="mt-2">Are all elements announcable by a <a href="#screen-readers" className="underline decoration-1 underline-offset-4 hover:decoration-primary">screen reader</a>?</li>
               <li className="mt-2">Are textual elements legible and scalable?</li>
               <li className="mt-2">Can I use this on a smaller and/or older device?</li>
             </ul>
@@ -126,13 +126,13 @@ export function AccessibilityDocPage() {
               All interactive page elements should be reachable by keyboard. Given the below inconsistency between devices and browsers, add <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">tabIndex= {'{'}0{'}'}</code> to all buttons, links, and non-text inputs, ideally at the component level. Consider tying the state of <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">tabIndex</code> to the <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">disabled</code> state of a component, if applicable.
             </p>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
-              Chromium-based browsers and Firefox handle this automatically via the Tab key. Safari, by default, requires the Option key to also be held down. Enabling <em>Keyboard navigation</em> on macOS Settings <a className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]" href="https://mayank.co/blog/safari-focus/#keyboard-navigation">removes this requirement</a> but makes links non-tabbable as a result.
+              Chromium-based browsers and Firefox handle this automatically via the Tab key. Safari, by default, requires the Option key to also be held down. Enabling <em>Keyboard navigation</em> on macOS Settings <a className="underline decoration-1 underline-offset-4 hover:decoration-primary" href="https://mayank.co/blog/safari-focus/#keyboard-navigation">removes this requirement</a> but makes links non-tabbable as a result.
             </p>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Interactive page elements should also provide visual feedback upon selection via a <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">focus-visible</code> state. We use consistent focus styles such as <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">inset-focus</code> so users recognize this state instantly.
             </p>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
-              <a className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]" href="/introduction">Button</a> has all of the above built-in. Bespoke interactive elements however, such as the below interactive <a className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]" href="/introduction">Table Row</a>, require these props to be added manually:
+              <a className="underline decoration-1 underline-offset-4 hover:decoration-primary" href="/introduction">Button</a> has all of the above built-in. Bespoke interactive elements however, such as the below interactive <a className="underline decoration-1 underline-offset-4 hover:decoration-primary" href="/introduction">Table Row</a>, require these props to be added manually:
             </p>
 
             <CodeBlock>
@@ -160,7 +160,7 @@ export function AccessibilityDocPage() {
               Consider also affordances like <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">ctrl</code> and <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">meta</code> key support for opening in a new tab. Anything that you can do with a mouse input should be replicable by keyboard.
             </p>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
-              See the examples within <a className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]" href="/introduction">Table</a> for more.
+              See the examples within <a className="underline decoration-1 underline-offset-4 hover:decoration-primary" href="/introduction">Table</a> for more.
             </p>
 
             <h3 className="font-heading mt-6 scroll-m-20 text-lg tracking-tight" id="radio-groups">

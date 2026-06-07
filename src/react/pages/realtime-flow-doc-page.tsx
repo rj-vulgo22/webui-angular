@@ -253,7 +253,7 @@ export function RealtimeFlowDocPage() {
               <SectionLink id="folder-structure" /> Folder structure
             </h2>
 
-            <FileTreeSection fileTree={fileTree} note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
+            <FileTreeSection fileTree={fileTree} note={<>This block includes the <a href="/client" className="underline decoration-1 underline-offset-4 hover:decoration-primary">Supabase client</a>. If you already have one installed, you can skip overwriting it.</>} />
 
             <div className="mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4 text-foreground/70 bg-muted/20 relative">
               <pre className="px-4">
@@ -275,14 +275,14 @@ export function RealtimeFlowDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The Realtime Flow component provides a collaborative diagram editor powered by{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://reactflow.dev/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://reactflow.dev/">
                 React Flow
               </a>{' '}
               and{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://yjs.dev/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://yjs.dev/">
                 Yjs
               </a>. It uses{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
                 @supabase-labs/y-supabase
               </a>{' '}
               under the hood to sync diagram state across clients through Supabase Realtime.
@@ -306,7 +306,7 @@ export function RealtimeFlowDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The component creates a{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://yjs.dev/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://yjs.dev/">
                 Yjs
               </a>{' '}
               document with two shared maps — one for nodes and one for edges — and connects it to a Supabase Realtime channel using <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">SupabaseProvider</code> from <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">@supabase-labs/y-supabase</code>. Each node and edge is stored by its ID in the respective <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">Y.Map</code>, enabling per-element conflict resolution.
@@ -645,27 +645,27 @@ export function RealtimeFlowDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/realtime/broadcast">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/realtime/broadcast">
                   Realtime Broadcast
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/realtime/authorization">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/realtime/authorization">
                   Realtime authorization
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://github.com/supabase-community/y-supabase">
                   @supabase-labs/y-supabase
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://docs.yjs.dev/">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://docs.yjs.dev/">
                   Yjs documentation
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://reactflow.dev/">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://reactflow.dev/">
                   React Flow documentation
                 </a>
               </li>

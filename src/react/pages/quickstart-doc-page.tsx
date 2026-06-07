@@ -8,7 +8,7 @@ const sections = [
 function SectionLink({ id }: { id: string }) {
   return (
     <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2 subheading-anchor"
+      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
       aria-label="Link to section"
       href={'#' + id}
     >
@@ -54,7 +54,7 @@ export function QuickStartDocPage() {
             </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Start by installing{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://ui.shadcn.com/">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://ui.shadcn.com/">
                 shadcn/ui
               </a>{' '}
               in your project. Use the appropriate setup guide linked below for your framework of choice.
@@ -141,7 +141,7 @@ export function QuickStartDocPage() {
                       Heads up: TanStack Start is in beta.
                     </div>
                     We're excited to support TanStack Start in our UI library! But since it's still in beta, things may change quickly — expect breaking changes and some rough edges. We'll do our best to keep up and make integration with Supabase as smooth as possible. If you run into issues, have a look at the TanStack docs.{' '}
-                    <a href="https://tanstack.com/start/latest/docs/framework/react/quick-start" target="_blank" rel="noopener noreferrer" className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2">
+                    <a href="https://tanstack.com/start/latest/docs/framework/react/quick-start" target="_blank" rel="noopener noreferrer" className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2">
                       TanStack Quickstart guide
                     </a>
                   </div>
@@ -163,7 +163,7 @@ export function QuickStartDocPage() {
             </p>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               For issues and questions about specific frameworks, see the{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="/faq">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="/faq">
                 FAQs
               </a>
             </p>

@@ -528,7 +528,7 @@ export function InfiniteQueryDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Before using this hook, we <strong>highly</strong> recommend you setup database types in your project. This will make the hook fully-typesafe. More info about generating Typescript types from database schema{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/api/rest/generating-types">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/api/rest/generating-types">
                 here
               </a>.
             </p>
@@ -639,7 +639,7 @@ export function InfiniteQueryDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The hook will use the typed defined on your Supabase client if they're setup ({' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/reference/javascript/typescript-support">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/reference/javascript/typescript-support">
                 more info
               </a>).
             </p>
@@ -711,7 +711,7 @@ export function InfiniteQueryDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Use the <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">InfiniteList</code> component with the{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/sql/quickstarts">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/sql/quickstarts">
                 Todo List
               </a>{' '}
               quickstart.
@@ -719,11 +719,11 @@ export function InfiniteQueryDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Add <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">{'<InfiniteListDemo />'}</code> to a page to see it in action. Ensure the{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://ui.shadcn.com/docs/components/checkbox">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://ui.shadcn.com/docs/components/checkbox">
                 Checkbox
               </a>{' '}
               component from shadcn/ui is installed, and{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/api/rest/generating-types">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/api/rest/generating-types">
                 regenerate/download
               </a>{' '}
               types after running the quickstart.
@@ -742,11 +742,11 @@ export function InfiniteQueryDocPage() {
 
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               The Todo List table has Row Level Security (RLS) enabled by default. Feel free disable it temporarily while testing. With RLS enabled, you will get an{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/troubleshooting/why-is-my-select-returning-an-empty-data-array-and-i-have-data-in-the-table-xvOPgx">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/troubleshooting/why-is-my-select-returning-an-empty-data-array-and-i-have-data-in-the-table-xvOPgx">
                 empty array
               </a>{' '}
               of results by default.{' '}
-              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/database/postgres/row-level-security">
+              <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/database/postgres/row-level-security">
                 Read more
               </a>{' '}
               about RLS.
@@ -758,22 +758,22 @@ export function InfiniteQueryDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/reference/javascript/typescript-support">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/reference/javascript/typescript-support">
                   Generating Typescript types from the database
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/reference/javascript/select">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/reference/javascript/select">
                   Supabase Database API
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/reference/javascript/select#pagination">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/reference/javascript/select#pagination">
                   Supabase Pagination
                 </a>
               </li>
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">
                   Intersection Observer API
                 </a>
               </li>

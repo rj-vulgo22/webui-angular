@@ -22,7 +22,7 @@ const sections = [
 function SectionLink({ id }: { id: string }) {
   return (
     <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2 subheading-anchor"
+      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
       aria-label="Link to section"
       href={'#' + id}
     >

@@ -21,7 +21,7 @@ const INSTALL_COMMANDS: Record<string, string> = {
 function SectionLink({ id }: { id: string }) {
   return (
     <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2 subheading-anchor"
+      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
       aria-label="Link to section"
       href={'#' + id}
     >
@@ -61,7 +61,7 @@ function PackageManagerTabs() {
           </div>
           <div className="flex items-center">
             <div className="flex-1 font-mono text-sm text-foreground relative z-10">
-              <span className="mr-2 text-[#888] select-none">$</span>
+              <span className="mr-2 text-muted-foreground select-none">$</span>
               {INSTALL_COMMANDS[active]}
             </div>
             <button
@@ -134,14 +134,14 @@ function FileTree() {
       <div className="group relative max-w-[90vw] md:max-w-none overflow-auto w-full">
         <pre className="p-4 w-full h-full max-w-none font-mono text-xs rounded-none border-none bg-muted/30" style={{ lineHeight: 1.4 }}>
           <code>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">1</span><span style={{ color: '#569cd6' }}>import</span> {'{'} createBrowserClient {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@supabase/ssr'</span></div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">2</span></div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">3</span><span style={{ color: '#569cd6' }}>export</span> <span style={{ color: '#569cd6' }}>function</span> <span style={{ color: '#3ECF8E' }}>createClient</span>() {'{'}</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">4</span>  <span style={{ color: '#569cd6' }}>return</span> createBrowserClient(</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">5</span>    process.env.NEXT_PUBLIC_SUPABASE_URL!,</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">6</span>    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">7</span>  )</div>
-            <div><span className="text-[#888] mr-3 text-center inline-block min-w-[44px] select-none">8</span>{'}'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">1</span><span style={{ color: '#569cd6' }}>import</span> {'{'} createBrowserClient {'}'} <span style={{ color: '#569cd6' }}>from</span> <span style={{ color: 'hsl(var(--brand-link), 1)' }}>'@supabase/ssr'</span></div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">2</span></div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">3</span><span style={{ color: '#569cd6' }}>export</span> <span style={{ color: '#569cd6' }}>function</span> <span style={{ color: '#3ECF8E' }}>createClient</span>() {'{'}</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">4</span>  <span style={{ color: '#569cd6' }}>return</span> createBrowserClient(</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">5</span>    process.env.NEXT_PUBLIC_SUPABASE_URL!,</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">6</span>    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">7</span>  )</div>
+            <div><span className="text-muted-foreground mr-3 text-center inline-block min-w-[44px] select-none">8</span>{'}'}</div>
           </code>
         </pre>
         <div className="absolute right-2 top-2">
@@ -253,11 +253,11 @@ export function ClientDocPage() {
               <li className="mt-2">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   If you're using supabase.com, you can find these values in the{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs">
                     Connect modal
                   </a>{' '}
                   under App Frameworks or in your project's{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/dashboard/project/_/settings/api">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/dashboard/project/_/settings/api">
                     API settings
                   </a>.
                 </p>
@@ -277,7 +277,7 @@ export function ClientDocPage() {
               <div className="text-sm text-foreground/70 font-normal">
                 <p className="leading-7 not-first:mt-6 text-foreground/70">
                   This Supabase client is built for SSR with the Next.js App Router. If you're building a React SPA, use the{' '}
-                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="/ui/docs/react-router/client">
+                  <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="/ui/docs/react-router/client">
                     React SPA client
                   </a>{' '}
                   instead.
@@ -291,7 +291,7 @@ export function ClientDocPage() {
 
             <ul className="my-6 ml-6 list-disc text-foreground/70">
               <li className="mt-2">
-                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2" href="https://supabase.com/docs/guides/api/rest/generating-types">
+                <a className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2" href="https://supabase.com/docs/guides/api/rest/generating-types">
                   Generating TypeScript types for your client
                 </a>
               </li>

@@ -12,7 +12,7 @@ const sections = [
 function SectionLink({ id }: { id: string }) {
   return (
     <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-[#3ECF8E] hover:decoration-2 subheading-anchor"
+      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
       aria-label="Link to section"
       href={'#' + id}
     >
@@ -111,7 +111,7 @@ export function IconsDocPage() {
               <SectionLink id="tints" /> Tints
             </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
-              Use classes just like you would for <a className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]" href="/color-usage#text">text</a> to tint icons. For example:
+              Use classes just like you would for <a className="underline decoration-1 underline-offset-4 hover:decoration-primary" href="/color-usage#text">text</a> to tint icons. For example:
             </p>
 
             <CodeBlock>
@@ -126,7 +126,7 @@ export function IconsDocPage() {
               <SectionLink id="ui-icons" /> UI icons
             </h2>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
-              We rely on <a className="underline decoration-1 underline-offset-4 hover:decoration-[#3ECF8E]" href="https://lucide.dev/icons/">Lucide</a> for any standard UI icon needs.
+              We rely on <a className="underline decoration-1 underline-offset-4 hover:decoration-primary" href="https://lucide.dev/icons/">Lucide</a> for any standard UI icon needs.
             </p>
 
             <h2 className="font-heading mt-8 scroll-m-20 text-xl tracking-tight" id="custom-icons">
@@ -236,7 +236,7 @@ export function IconsDocPage() {
             </ul>
 
             <h3 className="font-heading mt-6 scroll-m-20 text-lg tracking-tight">
-              Bad example <span style={{ color: '#ef4444' }}>❌</span>
+              Bad example <span className="text-destructive">❌</span>
             </h3>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Notice the hardcoded colors, unnecessary backgrounds, and complex structure:
@@ -251,7 +251,7 @@ export function IconsDocPage() {
             </CodeBlock>
 
             <h3 className="font-heading mt-6 scroll-m-20 text-lg tracking-tight">
-              Good example (stroke icon) <span style={{ color: '#22c55e' }}>✅</span>
+              Good example (stroke icon) <span className="text-primary">✅</span>
             </h3>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Clean structure with <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">currentColor</code> and proper attributes:
@@ -266,7 +266,7 @@ export function IconsDocPage() {
             </CodeBlock>
 
             <h3 className="font-heading mt-6 scroll-m-20 text-lg tracking-tight">
-              Good example (fill-only icon / logo) <span style={{ color: '#22c55e' }}>✅</span>
+              Good example (fill-only icon / logo) <span className="text-primary">✅</span>
             </h3>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Note <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">stroke="none"</code> on the root to prevent unwanted strokes, and <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">fill="currentColor"</code> on each path:

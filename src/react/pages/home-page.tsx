@@ -121,9 +121,9 @@ export function HomePage() {
               </div>
               <HorizontalGridLine />
               <div className="col-start-2 col-span-10 md:col-start-3 md:col-span-8 py-8">
-                <div className="rounded-lg border p-8 bg-[#1c1c1c]">
+                <div className="rounded-lg border p-8 bg-card">
                   <div className="flex flex-col items-center justify-center text-center gap-4">
-                    <div className="rounded-full bg-[#3ECF8E]/10 p-3"><CheckCircle2 className="h-8 w-8 text-[#3ECF8E]" /></div>
+                    <div className="rounded-full bg-primary/10 p-3"><CheckCircle2 className="h-8 w-8 text-primary" /></div>
                     <p className="text-lg font-medium text-white">Dark mode is fully supported</p>
                     <p className="text-sm text-white/60 max-w-md">Toggle between light and dark themes — all HSL CSS variables adapt automatically with smooth transitions.</p>
                     <Button variant="outline" className="mt-2 text-white border-white/20 hover:bg-white/10">Toggle Theme</Button>
