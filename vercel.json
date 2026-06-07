@@ -1,6 +1,6 @@
 {
   "framework": "angular",
-  "buildCommand": "pnpm build",
+  "buildCommand": "VITE_SENTRY_RELEASE=$(node -p \"require('./package.json').name + '@' + require('./package.json').version\") pnpm build",
   "outputDirectory": "dist/webui-angular/browser",
   "installCommand": "pnpm install",
   "rewrites": [

@@ -2,6 +2,7 @@ import * as Sentry from '@sentry/react'
 
 const env = (import.meta as any).env
 const dsn = typeof env === 'object' && env !== null ? env.VITE_SENTRY_DSN : undefined
+const release = typeof env === 'object' && env !== null ? env.VITE_SENTRY_RELEASE : undefined
 
 export function initSentry() {
   if (!dsn) {
@@ -11,6 +12,7 @@ export function initSentry() {
 
   Sentry.init({
     dsn,
+    release,
     integrations: [
       Sentry.browserTracingIntegration(),
       Sentry.replayIntegration(),
