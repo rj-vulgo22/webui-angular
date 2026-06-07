@@ -23,6 +23,9 @@ const queryClient = new QueryClient({
 
 const AccessibilityDocPage = lazy(() => import('./accessibility-doc-page').then(m => ({ default: m.AccessibilityDocPage })))
 const ColorUsageDocPage = lazy(() => import('./color-usage-doc-page').then(m => ({ default: m.ColorUsageDocPage })))
+const CopywritingDocPage = lazy(() => import('./copywriting-doc-page').then(m => ({ default: m.CopywritingDocPage })))
+const IconsDocPage = lazy(() => import('./icons-doc-page').then(m => ({ default: m.IconsDocPage })))
+const TailwindClassesDocPage = lazy(() => import('./tailwind-classes-doc-page').then(m => ({ default: m.TailwindClassesDocPage })))
 const QuickStartDocPage = lazy(() => import('./quickstart-doc-page').then(m => ({ default: m.QuickStartDocPage })))
 const FaqDocPage = lazy(() => import('./faq-doc-page').then(m => ({ default: m.FaqDocPage })))
 const ClientDocPage = lazy(() => import('./client-doc-page').then(m => ({ default: m.ClientDocPage })))
@@ -80,6 +83,12 @@ function PageRouter() {
             return <AccessibilityDocPage />
           case '/color-usage':
             return <ColorUsageDocPage />
+          case '/copywriting':
+            return <CopywritingDocPage />
+          case '/icons':
+            return <IconsDocPage />
+          case '/tailwind-classes':
+            return <TailwindClassesDocPage />
           case '/quickstart':
             return <QuickStartDocPage />
           case '/faq':

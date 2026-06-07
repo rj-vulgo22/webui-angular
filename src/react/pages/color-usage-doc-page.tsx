@@ -205,19 +205,100 @@ export function ColorUsageDocPage() {
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               We use surfaces in 2 different ways. In the ./www and ./docs sites, we use a darker background, so we have an extra surface color we can use
             </p>
-            <p className="leading-7 not-first:mt-6 text-foreground/70 italic text-muted-foreground">Loading...</p>
+
+            <div className="my-6 border border-dashed rounded-lg p-4" style={{ backgroundColor: 'hsl(var(--bg-canvas))' }}>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs text-muted-foreground">app background</span>
+                <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg</span>
+              </div>
+              <div className="rounded-lg p-4 shadow-sm border" style={{ backgroundColor: 'hsl(var(--bg-surface-75))', borderColor: 'hsl(var(--bg-surface-75))' }}>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs text-muted-foreground">content panel</span>
+                  <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-surface-75</span>
+                  <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border-muted</span>
+                </div>
+              </div>
+            </div>
 
             <h4 className="font-heading mt-4 scroll-m-20 text-base tracking-tight">{'`./apps/studio`'}</h4>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               For the studio (dashboard) we can use <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">bg-surface-100</code>, <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">bg-surface-200</code>, <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">bg-surface-300</code>
             </p>
-            <p className="leading-7 not-first:mt-6 text-foreground/70 italic text-muted-foreground">Loading...</p>
+
+            <div className="my-6 border border-dashed rounded-lg p-4" style={{ backgroundColor: 'hsl(var(--bg-studio))' }}>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs text-muted-foreground">app background</span>
+                <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-studio</span>
+              </div>
+              <div className="rounded-lg p-4 shadow-sm border" style={{ backgroundColor: 'hsl(var(--bg-surface-100))', borderColor: 'hsl(var(--border))' }}>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs text-muted-foreground">content panel</span>
+                  <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-surface-100</span>
+                  <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border</span>
+                </div>
+                <div className="rounded-lg p-4 shadow-sm border" style={{ backgroundColor: 'hsl(var(--bg-surface-200))', borderColor: 'hsl(var(--border))' }}>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs text-muted-foreground">content panel</span>
+                    <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-surface-200</span>
+                    <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border</span>
+                  </div>
+                  <div className="rounded-lg p-4 border" style={{ backgroundColor: 'hsl(var(--bg-surface-300))', borderColor: 'hsl(var(--border))' }}>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-xs text-muted-foreground">content panel</span>
+                      <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-surface-300</span>
+                      <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border</span>
+                    </div>
+                    <div className="border-b pb-2 mb-2" style={{ borderColor: 'hsl(var(--border))' }}>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs text-muted-foreground">grid header</span>
+                        <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-surface-200</span>
+                        <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border</span>
+                      </div>
+                    </div>
+                    {[1, 2, 3, 4].map((i) => (
+                      <div key={i} className="flex items-center gap-2 py-1.5 px-2 border-b border-dashed last:border-b-0 rounded mb-0.5 last:mb-0" style={{ backgroundColor: 'hsl(var(--bg-200))', borderColor: 'hsl(var(--bg-alternative))' }}>
+                        <span className="text-xs text-muted-foreground">content row</span>
+                        <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-alternative))', color: 'hsl(var(--foreground))', borderColor: 'hsl(var(--bg-alternative))' }}>bg-200</span>
+                        <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-alternative))', color: 'hsl(var(--foreground))', borderColor: 'hsl(var(--bg-alternative))' }}>border-secondary</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="mt-2 flex items-center gap-2">
+                <span className="text-xs text-muted-foreground">empty frame space</span>
+                <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-alternative</span>
+                <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border-stronger</span>
+              </div>
+            </div>
 
             <h4 className="font-heading mt-4 scroll-m-20 text-base tracking-tight">Data grid and frame space</h4>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Data grids use an alternative background color for empty space to add depth to the layout. The background of the empty space is the same background as used in <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">./apps/docs</code> and <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">./apps/www</code> - although; the color has been mapped to <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">bg-alternative</code> so it works well across different themes.
             </p>
-            <p className="leading-7 not-first:mt-6 text-foreground/70 italic text-muted-foreground">Loading...</p>
+
+            <div className="my-6 rounded-lg overflow-hidden border" style={{ backgroundColor: 'hsl(var(--bg-alternative))', borderColor: 'hsl(var(--bg-alternative))' }}>
+              <div className="flex items-center gap-2 p-3 border-b" style={{ backgroundColor: 'hsl(var(--bg-surface-100))', borderColor: 'hsl(var(--border))' }}>
+                <span className="text-xs text-muted-foreground">empty frame space</span>
+                <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg-alternative</span>
+                <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>border-stronger</span>
+              </div>
+              <div className="p-3" style={{ backgroundColor: 'hsl(var(--bg-alternative))' }}>
+                <div className="rounded-lg border shadow-sm" style={{ backgroundColor: 'hsl(var(--bg-surface-200))', borderColor: 'hsl(var(--border))' }}>
+                  <div className="border-b px-4 py-2 flex items-center gap-2" style={{ borderColor: 'hsl(var(--border))' }}>
+                    <span className="text-xs text-muted-foreground">data grid</span>
+                    <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-200))', color: 'hsl(var(--foreground))' }}>bg</span>
+                  </div>
+                  {[1, 2, 3].map((i) => (
+                    <div key={i} className="px-4 py-2 border-b last:border-b-0 flex items-center gap-2" style={{ backgroundColor: 'hsl(var(--bg-200))', borderColor: 'hsl(var(--bg-alternative))' }}>
+                      <span className="text-xs text-muted-foreground">content row</span>
+                      <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-alternative))', color: 'hsl(var(--foreground))', borderColor: 'hsl(var(--bg-alternative))' }}>bg-200</span>
+                      <span className="text-[10px] font-mono rounded-full px-2 py-0.5 border" style={{ backgroundColor: 'hsl(var(--bg-alternative))', color: 'hsl(var(--foreground))', borderColor: 'hsl(var(--bg-alternative))' }}>border-secondary</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
             <p className="leading-7 not-first:mt-6 text-foreground/70">
               Dealing with large areas of empty space in data display should also be catered for. You can use the <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">bg-200</code> or <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">bg</code> class to fill the space.
             </p>
