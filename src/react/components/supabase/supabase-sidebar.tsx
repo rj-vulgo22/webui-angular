@@ -71,7 +71,7 @@ function NavLink({ item, currentPath, navigate }: { item: NavItem; currentPath: 
       <div className={'transition absolute left-0 w-[2px] h-full bg-foreground rounded-r-sm ' + (isActive ? 'opacity-100' : 'opacity-0')} />
       <span className="pl-6">{item.title}</span>
       {item.new && (
-        <span className="mr-2 inline-flex items-center justify-center self-center rounded-full whitespace-nowrap tracking-[0.07em] uppercase font-medium text-[9px] leading-[13px] px-[5.5px] py-[2px] bg-[#3ECF8E]/10 text-[#3ECF8E] border border-[#3ECF8E]">
+        <span className="mr-2 inline-flex items-center justify-center self-center rounded-full whitespace-nowrap tracking-[0.07em] uppercase font-medium text-[9px] leading-[13px] px-[5.5px] py-[2px] bg-emerald-100 text-emerald-700 dark:bg-emerald-400/10 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-400">
           New
         </span>
       )}
