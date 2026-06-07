@@ -12,7 +12,7 @@ export function SupabaseLayout({ children }: SupabaseLayoutProps) {
     <div className="pt-10 lg:pt-0">
       <main className="flex-1 max-w-site mx-auto w-full p-0">
         <div className="border-b">
-          <div className="flex-1 items-start lg:grid lg:grid-cols-[240px_minmax(0,1fr)]">
+          <div className="flex-1 items-start lg:grid lg:grid-cols-[288px_minmax(0,1fr)]">
             <SupabaseSidebar />
             <div vaul-drawer-wrapper="">
               <div className="relative flex min-h-screen flex-col bg-background">

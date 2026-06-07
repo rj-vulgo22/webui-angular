@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from '../../lib/supabase-router'
 import { ThemeSwitcher } from './theme-switcher'
 import { CommandMenu } from './command-menu'
@@ -184,16 +185,32 @@ export function SupabaseSidebar() {
         </div>
       </div>
 
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 z-[55] bg-black/50 lg:hidden" onClick={closeMobile} />
-      )}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <>
+            <motion.div
+              className="fixed inset-0 z-[55] bg-black/50 lg:hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={closeMobile}
+            />
+            <motion.aside
+              className="fixed top-0 left-0 z-[60] h-screen w-full max-w-[288px] bg-200 lg:hidden"
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            >
+              <div className="h-full overflow-y-auto [scrollbar-width:none]">
+                <SidebarContent onNavigate={closeMobile} onClose={closeMobile} onSearch={() => setCommandOpen(true)} />
+              </div>
+            </motion.aside>
+          </>
+        )}
+      </AnimatePresence>
 
-      <aside className={[
-        'fixed z-[60] top-0 h-screen w-full max-w-[260px] shrink-0 bg-200 transition-transform',
-        'lg:sticky lg:block lg:max-w-none lg:z-30 lg:border-r lg:border-muted/50',
-        mobileMenuOpen ? 'translate-x-0' : '-translate-x-full',
-        'lg:translate-x-0',
-      ].join(' ')}>
+      <aside className="hidden shrink-0 lg:sticky lg:block lg:top-0 lg:h-screen lg:z-30 bg-200 lg:border-r lg:border-muted/50">
         <div className="h-full overflow-y-auto [scrollbar-width:none]">
           <SidebarContent onNavigate={closeMobile} onClose={closeMobile} onSearch={() => setCommandOpen(true)} />
         </div>
