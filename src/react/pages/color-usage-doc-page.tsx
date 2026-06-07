@@ -69,9 +69,9 @@ function TextSwatches({ groups }: { groups: SwatchGroup }) {
   )
 }
 
-function BgSwatches({ groups }: { groups: SwatchGroup }) {
+function BgSwatches({ groups, tight }: { groups: SwatchGroup; tight?: boolean }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-6">
+    <div className={'grid gap-3 my-6 ' + (tight ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4')}>
       {groups.colors.map((c) => (
         <div key={c.name} className="rounded-lg border overflow-hidden">
           <div className="h-12" style={{ backgroundColor: c.bg || 'var(--background)' }} />
@@ -85,9 +85,9 @@ function BgSwatches({ groups }: { groups: SwatchGroup }) {
   )
 }
 
-function BorderSwatches({ groups }: { groups: SwatchGroup }) {
+function BorderSwatches({ groups, tight }: { groups: SwatchGroup; tight?: boolean }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 my-6">
+    <div className={'grid gap-3 my-6 ' + (tight ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4')}>
       {groups.colors.map((c) => (
         <div key={c.name} className="rounded-lg border overflow-hidden">
           <div className="h-10 m-3 rounded border-2" style={{ borderColor: c.border || 'var(--border)' }} />
@@ -233,7 +233,7 @@ export function ColorUsageDocPage() {
               <SectionLink id="border" /> Border
             </h2>
 
-            <BorderSwatches groups={{
+            <BorderSwatches tight groups={{
               label: 'Border',
               colors: [
                 { name: 'border', border: '#e5e7eb' },
@@ -256,7 +256,7 @@ export function ColorUsageDocPage() {
               These can also be accessed with <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">foreground</code>. Like <code className="relative rounded-sm bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">text-foreground-light</code>.
             </p>
 
-            <BgSwatches groups={{
+            <BgSwatches tight groups={{
               label: 'Other Colors',
               colors: [
                 { name: 'bg-destructive-200', bg: '#fecaca' },
