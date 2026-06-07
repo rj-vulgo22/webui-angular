@@ -1,8 +1,9 @@
 import { createClient as createSupabaseClient } from '@supabase/supabase-js'
 
 export function createClient() {
-  const url = import.meta.env.VITE_SUPABASE_URL
-  const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
+  const env = (import.meta as any).env
+  const url = typeof env === 'object' && env !== null ? env.VITE_SUPABASE_URL : undefined
+  const key = typeof env === 'object' && env !== null ? env.VITE_SUPABASE_PUBLISHABLE_KEY : undefined
   if (!url || !key) {
     throw new Error(
       'Supabase environment variables not configured. ' +
