@@ -1,6 +1,7 @@
 import * as Sentry from '@sentry/react'
 
-const dsn = import.meta.env.VITE_SENTRY_DSN as string | undefined
+const env = (import.meta as any).env
+const dsn = typeof env === 'object' && env !== null ? env.VITE_SENTRY_DSN : undefined
 
 export function initSentry() {
   if (!dsn) {
