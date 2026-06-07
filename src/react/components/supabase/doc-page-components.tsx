@@ -1,6 +1,8 @@
 'use client'
 
-import { useState, type ReactNode } from 'react'
+import { useState, useEffect, type ReactNode } from 'react'
+import { motion } from 'framer-motion'
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 
 export interface TreeNode {
   name: string
@@ -95,49 +97,89 @@ export function FileTreeItem({ node, depth, activePath }: { node: TreeNode; dept
 }
 
 export function PackageManagerTabs({ installCommands }: { installCommands: Record<string, string> }) {
-  const [active, setActive] = useState<string>('npm')
   const PACKAGE_MANAGERS = ['npm', 'pnpm', 'yarn', 'bun'] as const
+  const [value, setValue] = useState<string>('npm')
+  const [copied, setCopied] = useState(false)
+
+  useEffect(() => {
+    const saved = typeof window !== 'undefined' ? localStorage.getItem('package-manager-copy-command') : null
+    if (saved && PACKAGE_MANAGERS.includes(saved as typeof PACKAGE_MANAGERS[number])) {
+      setValue(saved)
+    }
+  }, [])
+
+  const handleValueChange = (newValue: string) => {
+    setValue(newValue)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('package-manager-copy-command', newValue)
+    }
+  }
+
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      const textarea = document.createElement('textarea')
+      textarea.value = text
+      document.body.appendChild(textarea)
+      textarea.select()
+      document.execCommand('copy')
+      document.body.removeChild(textarea)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
+  }
 
   return (
-    <div className="mt-4">
-      <div className="group relative rounded-lg bg-muted px-4 py-2 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-muted-foreground/15 dark:via-foreground/20 to-transparent opacity-10 shimmer-sweep" />
-        <div className="flex flex-col">
-          <div className="flex items-center border-b gap-2 relative mb-2 z-10">
+    <Tabs value={value} onValueChange={handleValueChange}>
+      <div className="mt-4">
+        <div className="w-full group relative rounded-lg bg-surface-200 dark:bg-surface-100 px-4 py-2 overflow-hidden">
+          <motion.div
+            className="absolute inset-0 bg-linear-to-l from-transparent via-[#bbb] dark:via-white to-transparent opacity-10 z-0"
+            initial={{ x: '100%' }}
+            animate={{ x: '-100%' }}
+            transition={{ repeat: Infinity, duration: 2.5, ease: 'linear', repeatType: 'loop' }}
+          />
+          <div className="flex flex-col">
+            <TabsList variant="line" className="gap-2 relative mb-2 z-10">
+              {PACKAGE_MANAGERS.map((pm) => (
+                <TabsTrigger key={pm} value={pm} className="text-xs data-active:after:opacity-100">{pm}</TabsTrigger>
+              ))}
+            </TabsList>
             {PACKAGE_MANAGERS.map((pm) => (
-              <button
-                key={pm}
-                type="button"
-                onClick={() => setActive(pm)}
-                className={
-                  'inline-flex items-center justify-center whitespace-nowrap py-1.5 transition-all text-xs ' +
-                  (active === pm
-                    ? 'text-foreground border-foreground border-b-2'
-                    : 'text-muted-foreground hover:text-foreground border-b-2 border-transparent')
-                }
-              >
-                {pm}
-              </button>
+              <TabsContent key={pm} value={pm} className="m-0">
+                <div className="flex items-center">
+                  <div className="flex-1 font-mono text-sm text-foreground relative z-10">
+                    <span className="mr-2 text-[#888] select-none">$</span>
+                    {installCommands[pm]}
+                  </div>
+                  <div className="relative z-10">
+                    <button
+                      type="button"
+                      onClick={() => copyToClipboard(installCommands[pm])}
+                      className="inline-flex items-center justify-center rounded-md h-8 w-8 hover:bg-surface-100 dark:hover:bg-surface-200 transition-colors"
+                    >
+                      {copied ? (
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check h-4 w-4 text-primary">
+                          <path d="M20 6 9 17l-5-5" />
+                        </svg>
+                      ) : (
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-copy h-4 w-4 text-muted-foreground">
+                          <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                          <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg>
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </TabsContent>
             ))}
-          </div>
-          <div className="flex items-center">
-            <div className="flex-1 font-mono text-sm text-foreground relative z-10">
-              <span className="mr-2 text-muted-foreground select-none">$</span>
-              {installCommands[active]}
-            </div>
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-md h-10 w-10 hover:bg-muted transition-colors"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-copy h-4 w-4">
-                <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>
-    </div>
+    </Tabs>
   )
 }
 

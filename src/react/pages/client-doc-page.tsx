@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { SectionLink, PackageManagerTabs } from '../components/supabase/doc-page-components'
 
 const sections = [
   { id: 'installation', title: 'Installation' },
@@ -9,75 +9,11 @@ const sections = [
   { id: 'further-reading', title: 'Further reading' },
 ]
 
-const PACKAGE_MANAGERS = ['npm', 'pnpm', 'yarn', 'bun'] as const
-
 const INSTALL_COMMANDS: Record<string, string> = {
   npm: 'npx shadcn@latest add @supabase/supabase-client-nextjs',
   pnpm: 'pnpm dlx shadcn@latest add @supabase/supabase-client-nextjs',
   yarn: 'yarn dlx shadcn@latest add @supabase/supabase-client-nextjs',
   bun: 'bunx shadcn@latest add @supabase/supabase-client-nextjs',
-}
-
-function SectionLink({ id }: { id: string }) {
-  return (
-    <a
-      className="text-foreground underline decoration-1 decoration-foreground-muted underline-offset-4 transition-colors hover:decoration-primary hover:decoration-2 subheading-anchor"
-      aria-label="Link to section"
-      href={'#' + id}
-    >
-      <span className="icon icon-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline h-4 w-4">
-          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-        </svg>
-      </span>
-    </a>
-  )
-}
-
-function PackageManagerTabs() {
-  const [active, setActive] = useState<string>('npm')
-
-  return (
-    <div className="mt-4">
-      <div className="group relative rounded-lg bg-muted px-4 py-2 overflow-hidden">
-        <div className="flex flex-col">
-          <div className="flex items-center border-b gap-2 relative mb-2 z-10">
-            {PACKAGE_MANAGERS.map((pm) => (
-              <button
-                key={pm}
-                type="button"
-                onClick={() => setActive(pm)}
-                className={
-                  'inline-flex items-center justify-center whitespace-nowrap py-1.5 transition-all text-xs ' +
-                  (active === pm
-                    ? 'text-foreground border-foreground border-b-2'
-                    : 'text-muted-foreground hover:text-foreground border-b-2 border-transparent')
-                }
-              >
-                {pm}
-              </button>
-            ))}
-          </div>
-          <div className="flex items-center">
-            <div className="flex-1 font-mono text-sm text-foreground relative z-10">
-              <span className="mr-2 text-muted-foreground select-none">$</span>
-              {INSTALL_COMMANDS[active]}
-            </div>
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-md h-10 w-10 hover:bg-muted transition-colors"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-copy h-4 w-4">
-                <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
 }
 
 function FileTree() {
@@ -196,7 +132,7 @@ export function ClientDocPage() {
               <SectionLink id="installation" /> Installation
             </h2>
 
-            <PackageManagerTabs />
+            <PackageManagerTabs installCommands={INSTALL_COMMANDS} />
 
             <h2 className="font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl tracking-tight first:mt-0" id="folder-structure">
               <SectionLink id="folder-structure" /> Folder structure

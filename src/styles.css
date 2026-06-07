@@ -50,6 +50,17 @@
   --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
   --color-sidebar-border: hsl(var(--sidebar-border));
   --color-sidebar-ring: hsl(var(--sidebar-ring));
+  --color-surface-75: hsl(var(--bg-surface-75));
+  --color-surface-100: hsl(var(--bg-surface-100));
+  --color-surface-200: hsl(var(--bg-surface-200));
+  --color-surface-300: hsl(var(--bg-surface-300));
+  --color-surface-400: hsl(var(--bg-surface-400));
+  --color-canvas: hsl(var(--bg-canvas));
+  --color-studio: hsl(var(--bg-studio));
+  --color-alternative: hsl(var(--bg-alternative));
+  --color-overlay: hsl(var(--bg-overlay));
+  --color-control: hsl(var(--bg-control));
+  --color-selection: hsl(var(--bg-selection));
 }
 
 @layer base {
@@ -373,15 +384,4 @@
   }
 }
 
-.shimmer-sweep {
-  animation: sweep 2.5s linear infinite;
-}
 
-@keyframes sweep {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
