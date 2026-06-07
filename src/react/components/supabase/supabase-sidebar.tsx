@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { LazyMotion, domAnimation, m, AnimatePresence } from 'framer-motion'
 import { useRouter } from '../../lib/supabase-router'
 import { ThemeSwitcher } from './theme-switcher'
 import { CommandMenu } from './command-menu'
@@ -185,23 +185,37 @@ export function SupabaseSidebar() {
         </div>
       </div>
 
-      <motion.div
-        className="fixed inset-0 z-[55] bg-black/50 lg:hidden"
-        initial={false}
-        animate={{ opacity: mobileMenuOpen ? 1 : 0, pointerEvents: mobileMenuOpen ? 'auto' as const : 'none' as const }}
-        transition={{ duration: 0.15 }}
-        onClick={closeMobile}
-      />
-      <motion.aside
-        className="fixed top-0 left-0 z-[60] h-screen w-full max-w-[288px] bg-200 lg:hidden"
-        initial={false}
-        animate={{ x: mobileMenuOpen ? 0 : '-100%' }}
-        transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-      >
-        <div className="h-full overflow-y-auto [scrollbar-width:none]">
-          <SidebarContent onNavigate={closeMobile} onClose={closeMobile} onSearch={() => setCommandOpen(true)} />
-        </div>
-      </motion.aside>
+      <LazyMotion features={domAnimation}>
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <m.div
+              key="mobile-backdrop"
+              className="fixed inset-0 z-[55] bg-black/50 lg:hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.15 }}
+              onClick={closeMobile}
+            />
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <m.aside
+              key="mobile-sidebar"
+              className="fixed top-0 left-0 z-[60] h-screen w-full max-w-[288px] bg-200 lg:hidden"
+              initial={{ x: '-100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
+              transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            >
+              <div className="h-full overflow-y-auto [scrollbar-width:none]">
+                <SidebarContent onNavigate={closeMobile} onClose={closeMobile} onSearch={() => setCommandOpen(true)} />
+              </div>
+            </m.aside>
+          )}
+        </AnimatePresence>
+      </LazyMotion>
 
       <aside className="hidden shrink-0 lg:sticky lg:block lg:top-0 lg:h-screen lg:z-30 bg-200 lg:border-r lg:border-muted/50">
         <div className="h-full overflow-y-auto [scrollbar-width:none]">
