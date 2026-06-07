@@ -1,0 +1,288 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - link [ref=e13] [cursor=pointer]:
+                - /url: /ui
+                - img [ref=e14]
+              - button [ref=e18] [cursor=pointer]:
+                - img [ref=e20]
+            - link "Supabase UI Library" [ref=e26] [cursor=pointer]:
+              - /url: /ui
+              - heading "Supabase UI Library" [level=1] [ref=e27]
+            - button "Search... ⌘ K" [ref=e28] [cursor=pointer]:
+              - generic [ref=e29]:
+                - generic [ref=e30]: Search...
+                - generic:
+                  - generic: ⌘
+                  - text: K
+          - generic [ref=e31]:
+            - generic [ref=e32]: Getting Started
+            - link "Introduction" [ref=e33] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/introduction
+              - text: Introduction
+            - link "Quick Start" [ref=e35] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/quickstart
+              - text: Quick Start
+            - link "FAQ" [ref=e37] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/faq
+              - text: FAQ
+          - generic [ref=e39]:
+            - generic [ref=e40]: Blocks
+            - generic [ref=e41]:
+              - link "Client" [ref=e42] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/client
+                - text: Client
+              - link "Password-Based Auth" [ref=e44] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/password-based-auth
+                - text: Password-Based Auth
+              - link "Social Auth New" [ref=e46] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/social-auth
+                - text: Social Auth
+                - generic [ref=e48]: New
+              - link "Dropzone" [ref=e49] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/dropzone
+                - text: Dropzone
+              - link "Realtime Cursor" [ref=e51] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-cursor
+                - text: Realtime Cursor
+              - link "Realtime Monaco New" [ref=e53] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-monaco
+                - text: Realtime Monaco
+                - generic [ref=e55]: New
+              - link "Realtime Flow New" [ref=e56] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-flow
+                - text: Realtime Flow
+                - generic [ref=e58]: New
+              - link "Current User Avatar" [ref=e59] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/current-user-avatar
+                - text: Current User Avatar
+              - link "Realtime Avatar Stack" [ref=e61] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-avatar-stack
+                - text: Realtime Avatar Stack
+              - link "Realtime Chat" [ref=e63] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-chat
+                - text: Realtime Chat
+              - link "Infinite Query New" [ref=e65] [cursor=pointer]:
+                - /url: /ui/docs/react/infinite-query
+                - text: Infinite Query
+                - generic [ref=e67]: New
+          - generic [ref=e68]:
+            - generic [ref=e69]: AI Skills
+            - link "Skills New" [ref=e70] [cursor=pointer]:
+              - /url: /ui/docs/ai-editors-rules/skills
+              - text: Skills
+              - generic [ref=e72]: New
+          - generic [ref=e73]:
+            - generic [ref=e74]: Platform
+            - link "Platform Kit" [ref=e75] [cursor=pointer]:
+              - /url: /ui/docs/platform/platform-kit
+              - text: Platform Kit
+      - main [ref=e79]:
+        - generic [ref=e95]:
+          - generic [ref=e98]:
+            - heading "UI Blocks for Supabase Projects" [level=1] [ref=e99]
+            - heading "A collection of React components and blocks built on the shadcn/ui library that connect your front-end to your Supabase back-end via a single command." [level=2] [ref=e100]
+            - generic [ref=e101]:
+              - button "Get Started" [ref=e102]:
+                - link "Get Started" [ref=e103] [cursor=pointer]:
+                  - /url: /ui/docs/getting-started/quickstart
+              - button "Install Skills" [ref=e104]:
+                - link "Install Skills" [ref=e105] [cursor=pointer]:
+                  - /url: /ui/docs/ai-editors-rules/skills
+          - generic [ref=e106]:
+            - generic [ref=e107]: Password-based Authentication
+            - link "Go to block ➔" [ref=e108] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/password-based-auth
+          - iframe [ref=e115]:
+            - generic [active] [ref=f3e1]:
+              - generic [ref=f3e5]:
+                - generic [ref=f3e6]:
+                  - generic [ref=f3e7]: Sign up
+                  - generic [ref=f3e8]: Create a new account
+                - generic [ref=f3e10]:
+                  - generic [ref=f3e11]:
+                    - generic [ref=f3e12]:
+                      - generic [ref=f3e13]: Email
+                      - textbox "Email" [ref=f3e14]:
+                        - /placeholder: m@example.com
+                    - generic [ref=f3e15]:
+                      - generic [ref=f3e17]: Password
+                      - textbox "Password" [ref=f3e18]
+                    - generic [ref=f3e19]:
+                      - generic [ref=f3e21]: Repeat Password
+                      - textbox "Repeat Password" [ref=f3e22]
+                    - button "Sign up" [ref=f3e23]
+                  - generic [ref=f3e24]:
+                    - text: Already have an account?
+                    - link "Login" [ref=f3e25] [cursor=pointer]:
+                      - /url: auth/login
+              - alert [ref=f3e26]
+          - generic [ref=e117]:
+            - generic [ref=e118]: Social Authentication
+            - link "Go to block ➔" [ref=e119] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/social-auth
+          - iframe [ref=e126]:
+            - generic [active] [ref=f4e1]:
+              - generic [ref=f4e5]:
+                - generic [ref=f4e6]:
+                  - generic [ref=f4e7]: Welcome!
+                  - generic [ref=f4e8]: Sign in to your account to continue
+                - button "Continue with GitHub" [ref=f4e12]
+              - alert [ref=f4e13]
+          - generic [ref=e128]:
+            - generic [ref=e129]: Realtime Cursors
+            - link "Go to block ➔" [ref=e130] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/realtime-cursor
+          - generic [ref=e133]:
+            - iframe [ref=e137]:
+              - generic [active] [ref=f5e1]:
+                - generic [ref=f5e4]:
+                  - generic [ref=f5e5]: Username
+                  - generic [ref=f5e6]:
+                    - textbox [disabled] [ref=f5e7]: Irving B.
+                    - button [ref=f5e8]:
+                      - img
+                - alert [ref=f5e9]
+            - iframe [ref=e141]:
+              - generic [active] [ref=f6e1]:
+                - generic [ref=f6e4]:
+                  - generic [ref=f6e5]: Username
+                  - generic [ref=f6e6]:
+                    - textbox [disabled] [ref=f6e7]: Gemma Scout
+                    - button [ref=f6e8]:
+                      - img
+                - alert [ref=f6e9]
+          - generic [ref=e143]:
+            - generic [ref=e144]: File Upload
+            - link "Go to block ➔" [ref=e145] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/dropzone
+          - generic [ref=e154]:
+            - button "Choose File" [ref=e155]
+            - generic [ref=e156]:
+              - img [ref=e157]
+              - paragraph [ref=e160]: Upload 2 files
+              - generic [ref=e161]:
+                - paragraph [ref=e162]:
+                  - text: Drag and drop or
+                  - generic [ref=e163] [cursor=pointer]: select files
+                  - text: to upload
+                - paragraph [ref=e164]: "Maximum file size: 10 MB"
+          - generic [ref=e166]:
+            - generic [ref=e167]: Current User Avatar
+            - link "Go to block ➔" [ref=e168] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/current-user-avatar
+          - generic [ref=e177]: MS
+          - generic [ref=e179]:
+            - generic [ref=e180]: Realtime Avatar Stack
+            - link "Go to block ➔" [ref=e181] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/realtime-avatar-stack
+          - generic [ref=e189]:
+            - generic [ref=e191]: MS
+            - generic [ref=e193]: HR
+            - generic [ref=e195]: DG
+            - generic [ref=e197]: "+1"
+          - generic [ref=e199]:
+            - generic [ref=e200]: Realtime Chat
+            - link "Go to block ➔" [ref=e201] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/realtime-chat
+          - generic [ref=e204]:
+            - iframe [ref=e208]:
+              - generic [active] [ref=f7e1]:
+                - generic [ref=f7e4]:
+                  - generic [ref=f7e5]:
+                    - text: Username
+                    - textbox [ref=f7e6]: Zara
+                  - generic [ref=f7e8]:
+                    - generic [ref=f7e10]:
+                      - generic [ref=f7e13]:
+                        - generic [ref=f7e14]:
+                          - generic [ref=f7e15]: Harmony
+                          - generic [ref=f7e16]: 10:51 AM
+                        - generic [ref=f7e17]: Where are you Dylan?
+                      - generic [ref=f7e20]:
+                        - generic [ref=f7e21]:
+                          - generic [ref=f7e22]: Dylan
+                          - generic [ref=f7e23]: 10:51 AM
+                        - generic [ref=f7e24]: At the Supabase Meetup - just getting coffee
+                      - generic [ref=f7e27]:
+                        - generic [ref=f7e28]:
+                          - generic [ref=f7e29]: Mark S
+                          - generic [ref=f7e30]: 10:51 AM
+                        - generic [ref=f7e31]: I'm there too!
+                    - textbox "Type a message..." [disabled] [ref=f7e33]
+                - alert [ref=f7e34]
+            - iframe [ref=e212]:
+              - generic [active] [ref=f8e1]:
+                - generic [ref=f8e4]:
+                  - generic [ref=f8e5]:
+                    - text: Username
+                    - textbox [ref=f8e6]: Lyra
+                  - generic [ref=f8e8]:
+                    - generic [ref=f8e10]:
+                      - generic [ref=f8e13]:
+                        - generic [ref=f8e14]:
+                          - generic [ref=f8e15]: Harmony
+                          - generic [ref=f8e16]: 10:51 AM
+                        - generic [ref=f8e17]: Where are you Dylan?
+                      - generic [ref=f8e20]:
+                        - generic [ref=f8e21]:
+                          - generic [ref=f8e22]: Dylan
+                          - generic [ref=f8e23]: 10:51 AM
+                        - generic [ref=f8e24]: At the Supabase Meetup - just getting coffee
+                      - generic [ref=f8e27]:
+                        - generic [ref=f8e28]:
+                          - generic [ref=f8e29]: Mark S
+                          - generic [ref=f8e30]: 10:51 AM
+                        - generic [ref=f8e31]: I'm there too!
+                    - textbox "Type a message..." [disabled] [ref=f8e33]
+                - alert [ref=f8e34]
+          - generic [ref=e214]:
+            - generic [ref=e215]: Infinite Query Hook
+            - link "Go to block ➔" [ref=e216] [cursor=pointer]:
+              - /url: /ui/docs/nextjs/social-auth
+          - iframe [ref=e223]:
+            - generic [active] [ref=f9e1]:
+              - generic [ref=f9e6]:
+                - generic [ref=f9e8]:
+                  - checkbox [checked] [ref=f9e9]:
+                    - generic:
+                      - img
+                  - generic [ref=f9e10]:
+                    - text: Wash car
+                    - generic [ref=f9e11]: 3/31/2024
+                - generic [ref=f9e13]:
+                  - checkbox [checked] [ref=f9e14]:
+                    - generic:
+                      - img
+                  - generic [ref=f9e15]:
+                    - text: Organize garage
+                    - generic [ref=f9e16]: 3/30/2024
+                - generic [ref=f9e18]:
+                  - checkbox [ref=f9e19]
+                  - generic [ref=f9e20]:
+                    - text: Clean oven
+                    - generic [ref=f9e21]: 3/29/2024
+              - alert [ref=f9e27]
+  - contentinfo [ref=e225]:
+    - generic [ref=e226]:
+      - paragraph [ref=e227]:
+        - text: Built by
+        - link "Supabase" [ref=e228] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e229] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e230]:
+        - text: Site inspired by
+        - link "Radix" [ref=e231] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e232] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .
+  - alert [ref=e233]

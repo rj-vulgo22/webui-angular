@@ -1,0 +1,560 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - link "Supabase UI Library" [ref=e18] [cursor=pointer]:
+              - /url: /ui
+              - heading "Supabase UI Library" [level=1] [ref=e19]
+            - button "Search... ⌘ K" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21]:
+                - generic [ref=e22]: Search...
+                - generic:
+                  - generic: ⌘
+                  - text: K
+          - generic [ref=e23]:
+            - generic [ref=e24]: Getting Started
+            - link "Introduction" [ref=e25] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/introduction
+              - text: Introduction
+            - link "Quick Start" [ref=e27] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/quickstart
+              - text: Quick Start
+            - link "FAQ" [ref=e29] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/faq
+              - text: FAQ
+          - generic [ref=e31]:
+            - generic [ref=e32]: Blocks
+            - generic [ref=e33]:
+              - link "Client" [ref=e34] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/client
+                - text: Client
+              - link "Password-Based Auth" [ref=e36] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/password-based-auth
+                - text: Password-Based Auth
+              - link "Social Auth New" [ref=e38] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/social-auth
+                - text: Social Auth
+                - generic [ref=e40]: New
+              - link "Dropzone" [ref=e41] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/dropzone
+                - text: Dropzone
+              - link "Realtime Cursor" [ref=e43] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-cursor
+                - text: Realtime Cursor
+              - link "Realtime Monaco New" [ref=e45] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-monaco
+                - text: Realtime Monaco
+                - generic [ref=e47]: New
+              - link "Realtime Flow New" [ref=e48] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-flow
+                - text: Realtime Flow
+                - generic [ref=e50]: New
+              - link "Current User Avatar" [ref=e51] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/current-user-avatar
+                - text: Current User Avatar
+              - link "Realtime Avatar Stack" [ref=e53] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-avatar-stack
+                - text: Realtime Avatar Stack
+              - link "Realtime Chat" [ref=e55] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-chat
+                - text: Realtime Chat
+              - link "Infinite Query New" [ref=e57] [cursor=pointer]:
+                - /url: /ui/docs/react/infinite-query
+                - text: Infinite Query
+                - generic [ref=e59]: New
+          - generic [ref=e60]:
+            - generic [ref=e61]: AI Skills
+            - link "Skills New" [ref=e62] [cursor=pointer]:
+              - /url: /ui/docs/ai-editors-rules/skills
+              - text: Skills
+              - generic [ref=e64]: New
+          - generic [ref=e65]:
+            - generic [ref=e66]: Platform
+            - link "Platform Kit" [ref=e67] [cursor=pointer]:
+              - /url: /ui/docs/platform/platform-kit
+              - text: Platform Kit
+      - main [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Docs
+            - img [ref=e75]
+            - generic [ref=e77]: Password-based Authentication
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - heading "Password-based Authentication" [level=1] [ref=e80]
+              - paragraph [ref=e81]:
+                - generic [ref=e82]: Password-based authentication block for Next.js
+            - combobox [ref=e83]:
+              - img [ref=e84]
+            - combobox [ref=e86]
+          - generic [ref=e88]:
+            - iframe [ref=e92]:
+              - generic [active] [ref=f78e1]:
+                - generic [ref=f78e5]:
+                  - generic [ref=f78e6]:
+                    - generic [ref=f78e7]: Sign up
+                    - generic [ref=f78e8]: Create a new account
+                  - generic [ref=f78e10]:
+                    - generic [ref=f78e11]:
+                      - generic [ref=f78e12]:
+                        - generic [ref=f78e13]: Email
+                        - textbox "Email" [ref=f78e14]:
+                          - /placeholder: m@example.com
+                      - generic [ref=f78e15]:
+                        - generic [ref=f78e17]: Password
+                        - textbox "Password" [ref=f78e18]
+                      - generic [ref=f78e19]:
+                        - generic [ref=f78e21]: Repeat Password
+                        - textbox "Repeat Password" [ref=f78e22]
+                      - button "Sign up" [ref=f78e23]
+                    - generic [ref=f78e24]:
+                      - text: Already have an account?
+                      - link "Login" [ref=f78e25] [cursor=pointer]:
+                        - /url: auth/login
+                - alert [ref=f78e26]
+            - heading "Link to sectionInstallation" [level=2] [ref=e93]:
+              - link "Link to section":
+                - /url: "#installation"
+              - text: Installation
+            - link "Open in v0" [ref=e95] [cursor=pointer]:
+              - /url: https://v0.dev/chat/api/open?url=https://supabase.com/ui/r/password-based-auth-nextjs.json
+              - text: Open in
+              - img [ref=e96]
+            - heading "Link to sectionFolder structure" [level=2] [ref=e99]:
+              - link "Link to section":
+                - /url: "#folder-structure"
+              - text: Folder structure
+            - paragraph [ref=e100]:
+              - text: This block includes the
+              - link "Supabase client" [ref=e101] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/client
+              - text: . If you already have one installed, you can skip overwriting it.
+            - generic [ref=e102]:
+              - tree "file browser" [ref=e104]:
+                - treeitem "app" [expanded] [level=1] [ref=e105]:
+                  - generic "app" [ref=e106] [cursor=pointer]:
+                    - generic [ref=e107]:
+                      - img [ref=e108]
+                      - img [ref=e110]
+                      - generic [ref=e112]: app
+                  - group [ref=e113]:
+                    - treeitem "auth" [expanded] [level=2] [ref=e114]:
+                      - generic "auth" [ref=e115] [cursor=pointer]:
+                        - generic [ref=e117]:
+                          - img [ref=e118]
+                          - img [ref=e120]
+                          - generic [ref=e122]: auth
+                      - group [ref=e123]:
+                        - treeitem "confirm" [expanded] [level=3] [ref=e124]:
+                          - generic "confirm" [ref=e125] [cursor=pointer]:
+                            - generic [ref=e128]:
+                              - img [ref=e129]
+                              - img [ref=e131]
+                              - generic [ref=e133]: confirm
+                          - group [ref=e134]:
+                            - treeitem "route.ts" [level=4] [selected] [ref=e135] [cursor=pointer]:
+                              - generic [ref=e140]:
+                                - img [ref=e141]
+                                - generic [ref=e144]: route.ts
+                        - treeitem "error" [expanded] [level=3] [ref=e145]:
+                          - generic "error" [ref=e146] [cursor=pointer]:
+                            - generic [ref=e149]:
+                              - img [ref=e150]
+                              - img [ref=e152]
+                              - generic [ref=e154]: error
+                          - group [ref=e155]:
+                            - treeitem "page.tsx" [level=4] [ref=e156] [cursor=pointer]:
+                              - generic [ref=e160]:
+                                - img [ref=e161]
+                                - generic [ref=e164]: page.tsx
+                        - treeitem "forgot-password" [expanded] [level=3] [ref=e165]:
+                          - generic "forgot-password" [ref=e166] [cursor=pointer]:
+                            - generic [ref=e169]:
+                              - img [ref=e170]
+                              - img [ref=e172]
+                              - generic [ref=e174]: forgot-password
+                          - group [ref=e175]:
+                            - treeitem "page.tsx" [level=4] [ref=e176] [cursor=pointer]:
+                              - generic [ref=e180]:
+                                - img [ref=e181]
+                                - generic [ref=e184]: page.tsx
+                        - treeitem "login" [expanded] [level=3] [ref=e185]:
+                          - generic "login" [ref=e186] [cursor=pointer]:
+                            - generic [ref=e189]:
+                              - img [ref=e190]
+                              - img [ref=e192]
+                              - generic [ref=e194]: login
+                          - group [ref=e195]:
+                            - treeitem "page.tsx" [level=4] [ref=e196] [cursor=pointer]:
+                              - generic [ref=e200]:
+                                - img [ref=e201]
+                                - generic [ref=e204]: page.tsx
+                        - treeitem "sign-up-success" [expanded] [level=3] [ref=e205]:
+                          - generic "sign-up-success" [ref=e206] [cursor=pointer]:
+                            - generic [ref=e209]:
+                              - img [ref=e210]
+                              - img [ref=e212]
+                              - generic [ref=e214]: sign-up-success
+                          - group [ref=e215]:
+                            - treeitem "page.tsx" [level=4] [ref=e216] [cursor=pointer]:
+                              - generic [ref=e220]:
+                                - img [ref=e221]
+                                - generic [ref=e224]: page.tsx
+                        - treeitem "sign-up" [expanded] [level=3] [ref=e225]:
+                          - generic "sign-up" [ref=e226] [cursor=pointer]:
+                            - generic [ref=e229]:
+                              - img [ref=e230]
+                              - img [ref=e232]
+                              - generic [ref=e234]: sign-up
+                          - group [ref=e235]:
+                            - treeitem "page.tsx" [level=4] [ref=e236] [cursor=pointer]:
+                              - generic [ref=e240]:
+                                - img [ref=e241]
+                                - generic [ref=e244]: page.tsx
+                        - treeitem "update-password" [expanded] [level=3] [ref=e245]:
+                          - generic "update-password" [ref=e246] [cursor=pointer]:
+                            - generic [ref=e249]:
+                              - img [ref=e250]
+                              - img [ref=e252]
+                              - generic [ref=e254]: update-password
+                          - group [ref=e255]:
+                            - treeitem "page.tsx" [level=4] [ref=e256] [cursor=pointer]:
+                              - generic [ref=e260]:
+                                - img [ref=e261]
+                                - generic [ref=e264]: page.tsx
+                    - treeitem "protected" [expanded] [level=2] [ref=e265]:
+                      - generic "protected" [ref=e266] [cursor=pointer]:
+                        - generic [ref=e268]:
+                          - img [ref=e269]
+                          - img [ref=e271]
+                          - generic [ref=e273]: protected
+                      - group [ref=e274]:
+                        - treeitem "page.tsx" [level=3] [ref=e275] [cursor=pointer]:
+                          - generic [ref=e278]:
+                            - img [ref=e279]
+                            - generic [ref=e282]: page.tsx
+                - treeitem "components" [expanded] [level=1] [ref=e283]:
+                  - generic "components" [ref=e284] [cursor=pointer]:
+                    - generic [ref=e285]:
+                      - img [ref=e286]
+                      - img [ref=e288]
+                      - generic [ref=e290]: components
+                  - group [ref=e291]:
+                    - treeitem "forgot-password-form.tsx" [level=2] [ref=e292] [cursor=pointer]:
+                      - generic [ref=e294]:
+                        - img [ref=e295]
+                        - generic [ref=e298]: forgot-password-form.tsx
+                    - treeitem "login-form.tsx" [level=2] [ref=e299] [cursor=pointer]:
+                      - generic [ref=e301]:
+                        - img [ref=e302]
+                        - generic [ref=e305]: login-form.tsx
+                    - treeitem "logout-button.tsx" [level=2] [ref=e306] [cursor=pointer]:
+                      - generic [ref=e308]:
+                        - img [ref=e309]
+                        - generic [ref=e312]: logout-button.tsx
+                    - treeitem "sign-up-form.tsx" [level=2] [ref=e313] [cursor=pointer]:
+                      - generic [ref=e315]:
+                        - img [ref=e316]
+                        - generic [ref=e319]: sign-up-form.tsx
+                    - treeitem "update-password-form.tsx" [level=2] [ref=e320] [cursor=pointer]:
+                      - generic [ref=e322]:
+                        - img [ref=e323]
+                        - generic [ref=e326]: update-password-form.tsx
+                - treeitem "middleware.ts" [level=1] [ref=e327] [cursor=pointer]:
+                  - generic [ref=e328]:
+                    - img [ref=e329]
+                    - generic [ref=e332]: middleware.ts
+                - treeitem "lib" [expanded] [level=1] [ref=e333]:
+                  - generic "lib" [ref=e334] [cursor=pointer]:
+                    - generic [ref=e335]:
+                      - img [ref=e336]
+                      - img [ref=e338]
+                      - generic [ref=e340]: lib
+                  - group [ref=e341]:
+                    - treeitem "supabase" [expanded] [level=2] [ref=e342]:
+                      - generic "supabase" [ref=e343] [cursor=pointer]:
+                        - generic [ref=e345]:
+                          - img [ref=e346]
+                          - img [ref=e348]
+                          - generic [ref=e350]: supabase
+                      - group [ref=e351]:
+                        - treeitem "client.ts" [level=3] [ref=e352] [cursor=pointer]:
+                          - generic [ref=e355]:
+                            - img [ref=e356]
+                            - generic [ref=e359]: client.ts
+                        - treeitem "middleware.ts" [level=3] [ref=e360] [cursor=pointer]:
+                          - generic [ref=e363]:
+                            - img [ref=e364]
+                            - generic [ref=e367]: middleware.ts
+                        - treeitem "server.ts" [level=3] [ref=e368] [cursor=pointer]:
+                          - generic [ref=e371]:
+                            - img [ref=e372]
+                            - generic [ref=e375]: server.ts
+              - generic [ref=e376]:
+                - code [ref=e378]:
+                  - generic [ref=e379]:
+                    - generic [ref=e380]: "1"
+                    - text: "import { type EmailOtpType } from '@supabase/supabase-js'"
+                  - generic [ref=e381]:
+                    - generic [ref=e382]: "2"
+                    - text: "import { redirect } from 'next/navigation'"
+                  - generic [ref=e383]:
+                    - generic [ref=e384]: "3"
+                    - text: "import { type NextRequest } from 'next/server'"
+                  - generic [ref=e386]: "4"
+                  - generic [ref=e387]:
+                    - generic [ref=e388]: "5"
+                    - text: "import { createClient } from '@/lib/supabase/server'"
+                  - generic [ref=e390]: "6"
+                  - generic [ref=e391]:
+                    - generic [ref=e392]: "7"
+                    - text: "export async function GET(request: NextRequest) {"
+                  - generic [ref=e393]:
+                    - generic [ref=e394]: "8"
+                    - text: "const { searchParams } = new URL(request.url)"
+                  - generic [ref=e395]:
+                    - generic [ref=e396]: "9"
+                    - text: const token_hash = searchParams.get('token_hash')
+                  - generic [ref=e397]:
+                    - generic [ref=e398]: "10"
+                    - text: const type = searchParams.get('type') as EmailOtpType | null
+                  - generic [ref=e399]:
+                    - generic [ref=e400]: "11"
+                    - text: const _next = searchParams.get('next')
+                  - generic [ref=e401]:
+                    - generic [ref=e402]: "12"
+                    - text: "const next = _next?.startsWith('/') ? _next : '/'"
+                  - generic [ref=e404]: "13"
+                  - generic [ref=e405]:
+                    - generic [ref=e406]: "14"
+                    - text: "if (token_hash && type) {"
+                  - generic [ref=e407]:
+                    - generic [ref=e408]: "15"
+                    - text: const supabase = await createClient()
+                  - generic [ref=e410]: "16"
+                  - generic [ref=e411]:
+                    - generic [ref=e412]: "17"
+                    - text: "const { error } = await supabase.auth.verifyOtp({"
+                  - generic [ref=e413]:
+                    - generic [ref=e414]: "18"
+                    - text: type,
+                  - generic [ref=e415]:
+                    - generic [ref=e416]: "19"
+                    - text: token_hash,
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: "20"
+                    - text: "})"
+                  - generic [ref=e419]:
+                    - generic [ref=e420]: "21"
+                    - text: "if (!error) {"
+                  - generic [ref=e421]:
+                    - generic [ref=e422]: "22"
+                    - text: // redirect user to specified redirect URL or root of app
+                  - generic [ref=e423]:
+                    - generic [ref=e424]: "23"
+                    - text: redirect(next)
+                  - generic [ref=e425]:
+                    - generic [ref=e426]: "24"
+                    - text: "} else {"
+                  - generic [ref=e427]:
+                    - generic [ref=e428]: "25"
+                    - text: // redirect the user to an error page with some instructions
+                  - generic [ref=e429]:
+                    - generic [ref=e430]: "26"
+                    - text: "redirect(`/auth/error?error=${error?.message}`)"
+                  - generic [ref=e431]:
+                    - generic [ref=e432]: "27"
+                    - text: "}"
+                  - generic [ref=e433]:
+                    - generic [ref=e434]: "28"
+                    - text: "}"
+                  - generic [ref=e436]: "29"
+                  - generic [ref=e437]:
+                    - generic [ref=e438]: "30"
+                    - text: // redirect the user to an error page with some instructions
+                  - generic [ref=e439]:
+                    - generic [ref=e440]: "31"
+                    - text: "redirect(`/auth/error?error=No token hash or type`)"
+                  - generic [ref=e441]:
+                    - generic [ref=e442]: "32"
+                    - text: "}"
+                - button [ref=e444] [cursor=pointer]:
+                  - img [ref=e446]
+            - heading "Link to sectionUsage" [level=2] [ref=e449]:
+              - link "Link to section":
+                - /url: "#usage"
+              - text: Usage
+            - paragraph [ref=e450]: Once you install the block in your Next.js project, you'll get all the necessary pages and components to set up a password-based authentication flow.
+            - heading "Link to sectionGetting started" [level=3] [ref=e451]:
+              - link "Link to section":
+                - /url: "#getting-started"
+              - text: Getting started
+            - paragraph [ref=e452]:
+              - text: After installing the block, you'll have the following environment variables in your
+              - code [ref=e453]: .env.local
+              - text: "file:"
+            - generic [ref=e454]:
+              - code [ref=e456]:
+                - generic [ref=e457]: NEXT_PUBLIC_SUPABASE_URL=
+                - generic [ref=e458]: NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
+              - button "Copy" [ref=e459] [cursor=pointer]:
+                - generic [ref=e460]:
+                  - generic [ref=e461]: Copy
+                  - img [ref=e462]
+            - list [ref=e465]:
+              - listitem [ref=e466]:
+                - paragraph [ref=e467]:
+                  - text: If you're using supabase.com, you can find these values in the
+                  - link "Connect modal" [ref=e468] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs
+                  - text: under App Frameworks or in your project's
+                  - link "API settings" [ref=e469] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_/settings/api
+                  - text: .
+              - listitem [ref=e470]:
+                - paragraph [ref=e471]:
+                  - text: If you're using a local instance of Supabase, you can find these values by running
+                  - code [ref=e472]: supabase start
+                  - text: or
+                  - code [ref=e473]: supabase status
+                  - text: (if you already have it running).
+            - heading "Link to sectionAdding email templates" [level=3] [ref=e474]:
+              - link "Link to section":
+                - /url: "#adding-email-templates"
+              - text: Adding email templates
+            - list [ref=e475]:
+              - listitem [ref=e476]:
+                - paragraph [ref=e477]:
+                  - text: Add an
+                  - link "email template for sign-up" [ref=e478] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_/auth/templates
+                  - text: "to the Supabase project. Your signup email template should contain at least the following HTML:"
+                - generic [ref=e479]:
+                  - code [ref=e481]:
+                    - generic [ref=e482]: <h2>Confirm your email address</h2>
+                    - generic [ref=e484]: <p>Follow the link below to confirm this email address and finish signing up.</p>
+                    - generic [ref=e485]: <p>
+                    - generic [ref=e486]: <a
+                    - generic [ref=e487]: "href=\"{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=email&next={{ .RedirectTo }}\""
+                    - generic [ref=e488]: ">Confirm email address</a"
+                    - generic [ref=e489]: ">"
+                    - generic [ref=e490]: </p>
+                  - button "Copy" [ref=e491] [cursor=pointer]:
+                    - generic [ref=e492]:
+                      - generic [ref=e493]: Copy
+                      - img [ref=e494]
+                - paragraph [ref=e497]:
+                  - text: For detailed instructions on how to configure your email templates, including the use of variables like
+                  - code [ref=e498]: "{{ .SiteURL }}"
+                  - text: ","
+                  - code [ref=e499]: "{{ .TokenHash }}"
+                  - text: ", and"
+                  - code [ref=e500]: "{{ .RedirectTo }}"
+                  - text: ", refer to our"
+                  - link "Email Templates guide" [ref=e501] [cursor=pointer]:
+                    - /url: https://supabase.com/docs/guides/auth/auth-email-templates
+                  - text: .
+              - listitem [ref=e502]:
+                - paragraph [ref=e503]:
+                  - text: Add an
+                  - link "email template for reset password" [ref=e504] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_/auth/templates
+                  - text: "to the Supabase project. Your reset password email template should contain at least the following HTML:"
+                - generic [ref=e505]:
+                  - code [ref=e507]:
+                    - generic [ref=e508]: <h2>Reset your password</h2>
+                    - generic [ref=e510]: <p>We received a request to reset your password. Follow the link below to choose a new one.</p>
+                    - generic [ref=e511]: <p>
+                    - generic [ref=e512]: <a
+                    - generic [ref=e513]: "href=\"{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&type=recovery&next={{ .RedirectTo }}\""
+                    - generic [ref=e514]: ">Reset password</a"
+                    - generic [ref=e515]: ">"
+                    - generic [ref=e516]: </p>
+                  - button "Copy" [ref=e517] [cursor=pointer]:
+                    - generic [ref=e518]:
+                      - generic [ref=e519]: Copy
+                      - img [ref=e520]
+            - heading "Link to sectionSetting up routes and redirect URLs" [level=3] [ref=e523]:
+              - link "Link to section":
+                - /url: "#setting-up-routes-and-redirect-urls"
+              - text: Setting up routes and redirect URLs
+            - list [ref=e524]:
+              - listitem [ref=e525]:
+                - paragraph [ref=e526]:
+                  - text: Set the site URL in the
+                  - link "URL Configuration" [ref=e527] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_/auth/url-configuration
+                  - text: settings in the Supabase Dashboard.
+              - listitem [ref=e528]:
+                - paragraph [ref=e529]:
+                  - text: Set up the Next.js route that users will visit to reset or update their password. Go to the
+                  - link "URL Configuration" [ref=e530] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_/auth/url-configuration
+                  - text: settings and add the
+                  - code [ref=e531]: forgot-password
+                  - text: "route to the list of Redirect URLs. It should look something like:"
+                  - code [ref=e532]: http://example.com/auth/forgot-password
+                  - text: .
+              - listitem [ref=e533]:
+                - paragraph [ref=e534]:
+                  - text: Update the redirect paths in
+                  - code [ref=e535]: login-form.tsx
+                  - text: and
+                  - code [ref=e536]: update-password-form.tsx
+                  - text: components to point to the logged-in routes in your app. Our examples use
+                  - code [ref=e537]: /protected
+                  - text: ", but you can set this to whatever fits your app."
+            - alert [ref=e538]:
+              - paragraph [ref=e540]:
+                - text: You can use this block with the Pages router by moving the routes from the
+                - code [ref=e541]: app
+                - text: folder into the
+                - code [ref=e542]: pages
+                - text: folder and renaming them. Example instead of
+                - code [ref=e543]: app/sign-up/page.tsx
+                - text: ", you'd create a"
+                - code [ref=e544]: pages/sign-up.tsx
+                - text: file.
+            - heading "Link to sectionFurther reading" [level=2] [ref=e545]:
+              - link "Link to section":
+                - /url: "#further-reading"
+              - text: Further reading
+            - list [ref=e546]:
+              - listitem [ref=e547]:
+                - link "Password-based authentication (PKCE flow)" [ref=e548] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/auth/passwords?queryGroups=flow&flow=pkce
+              - listitem [ref=e549]:
+                - link "Authentication error codes" [ref=e550] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/auth/debugging/error-codes
+              - listitem [ref=e551]:
+                - link "Email templates" [ref=e552] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/auth/auth-email-templates
+              - listitem [ref=e553]:
+                - link "Email templates for local development" [ref=e554] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/local-development/customizing-email-templates
+              - listitem [ref=e555]:
+                - link "Custom SMTP" [ref=e556] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/auth/auth-smtp
+  - contentinfo [ref=e557]:
+    - generic [ref=e558]:
+      - paragraph [ref=e559]:
+        - text: Built by
+        - link "Supabase" [ref=e560] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e561] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e562]:
+        - text: Site inspired by
+        - link "Radix" [ref=e563] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e564] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .

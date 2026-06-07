@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webui-angular.vercel.app/sitemap.xml

@@ -1,0 +1,2 @@
+[     184ms] TypeError: Cannot read properties of undefined (reading 'VITE_SENTRY_DSN')
+    at https://webui-angular.vercel.app/main-BAILKLFP.js:36:32395

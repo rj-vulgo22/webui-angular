@@ -1,0 +1,99 @@
+- main [ref=e5]:
+  - generic [ref=e7]:
+    - complementary [ref=e8]:
+      - navigation [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - button [ref=e13] [cursor=pointer]
+            - button [ref=e17]
+          - button "Supabase UI Library" [ref=e24] [cursor=pointer]:
+            - heading "Supabase UI Library" [level=1] [ref=e25]
+          - button "Search documentation..." [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+            - generic [ref=e29]: Search documentation...
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: Getting Started
+            - link "Introduction" [ref=e35] [cursor=pointer]:
+              - /url: /introduction
+          - generic [ref=e37]:
+            - generic [ref=e38]: Blocks
+            - generic [ref=e39]
+          - generic [ref=e54]:
+            - generic [ref=e55]: AI & Editor Rules
+            - generic [ref=e56]
+    - generic [ref=e68]:
+      - main [ref=e69]:
+        - generic [ref=e85]:
+          - generic [ref=e88]:
+            - heading "UI Blocks for Supabase Projects" [level=1] [ref=e89]
+            - heading "A collection of React components and blocks built on the shadcn/ui library that connect your front-end to your Supabase back-end via a single command." [level=2] [ref=e90]
+            - generic [ref=e91]
+          - generic [ref=e95]:
+            - generic [ref=e96]: Password-based Authentication
+            - generic [ref=e97]
+          - generic [ref=e106]:
+            - generic [ref=e107]
+            - generic [ref=e111]
+          - generic [ref=e128]:
+            - generic [ref=e129]: Social Authentication
+            - generic [ref=e130]
+          - generic [ref=e139]:
+            - generic [ref=e140]
+            - generic [ref=e144]
+          - generic [ref=e158]:
+            - generic [ref=e159]: File Upload
+            - generic [ref=e160]
+          - generic [ref=e169]:
+            - img [ref=e170]
+            - paragraph [ref=e173]: Upload files
+            - paragraph [ref=e174]: Drag and drop or select files to upload
+            - paragraph [ref=e175]: "Maximum file size: 5 MB"
+          - generic [ref=e177]:
+            - generic [ref=e178]: Supabase Products
+            - generic [ref=e179]: Platform
+          - generic [ref=e182]:
+            - generic [ref=e183] [cursor=pointer]
+            - generic [ref=e193] [cursor=pointer]
+            - generic [ref=e203] [cursor=pointer]
+            - generic [ref=e212] [cursor=pointer]
+            - generic [ref=e221] [cursor=pointer]
+            - generic [ref=e232] [cursor=pointer]
+          - generic [ref=e241]:
+            - generic [ref=e242]: Realtime Chat
+            - generic [ref=e243]
+          - generic [ref=e248]:
+            - generic [ref=e249]: Chat Preview A
+            - generic [ref=e250]: Chat Preview B
+          - generic [ref=e252]:
+            - generic [ref=e253]: Infinite Query Hook
+            - generic [ref=e254]
+          - generic [ref=e260]: Infinite Query Hook Demo
+          - generic [ref=e262]:
+            - generic [ref=e263]: Dark Mode
+            - generic [ref=e264]: data-theme="dark"
+          - generic [ref=e268]:
+            - img [ref=e270]
+            - paragraph [ref=e273]: Dark mode is fully supported
+            - paragraph [ref=e274]: Toggle between light and dark themes — all HSL CSS variables adapt automatically with smooth transitions.
+            - button "Toggle Theme" [ref=e275]
+          - generic [ref=e278]:
+            - paragraph [ref=e279]: Built with shadcn/ui base-nova · Inter Variable · Supabase HSL Theme
+            - paragraph [ref=e280]: Inspired by radix-ui.com/themes and ui.shadcn.com
+      - generic [ref=e282]:
+        - paragraph [ref=e283]:
+          - text: Built by
+          - link "Supabase" [ref=e284] [cursor=pointer]:
+            - /url: https://twitter.com/supabase
+          - text: . The source code is available on
+          - link "GitHub" [ref=e285] [cursor=pointer]:
+            - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+          - text: .
+        - paragraph [ref=e286]:
+          - text: Site inspired by
+          - link "Radix" [ref=e287] [cursor=pointer]:
+            - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+          - text: ","
+          - link "shadcn/ui" [ref=e288] [cursor=pointer]:
+            - /url: https://ui.shadcn.com
+          - text: .

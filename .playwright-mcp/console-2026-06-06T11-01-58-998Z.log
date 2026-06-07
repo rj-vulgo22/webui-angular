@@ -1,0 +1,5 @@
+[     195ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=7726582a:20102
+[     240ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-LCJUR7GI.js?v=7726582a:17479
+[     455ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:4200/:0
+[     455ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:4200/:0
+[     455ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:4200/:0

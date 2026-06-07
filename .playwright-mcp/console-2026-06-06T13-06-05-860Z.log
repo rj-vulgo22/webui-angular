@@ -1,0 +1,14 @@
+[     550ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[     551ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[     708ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rX (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:45264)
+    at iu (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:96305)
+    at sd (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:136995)
+    at https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:131881
+    at se (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:131982)
+    at s$ (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:158546)
+    at MessagePort.z (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:6704)
+[     942ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[     942ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[    1416ms] [WARNING] PostHog API key not found. Skipping initialization. @ https://supabase.com/ui/_next/static/chunks/12-nw7e0nah05.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:4
+[    2366ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://supabase.com/ui?_rsc=Y7bcJqs_cyKPQJh_:0

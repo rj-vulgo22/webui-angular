@@ -1,0 +1,169 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - link "Supabase UI Library" [ref=e18] [cursor=pointer]:
+              - /url: /ui
+              - heading "Supabase UI Library" [level=1] [ref=e19]
+            - button "Search... ⌘ K" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21]:
+                - generic [ref=e22]: Search...
+                - generic:
+                  - generic: ⌘
+                  - text: K
+          - generic [ref=e23]:
+            - generic [ref=e24]: Getting Started
+            - link "Introduction" [ref=e25] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/introduction
+              - text: Introduction
+            - link "Quick Start" [ref=e27] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/quickstart
+              - text: Quick Start
+            - link "FAQ" [ref=e29] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/faq
+              - text: FAQ
+          - generic [ref=e31]:
+            - generic [ref=e32]: Blocks
+            - generic [ref=e33]:
+              - link "Client" [ref=e34] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/client
+                - text: Client
+              - link "Password-Based Auth" [ref=e36] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/password-based-auth
+                - text: Password-Based Auth
+              - link "Social Auth New" [ref=e38] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/social-auth
+                - text: Social Auth
+                - generic [ref=e40]: New
+              - link "Dropzone" [ref=e41] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/dropzone
+                - text: Dropzone
+              - link "Realtime Cursor" [ref=e43] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-cursor
+                - text: Realtime Cursor
+              - link "Realtime Monaco New" [ref=e45] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-monaco
+                - text: Realtime Monaco
+                - generic [ref=e47]: New
+              - link "Realtime Flow New" [ref=e48] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-flow
+                - text: Realtime Flow
+                - generic [ref=e50]: New
+              - link "Current User Avatar" [ref=e51] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/current-user-avatar
+                - text: Current User Avatar
+              - link "Realtime Avatar Stack" [ref=e53] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-avatar-stack
+                - text: Realtime Avatar Stack
+              - link "Realtime Chat" [ref=e55] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-chat
+                - text: Realtime Chat
+              - link "Infinite Query New" [ref=e57] [cursor=pointer]:
+                - /url: /ui/docs/react/infinite-query
+                - text: Infinite Query
+                - generic [ref=e59]: New
+          - generic [ref=e60]:
+            - generic [ref=e61]: AI Skills
+            - link "Skills New" [ref=e62] [cursor=pointer]:
+              - /url: /ui/docs/ai-editors-rules/skills
+              - text: Skills
+              - generic [ref=e64]: New
+          - generic [ref=e65]:
+            - generic [ref=e66]: Platform
+            - link "Platform Kit" [ref=e67] [cursor=pointer]:
+              - /url: /ui/docs/platform/platform-kit
+              - text: Platform Kit
+      - main [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Docs
+            - img [ref=e75]
+            - generic [ref=e77]: Quick Start
+          - generic [ref=e79]:
+            - heading "Quick Start" [level=1] [ref=e80]
+            - paragraph [ref=e81]:
+              - generic [ref=e82]: Install shadcn/ui and use the components in your project
+          - generic [ref=e84]:
+            - heading "Link to sectionSet up shadcn/ui" [level=2] [ref=e85]:
+              - link "Link to section":
+                - /url: "#set-up-shadcnui"
+              - text: Set up shadcn/ui
+            - paragraph [ref=e86]:
+              - text: Start by installing
+              - link "shadcn/ui" [ref=e87] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/
+              - text: in your project. Use the appropriate setup guide linked below for your framework of choice.
+            - paragraph [ref=e88]:
+              - text: If you're already using a recent version of shadcn/ui in your existing project, you can skip this step—this library should work with your current setup. However, if you encounter issues, try deleting your existing
+              - code [ref=e89]: components.json
+              - text: file and follow one of the guides to reset your setup.
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - img "Next.js" [ref=e92]
+                - paragraph [ref=e94]: Next.js
+                - generic [ref=e95]:
+                  - paragraph
+                  - paragraph [ref=e96]:
+                    - code [ref=e98]: $
+                    - code [ref=e99]: npx create-next-app -e with-supabase
+                  - paragraph
+                  - button "Copy" [ref=e100] [cursor=pointer]:
+                    - generic [ref=e101]:
+                      - generic [ref=e102]: Copy
+                      - img [ref=e103]
+              - link "React Router" [ref=e106] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/installation/react-router
+                - img [ref=e107]
+                - paragraph [ref=e109]: React Router
+              - link "TanStack Start" [ref=e110] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/installation/tanstack
+                - img [ref=e111]
+                - paragraph [ref=e113]: TanStack Start
+              - link "React SPA React SPA" [ref=e114] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/installation/manual
+                - img "React SPA" [ref=e115]
+                - paragraph [ref=e117]: React SPA
+            - alert [ref=e119]:
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - img [ref=e123]
+                  - text: "Heads up: TanStack Start is in beta."
+                - text: We're excited to support TanStack Start in our UI library! But since it's still in beta, things may change quickly — expect breaking changes and some rough edges. We'll do our best to keep up and make integration with Supabase as smooth as possible. If you run into issues, have a look at the TanStack docs.
+                - link "TanStack Quickstart guide" [ref=e125] [cursor=pointer]:
+                  - /url: https://tanstack.com/start/latest/docs/framework/react/quick-start
+            - paragraph [ref=e126]: When you've finished setting up shadcn/ui, you can start exploring the components in the sidebar
+            - heading "Link to sectionTroubleshooting" [level=2] [ref=e127]:
+              - link "Link to section":
+                - /url: "#troubleshooting"
+              - text: Troubleshooting
+            - paragraph [ref=e128]:
+              - text: If you encounter issues, try deleting your existing
+              - code [ref=e129]: components.json
+              - text: file and follow one of the guides to reset your setup.
+            - paragraph [ref=e130]:
+              - text: For issues and questions about specific frameworks, see the
+              - link "FAQs" [ref=e131] [cursor=pointer]:
+                - /url: /ui/docs/getting-started/faq
+  - contentinfo [ref=e132]:
+    - generic [ref=e133]:
+      - paragraph [ref=e134]:
+        - text: Built by
+        - link "Supabase" [ref=e135] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e136] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e137]:
+        - text: Site inspired by
+        - link "Radix" [ref=e138] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e139] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .

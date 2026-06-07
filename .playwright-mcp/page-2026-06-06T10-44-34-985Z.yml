@@ -1,0 +1,130 @@
+- main [ref=e5]:
+  - generic [ref=e7]:
+    - complementary [ref=e8]:
+      - navigation [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - button [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+            - button [ref=e17]:
+              - img [ref=e18]
+          - button "Supabase UI Library" [ref=e24] [cursor=pointer]:
+            - heading "Supabase UI Library" [level=1] [ref=e25]
+          - button "Search documentation..." [ref=e26] [cursor=pointer]:
+            - img [ref=e27]
+            - generic [ref=e29]: Search documentation...
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: Getting Started
+            - link "Introduction" [active] [ref=e35] [cursor=pointer]:
+              - /url: /introduction
+              - text: Introduction
+          - generic [ref=e37]:
+            - generic [ref=e38]: Blocks
+            - generic [ref=e39]:
+              - link "Password-based Auth" [ref=e40] [cursor=pointer]:
+                - /url: "#"
+                - text: Password-based Auth
+              - link "Social Auth" [ref=e42] [cursor=pointer]:
+                - /url: "#"
+                - text: Social Auth
+              - link "File Upload" [ref=e44] [cursor=pointer]:
+                - /url: "#"
+                - text: File Upload
+              - link "Current User Avatar" [ref=e46] [cursor=pointer]:
+                - /url: "#"
+                - text: Current User Avatar
+              - link "Realtime Avatar Stack" [ref=e48] [cursor=pointer]:
+                - /url: "#"
+                - text: Realtime Avatar Stack
+              - link "Realtime Chat" [ref=e50] [cursor=pointer]:
+                - /url: "#"
+                - text: Realtime Chat
+              - link "Infinite Query Hook" [ref=e52] [cursor=pointer]:
+                - /url: "#"
+                - text: Infinite Query Hook
+          - generic [ref=e54]:
+            - generic [ref=e55]: AI & Editor Rules
+            - generic [ref=e56]:
+              - link "Cursor Rules" [ref=e57] [cursor=pointer]:
+                - /url: "#"
+                - text: Cursor Rules
+              - link "Windsurf Rules" [ref=e59] [cursor=pointer]:
+                - /url: "#"
+                - text: Windsurf Rules
+              - link "CodeGPT Rules" [ref=e61] [cursor=pointer]:
+                - /url: "#"
+                - text: CodeGPT Rules
+              - link "Copilot Instructions" [ref=e63] [cursor=pointer]:
+                - /url: "#"
+                - text: Copilot Instructions
+    - generic [ref=e68]:
+      - main [ref=e289]:
+        - generic [ref=e305]:
+          - generic [ref=e308]:
+            - generic [ref=e309]: Getting Started
+            - heading "Introduction" [level=1] [ref=e310]
+            - paragraph [ref=e311]: A flexible, open-source, React-based UI component library built on shadcn/ui, designed to simplify Supabase-powered projects with pre-built Auth, Storage, and Realtime features.
+          - generic [ref=e314]:
+            - paragraph [ref=e315]: Our Supabase UI component library is a set of components built on top of the shadcn/ui registry system. It's designed to make building new or existing Supabase-powered projects faster and easier by providing pre-built solutions for common but challenging features — such as authentication, file uploads, and real-time updates.
+            - paragraph [ref=e316]: Our Supabase UI library aims to solve these issues with extensible, composable components that integrate seamlessly with your Supabase project.
+          - generic [ref=e318]: Features
+          - generic [ref=e321]:
+            - generic [ref=e323]:
+              - img [ref=e325]
+              - generic [ref=e327]:
+                - heading "Extensible components" [level=3] [ref=e328]
+                - paragraph [ref=e329]: Modify and extend simple primitives as needed. Change any code to fit your needs while keeping the hard parts easy.
+            - generic [ref=e331]:
+              - img [ref=e333]
+              - generic [ref=e337]:
+                - heading "Composable Components" [level=3] [ref=e338]
+                - paragraph [ref=e339]: Modular structure that makes components easy to integrate and combine. Build new components tailored to your needs.
+            - generic [ref=e341]:
+              - img [ref=e343]
+              - generic [ref=e345]:
+                - heading "Supabase Clients" [level=3] [ref=e346]
+                - paragraph [ref=e347]: Interact with Supabase however you choose. Both client-side and server-side clients for several major frameworks.
+            - generic [ref=e349]:
+              - img [ref=e351]
+              - generic [ref=e354]:
+                - heading "Scaffolding for Hard Problems" [level=3] [ref=e355]
+                - paragraph [ref=e356]: Pre-built solutions for challenging features like sign-in/sign-up flows, file uploads, and real-time data sync.
+            - generic [ref=e358]:
+              - img [ref=e360]
+              - generic [ref=e363]:
+                - heading "New or existing projects" [level=3] [ref=e364]
+                - paragraph [ref=e365]: Designed to work with brand new projects or to fit easily into existing ones.
+          - generic [ref=e367]: Quick Start
+          - generic [ref=e370]:
+            - generic [ref=e371]: npx shadcn add @supabase/password-based-auth-react
+            - generic [ref=e372]: "# Then import and use it in your project:"
+            - generic [ref=e373]:
+              - text: import
+              - generic [ref=e374]: "{ AuthUI }"
+              - text: from '@supabase/password-based-auth-react'
+            - generic [ref=e375]:
+              - text: import
+              - generic [ref=e376]: "{ createClient }"
+              - text: from '@supabase/supabase-js'
+          - generic [ref=e379]:
+            - img [ref=e381]
+            - paragraph [ref=e384]: Ready to get started?
+            - paragraph [ref=e385]: Browse the blocks below to find pre-built components for your next Supabase project. Each block can be installed with a single command.
+      - generic [ref=e282]:
+        - paragraph [ref=e283]:
+          - text: Built by
+          - link "Supabase" [ref=e284] [cursor=pointer]:
+            - /url: https://twitter.com/supabase
+          - text: . The source code is available on
+          - link "GitHub" [ref=e285] [cursor=pointer]:
+            - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+          - text: .
+        - paragraph [ref=e286]:
+          - text: Site inspired by
+          - link "Radix" [ref=e287] [cursor=pointer]:
+            - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+          - text: ","
+          - link "shadcn/ui" [ref=e288] [cursor=pointer]:
+            - /url: https://ui.shadcn.com
+          - text: .

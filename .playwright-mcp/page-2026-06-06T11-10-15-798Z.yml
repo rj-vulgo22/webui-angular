@@ -1,0 +1,172 @@
+- main [ref=e5]:
+  - generic [ref=e7]:
+    - complementary [ref=e8]:
+      - navigation [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - button [ref=e19]:
+              - img [ref=e20]
+          - link "Supabase UI Library" [ref=e26] [cursor=pointer]:
+            - /url: /ui
+            - heading "Supabase UI Library" [level=1] [ref=e27]
+          - button "Search... ⌘ K" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: Search...
+              - generic:
+                - generic: ⌘
+                - text: K
+        - generic [ref=e31]:
+          - generic [ref=e32]: Getting Started
+          - generic [ref=e33]:
+            - link "Introduction" [ref=e34] [cursor=pointer]:
+              - /url: /introduction
+              - generic [ref=e36]: Introduction
+            - link "Quick Start" [active] [ref=e37] [cursor=pointer]:
+              - /url: /quickstart
+              - generic [ref=e39]: Quick Start
+            - link "FAQ" [ref=e40] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e42]: FAQ
+        - generic [ref=e43]:
+          - generic [ref=e44]: Blocks
+          - generic [ref=e45]:
+            - link "Client" [ref=e46] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e48]: Client
+            - link "Password-Based Auth" [ref=e49] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: Password-Based Auth
+            - link "Social Auth New" [ref=e52] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e54]: Social Auth
+              - generic [ref=e55]: New
+            - link "Dropzone" [ref=e56] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e58]: Dropzone
+            - link "Realtime Cursor" [ref=e59] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e61]: Realtime Cursor
+            - link "Realtime Monaco New" [ref=e62] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e64]: Realtime Monaco
+              - generic [ref=e65]: New
+            - link "Realtime Flow New" [ref=e66] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e68]: Realtime Flow
+              - generic [ref=e69]: New
+            - link "Current User Avatar" [ref=e70] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e72]: Current User Avatar
+            - link "Realtime Avatar Stack" [ref=e73] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e75]: Realtime Avatar Stack
+            - link "Realtime Chat" [ref=e76] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e78]: Realtime Chat
+            - link "Infinite Query New" [ref=e79] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e81]: Infinite Query
+              - generic [ref=e82]: New
+        - generic [ref=e83]:
+          - generic [ref=e84]: AI Skills
+          - link "Skills New" [ref=e85] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e87]: Skills
+            - generic [ref=e88]: New
+        - generic [ref=e89]:
+          - generic [ref=e90]: Platform
+          - link "Platform Kit" [ref=e91] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e93]: Platform Kit
+    - generic [ref=e95]:
+      - main [ref=e316]:
+        - generic [ref=e317]:
+          - generic [ref=e318]:
+            - generic [ref=e319]: Docs
+            - img [ref=e320]
+            - generic [ref=e322]: Quick Start
+          - generic [ref=e324]:
+            - heading "Quick Start" [level=1] [ref=e325]
+            - paragraph [ref=e326]:
+              - generic [ref=e327]: Install shadcn/ui and use the components in your project
+          - generic [ref=e329]:
+            - heading "Link to section Set up shadcn/ui" [level=2] [ref=e330]:
+              - link "Link to section" [ref=e331] [cursor=pointer]:
+                - /url: "#set-up-shadcnui"
+                - img [ref=e333]
+              - text: Set up shadcn/ui
+            - paragraph [ref=e336]:
+              - text: Start by installing
+              - link "shadcn/ui" [ref=e337] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/
+              - text: in your project. Use the appropriate setup guide linked below for your framework of choice.
+            - paragraph [ref=e338]:
+              - text: If you're already using a recent version of shadcn/ui in your existing project, you can skip this step—this library should work with your current setup. However, if you encounter issues, try deleting your existing
+              - code [ref=e339]: components.json
+              - text: file and follow one of the guides to reset your setup.
+            - generic [ref=e340]:
+              - generic [ref=e341]:
+                - img "Next.js" [ref=e342]
+                - paragraph [ref=e344]: Next.js
+                - generic [ref=e345]:
+                  - paragraph [ref=e346]:
+                    - code [ref=e347]: $
+                    - code [ref=e348]: npx create-next-app -e with-supabase
+                  - button "Copy" [ref=e349] [cursor=pointer]:
+                    - generic [ref=e350]:
+                      - generic [ref=e351]: Copy
+                      - img [ref=e352]
+              - link "React Router" [ref=e355] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/installation/react-router
+                - img [ref=e356]
+                - paragraph [ref=e358]: React Router
+              - link "TanStack Start" [ref=e359] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/installation/tanstack
+                - img [ref=e360]
+                - paragraph [ref=e362]: TanStack Start
+              - link "React SPA React SPA" [ref=e363] [cursor=pointer]:
+                - /url: https://ui.shadcn.com/docs/installation/manual
+                - img "React SPA" [ref=e364]
+                - paragraph [ref=e366]: React SPA
+            - alert [ref=e368]:
+              - generic [ref=e370]:
+                - generic [ref=e371]:
+                  - img [ref=e372]
+                  - text: "Heads up: TanStack Start is in beta."
+                - text: We're excited to support TanStack Start in our UI library! But since it's still in beta, things may change quickly — expect breaking changes and some rough edges. We'll do our best to keep up and make integration with Supabase as smooth as possible. If you run into issues, have a look at the TanStack docs.
+                - link "TanStack Quickstart guide" [ref=e374] [cursor=pointer]:
+                  - /url: https://tanstack.com/start/latest/docs/framework/react/quick-start
+            - paragraph [ref=e375]: When you've finished setting up shadcn/ui, you can start exploring the components in the sidebar
+            - heading "Link to section Troubleshooting" [level=2] [ref=e376]:
+              - link "Link to section" [ref=e377] [cursor=pointer]:
+                - /url: "#troubleshooting"
+                - img [ref=e379]
+              - text: Troubleshooting
+            - paragraph [ref=e382]:
+              - text: If you encounter issues, try deleting your existing
+              - code [ref=e383]: components.json
+              - text: file and follow one of the guides to reset your setup.
+            - paragraph [ref=e384]:
+              - text: For issues and questions about specific frameworks, see the
+              - link "FAQs" [ref=e385] [cursor=pointer]:
+                - /url: /faq
+      - generic [ref=e309]:
+        - paragraph [ref=e310]:
+          - text: Built by
+          - link "Supabase" [ref=e311] [cursor=pointer]:
+            - /url: https://twitter.com/supabase
+          - text: . The source code is available on
+          - link "GitHub" [ref=e312] [cursor=pointer]:
+            - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+          - text: .
+        - paragraph [ref=e313]:
+          - text: Site inspired by
+          - link "Radix" [ref=e314] [cursor=pointer]:
+            - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+          - text: ","
+          - link "shadcn/ui" [ref=e315] [cursor=pointer]:
+            - /url: https://ui.shadcn.com
+          - text: .

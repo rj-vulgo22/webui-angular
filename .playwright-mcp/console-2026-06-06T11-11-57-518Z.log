@@ -1,0 +1,2 @@
+[    1302ms] [WARNING] PostHog API key not found. Skipping initialization. @ https://supabase.com/ui/_next/static/chunks/12-nw7e0nah05.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:4
+[    1546ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://supabase.com/ui?_rsc=ayejMxZ7ih3nDACf:0

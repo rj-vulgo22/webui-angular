@@ -1,0 +1,36 @@
+[     706ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:20102
+[     757ms] Error: supabaseUrl is required.
+    at validateSupabaseUrl (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/@supabase_supabase-js.js?v=352eac44:20624:26)
+    at new SupabaseClient (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/@supabase_supabase-js.js?v=352eac44:20853:21)
+    at createClient (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/@supabase_supabase-js.js?v=352eac44:21066:10)
+    at createClient (http://localhost:4200/main.js:119:10)
+    at http://localhost:4200/main.js:429:16
+[   20416ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:20102
+[   20452ms] Error: Supabase environment variables not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in .env.local
+    at createClient (http://localhost:4200/main.js:122:11)
+    at http://localhost:4200/main.js:434:16
+[   31892ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:20102
+[   31968ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-LCJUR7GI.js?v=049912f6:17479
+[   32043ms] [ERROR] ERROR Error: Supabase environment variables not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in .env.local
+    at createClient (http://localhost:4200/main.js:122:11)
+    at ClientStatus (http://localhost:4200/main.js:542:21)
+    at Object.react_stack_bottom_frame (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:18509:20)
+    at renderWithHooks (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:5654:24)
+    at updateFunctionComponent (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:7475:21)
+    at beginWork (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:8525:20)
+    at runWithFiberInDEV (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:997:72)
+    at performUnitOfWork (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:12561:98)
+    at workLoopSync (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:12424:43)
+    at renderRootSync (http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:12408:13) @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-LCJUR7GI.js?v=049912f6:5807
+[   32044ms] [WARNING] %s
+
+%s
+ An error occurred in the <ClientStatus> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:6965
+[   40517ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:20102
+[   40557ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-LCJUR7GI.js?v=049912f6:17479
+[   49056ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=352eac44:20102
+[   49199ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-LCJUR7GI.js?v=049912f6:17479
+[   77831ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4200/@vite/client:864
+[   97032ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=782171a9:20102
+[   97103ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-LCJUR7GI.js?v=782171a9:17479

@@ -1,0 +1,30 @@
+[     657ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[     657ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[    1964ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rX (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:45264)
+    at iu (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:96305)
+    at sd (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:136995)
+    at https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:131881
+    at se (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:131982)
+    at s$ (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:158546)
+    at MessagePort.z (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:6704)
+[    2123ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[    2123ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://supabase.com/ui/example/password-based-auth/auth/sign-up:0
+[    2395ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rX (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:45264)
+    at iu (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:96305)
+    at sd (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:136995)
+    at https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:131881
+    at se (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:131982)
+    at s$ (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:158546)
+    at MessagePort.z (https://supabase.com/ui/_next/static/chunks/0gn_bkphfmq_s.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:1:6704)
+[    4097ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://supabase.com/ui?_rsc=tXyZJ52UQVBCVsD3:0
+[    4603ms] [WARNING] PostHog API key not found. Skipping initialization. @ https://supabase.com/ui/_next/static/chunks/12-nw7e0nah05.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:4
+[   10843ms] [WARNING] The resource https://supabase.com/ui/_next/static/chunks/0pjj1an-9hxx9.css?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://supabase.com/ui:0
+[   51741ms] [ERROR] `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog @ https://supabase.com/ui/_next/static/chunks/12z3_k8xjteea.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:4
+[   51743ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ https://supabase.com/ui/_next/static/chunks/12z3_k8xjteea.js?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d:4
+[   54909ms] [WARNING] The resource https://supabase.com/ui/_next/static/chunks/0pjj1an-9hxx9.css?dpl=dpl_CrqwtRLyZdm8xZ7HZngpmJ8TKw2d was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://supabase.com/ui:0

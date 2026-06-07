@@ -1,0 +1,235 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - link "Supabase UI Library" [ref=e18] [cursor=pointer]:
+              - /url: /ui
+              - heading "Supabase UI Library" [level=1] [ref=e19]
+            - button "Search... ⌘ K" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21]:
+                - generic [ref=e22]: Search...
+                - generic:
+                  - generic: ⌘
+                  - text: K
+          - generic [ref=e23]:
+            - generic [ref=e24]: Getting Started
+            - link "Introduction" [ref=e25] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/introduction
+              - text: Introduction
+            - link "Quick Start" [ref=e27] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/quickstart
+              - text: Quick Start
+            - link "FAQ" [ref=e29] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/faq
+              - text: FAQ
+          - generic [ref=e31]:
+            - generic [ref=e32]: Blocks
+            - generic [ref=e33]:
+              - link "Client" [ref=e34] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/client
+                - text: Client
+              - link "Password-Based Auth" [ref=e36] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/password-based-auth
+                - text: Password-Based Auth
+              - link "Social Auth New" [ref=e38] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/social-auth
+                - text: Social Auth
+                - generic [ref=e40]: New
+              - link "Dropzone" [ref=e41] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/dropzone
+                - text: Dropzone
+              - link "Realtime Cursor" [ref=e43] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-cursor
+                - text: Realtime Cursor
+              - link "Realtime Monaco New" [ref=e45] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-monaco
+                - text: Realtime Monaco
+                - generic [ref=e47]: New
+              - link "Realtime Flow New" [ref=e48] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-flow
+                - text: Realtime Flow
+                - generic [ref=e50]: New
+              - link "Current User Avatar" [ref=e51] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/current-user-avatar
+                - text: Current User Avatar
+              - link "Realtime Avatar Stack" [ref=e53] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-avatar-stack
+                - text: Realtime Avatar Stack
+              - link "Realtime Chat" [ref=e55] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-chat
+                - text: Realtime Chat
+              - link "Infinite Query New" [ref=e57] [cursor=pointer]:
+                - /url: /ui/docs/react/infinite-query
+                - text: Infinite Query
+                - generic [ref=e59]: New
+          - generic [ref=e60]:
+            - generic [ref=e61]: AI Skills
+            - link "Skills New" [ref=e62] [cursor=pointer]:
+              - /url: /ui/docs/ai-editors-rules/skills
+              - text: Skills
+              - generic [ref=e64]: New
+          - generic [ref=e65]:
+            - generic [ref=e66]: Platform
+            - link "Platform Kit" [ref=e67] [cursor=pointer]:
+              - /url: /ui/docs/platform/platform-kit
+              - text: Platform Kit
+      - main [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Docs
+            - img [ref=e75]
+            - generic [ref=e77]: Supabase Client Libraries
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - heading "Supabase Client Libraries" [level=1] [ref=e80]
+              - paragraph [ref=e81]:
+                - generic [ref=e82]: Supabase client for Next.js
+            - combobox [ref=e83]:
+              - img [ref=e84]
+            - combobox [ref=e86]
+          - generic [ref=e88]:
+            - heading "Link to sectionInstallation" [level=2] [ref=e89]:
+              - link "Link to section":
+                - /url: "#installation"
+              - text: Installation
+            - link "Open in v0" [ref=e91] [cursor=pointer]:
+              - /url: https://v0.dev/chat/api/open?url=https://supabase.com/ui/r/supabase-client-nextjs.json
+              - text: Open in
+              - img [ref=e92]
+            - heading "Link to sectionFolder structure" [level=2] [ref=e95]:
+              - link "Link to section":
+                - /url: "#folder-structure"
+              - text: Folder structure
+            - generic [ref=e96]:
+              - tree "file browser" [ref=e98]:
+                - treeitem "lib" [expanded] [level=1] [ref=e99]:
+                  - generic "lib" [ref=e100] [cursor=pointer]:
+                    - generic [ref=e101]:
+                      - img [ref=e102]
+                      - img [ref=e104]
+                      - generic [ref=e106]: lib
+                  - group [ref=e107]:
+                    - treeitem "supabase" [expanded] [level=2] [ref=e108]:
+                      - generic "supabase" [ref=e109] [cursor=pointer]:
+                        - generic [ref=e111]:
+                          - img [ref=e112]
+                          - img [ref=e114]
+                          - generic [ref=e116]: supabase
+                      - group [ref=e117]:
+                        - treeitem "client.ts" [level=3] [selected] [ref=e118] [cursor=pointer]:
+                          - generic [ref=e122]:
+                            - img [ref=e123]
+                            - generic [ref=e126]: client.ts
+                        - treeitem "middleware.ts" [level=3] [ref=e127] [cursor=pointer]:
+                          - generic [ref=e130]:
+                            - img [ref=e131]
+                            - generic [ref=e134]: middleware.ts
+                        - treeitem "server.ts" [level=3] [ref=e135] [cursor=pointer]:
+                          - generic [ref=e138]:
+                            - img [ref=e139]
+                            - generic [ref=e142]: server.ts
+              - generic [ref=e143]:
+                - code [ref=e145]:
+                  - generic [ref=e146]:
+                    - generic [ref=e147]: "1"
+                    - text: "import { createBrowserClient } from '@supabase/ssr'"
+                  - generic [ref=e149]: "2"
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: "3"
+                    - text: "export function createClient() {"
+                  - generic [ref=e152]:
+                    - generic [ref=e153]: "4"
+                    - text: return createBrowserClient(
+                  - generic [ref=e154]:
+                    - generic [ref=e155]: "5"
+                    - text: process.env.NEXT_PUBLIC_SUPABASE_URL!,
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "6"
+                    - text: process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
+                  - generic [ref=e158]:
+                    - generic [ref=e159]: "7"
+                    - text: )
+                  - generic [ref=e160]:
+                    - generic [ref=e161]: "8"
+                    - text: "}"
+                - button [ref=e163] [cursor=pointer]:
+                  - img [ref=e165]
+            - heading "Link to sectionUsage" [level=2] [ref=e168]:
+              - link "Link to section":
+                - /url: "#usage"
+              - text: Usage
+            - paragraph [ref=e169]: This block installs a Supabase client for connecting your Next.js project to Supabase. It's designed for use with the App Router and fully supports server-side rendering (SSR).
+            - paragraph [ref=e170]:
+              - text: If you've already set up your Supabase client—either using the
+              - code [ref=e171]: npx create-next-app -e with-supabase
+              - text: template or another method—you can continue using your existing setup.
+            - heading "Link to sectionGetting started" [level=3] [ref=e172]:
+              - link "Link to section":
+                - /url: "#getting-started"
+              - text: Getting started
+            - paragraph [ref=e173]:
+              - text: After installing the block, you'll have the following environment variables in your
+              - code [ref=e174]: .env.local
+              - text: "file:"
+            - generic [ref=e175]:
+              - code [ref=e177]:
+                - generic [ref=e178]: NEXT_PUBLIC_SUPABASE_URL=
+                - generic [ref=e179]: NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
+              - button "Copy" [ref=e180] [cursor=pointer]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]: Copy
+                  - img [ref=e183]
+            - list [ref=e186]:
+              - listitem [ref=e187]:
+                - paragraph [ref=e188]:
+                  - text: If you're using supabase.com, you can find these values in the
+                  - link "Connect modal" [ref=e189] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_?showConnect=true&connectTab=frameworks&framework=nextjs
+                  - text: under App Frameworks or in your project's
+                  - link "API settings" [ref=e190] [cursor=pointer]:
+                    - /url: https://supabase.com/dashboard/project/_/settings/api
+                  - text: .
+              - listitem [ref=e191]:
+                - paragraph [ref=e192]:
+                  - text: If you're using a local instance of Supabase, you can find these values by running
+                  - code [ref=e193]: supabase start
+                  - text: or
+                  - code [ref=e194]: supabase status
+                  - text: (if you already have it running).
+            - alert [ref=e195]:
+              - paragraph [ref=e197]:
+                - text: This Supabase client is built for SSR with the Next.js App Router. If you're building a React SPA, use the
+                - link "React SPA client" [ref=e198] [cursor=pointer]:
+                  - /url: /ui/docs/react-router/client
+                - text: instead.
+            - heading "Link to sectionFurther reading" [level=2] [ref=e199]:
+              - link "Link to section":
+                - /url: "#further-reading"
+              - text: Further reading
+            - list [ref=e200]:
+              - listitem [ref=e201]:
+                - link "Generating TypeScript types for your client" [ref=e202] [cursor=pointer]:
+                  - /url: https://supabase.com/docs/guides/api/rest/generating-types
+  - contentinfo [ref=e203]:
+    - generic [ref=e204]:
+      - paragraph [ref=e205]:
+        - text: Built by
+        - link "Supabase" [ref=e206] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e207] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e208]:
+        - text: Site inspired by
+        - link "Radix" [ref=e209] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e210] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .

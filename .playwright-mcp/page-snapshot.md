@@ -1,0 +1,49 @@
+- main [ref=e5]:
+  - generic [ref=e7]:
+    - complementary [ref=e8]:
+      - navigation [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]
+          - link "Supabase UI Library" [ref=e23] [cursor=pointer]:
+            - /url: /introduction
+          - button "Search documentation..." [ref=e25]
+        - generic [ref=e30]:
+          - generic [ref=e31]
+          - generic [ref=e36]
+          - generic [ref=e53]
+    - generic [ref=e67]:
+      - main [ref=e68]:
+        - generic [ref=e84]:
+          - generic [ref=e87]
+          - generic [ref=e93]
+          - generic [ref=e104]
+          - generic [ref=e126]
+          - generic [ref=e137]
+          - generic [ref=e156]
+          - generic [ref=e167]
+          - generic [ref=e175]
+          - generic [ref=e180]
+          - generic [ref=e239]
+          - generic [ref=e246]
+          - generic [ref=e250]
+          - generic [ref=e258]: Infinite Query Hook Demo
+          - generic [ref=e260]
+          - generic [ref=e266]
+          - generic [ref=e276]
+      - generic [ref=e280]:
+        - paragraph [ref=e281]:
+          - text: Built by
+          - link "Supabase" [ref=e282] [cursor=pointer]:
+            - /url: https://twitter.com/supabase
+          - text: . The source code is available on
+          - link "GitHub" [ref=e283] [cursor=pointer]:
+            - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+          - text: .
+        - paragraph [ref=e284]:
+          - text: Site inspired by
+          - link "Radix" [ref=e285] [cursor=pointer]:
+            - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+          - text: ","
+          - link "shadcn/ui" [ref=e286] [cursor=pointer]:
+            - /url: https://ui.shadcn.com
+          - text: .

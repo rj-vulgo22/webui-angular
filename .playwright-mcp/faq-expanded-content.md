@@ -1,0 +1,67 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]
+            - link "Supabase UI Library" [ref=e18] [cursor=pointer]:
+              - /url: /ui
+            - button "Search... ⌘ K" [ref=e20] [cursor=pointer]
+          - generic [ref=e23]:
+            - generic [ref=e24]: Getting Started
+            - link "Introduction" [ref=e25] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/introduction
+            - link "Quick Start" [ref=e27] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/quickstart
+            - link "FAQ" [ref=e29] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/faq
+          - generic [ref=e31]:
+            - generic [ref=e32]: Blocks
+            - generic [ref=e33]
+          - generic [ref=e60]:
+            - generic [ref=e61]: AI Skills
+            - link "Skills New" [ref=e62] [cursor=pointer]:
+              - /url: /ui/docs/ai-editors-rules/skills
+          - generic [ref=e65]:
+            - generic [ref=e66]: Platform
+            - link "Platform Kit" [ref=e67] [cursor=pointer]:
+              - /url: /ui/docs/platform/platform-kit
+      - main [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Docs
+            - img [ref=e75]
+            - generic [ref=e77]: FAQ
+          - generic [ref=e79]:
+            - heading "FAQ" [level=1] [ref=e80]
+            - paragraph [ref=e81]
+          - generic [ref=e85]:
+            - heading "How does it work?" [level=3] [ref=e87]
+            - heading "Will it overwrite existing files?" [level=3] [ref=e92]
+            - heading "I've already started a project, what should I do?" [level=3] [ref=e97]
+            - heading "I've already installed shadcn/ui, what should I do?" [level=3] [ref=e102]
+            - heading "I already started with npx create-next-app -e with-supabase what should I do now?" [level=3] [ref=e107]
+            - heading "Do I need to install one of the framework quickstarts before using this library?" [level=3] [ref=e114]
+            - heading "I used an AI builder to build an app, what should I do?" [level=3] [ref=e120]
+            - heading "Why is this library React-only?" [level=3] [ref=e125]
+            - heading "Any plans for other, non-React frameworks?" [level=3] [ref=e130]
+  - contentinfo [ref=e134]:
+    - generic [ref=e135]:
+      - paragraph [ref=e136]:
+        - text: Built by
+        - link "Supabase" [ref=e137] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e138] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e139]:
+        - text: Site inspired by
+        - link "Radix" [ref=e140] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e141] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .
+  - alert [ref=e150]

@@ -1,0 +1,235 @@
+- main [ref=e5]:
+  - generic [ref=e7]:
+    - complementary [ref=e8]:
+      - navigation [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - button [ref=e18]:
+              - img [ref=e19]
+          - link "Supabase UI Library" [ref=e25] [cursor=pointer]:
+            - /url: /ui
+            - heading "Supabase UI Library" [level=1] [ref=e26]
+          - button "Search... ⌘ K" [ref=e27] [cursor=pointer]:
+            - generic [ref=e28]:
+              - generic [ref=e29]: Search...
+              - generic:
+                - generic: ⌘
+                - text: K
+        - generic [ref=e30]:
+          - generic [ref=e31]: Getting Started
+          - generic [ref=e32]:
+            - link "Introduction" [ref=e33] [cursor=pointer]:
+              - /url: /introduction
+              - generic [ref=e35]: Introduction
+            - link "Quick Start" [ref=e36] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e38]: Quick Start
+            - link "FAQ" [ref=e39] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e41]: FAQ
+        - generic [ref=e42]:
+          - generic [ref=e43]: Blocks
+          - generic [ref=e44]:
+            - link "Client" [ref=e45] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e47]: Client
+            - link "Password-Based Auth" [ref=e48] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e50]: Password-Based Auth
+            - link "Social Auth New" [ref=e51] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e53]: Social Auth
+              - generic [ref=e54]: New
+            - link "Dropzone" [ref=e55] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e57]: Dropzone
+            - link "Realtime Cursor" [ref=e58] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e60]: Realtime Cursor
+            - link "Realtime Monaco New" [ref=e61] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e63]: Realtime Monaco
+              - generic [ref=e64]: New
+            - link "Realtime Flow New" [ref=e65] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e67]: Realtime Flow
+              - generic [ref=e68]: New
+            - link "Current User Avatar" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e71]: Current User Avatar
+            - link "Realtime Avatar Stack" [ref=e72] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e74]: Realtime Avatar Stack
+            - link "Realtime Chat" [ref=e75] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e77]: Realtime Chat
+            - link "Infinite Query New" [ref=e78] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e80]: Infinite Query
+              - generic [ref=e81]: New
+        - generic [ref=e82]:
+          - generic [ref=e83]: AI Skills
+          - link "Skills New" [ref=e84] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e86]: Skills
+            - generic [ref=e87]: New
+        - generic [ref=e88]:
+          - generic [ref=e89]: Platform
+          - link "Platform Kit" [ref=e90] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e92]: Platform Kit
+    - generic [ref=e94]:
+      - main [ref=e95]:
+        - generic [ref=e111]:
+          - generic [ref=e114]:
+            - heading "UI Blocks for Supabase Projects" [level=1] [ref=e115]
+            - heading "A collection of React components and blocks built on the shadcn/ui library that connect your front-end to your Supabase back-end via a single command." [level=2] [ref=e116]
+            - generic [ref=e117]:
+              - button "Get Started" [ref=e118]
+              - button "Install Skills" [ref=e119]
+          - generic [ref=e121]:
+            - generic [ref=e122]: Password-based Authentication
+            - generic [ref=e123]:
+              - text: Go to block
+              - img [ref=e124]
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]: Sign up
+              - generic [ref=e135]: Create a new account
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139]:
+                  - generic [ref=e140]: Email
+                  - textbox "Email Email" [ref=e141]:
+                    - /placeholder: m@example.com
+                - generic [ref=e142]:
+                  - generic [ref=e144]: Password
+                  - textbox "Password Password" [ref=e145]
+                - generic [ref=e146]:
+                  - generic [ref=e148]: Repeat Password
+                  - textbox "Repeat Password" [ref=e149]
+                - button "Sign up" [ref=e150]
+              - generic [ref=e151]:
+                - text: Already have an account?
+                - link "Login" [ref=e152] [cursor=pointer]:
+                  - /url: /login
+          - generic [ref=e154]:
+            - generic [ref=e155]: Social Authentication
+            - generic [ref=e156]:
+              - text: Go to block
+              - img [ref=e157]
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - generic [ref=e167]: Login
+              - generic [ref=e168]: Enter your email below to login to your account
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - generic [ref=e172]:
+                  - generic [ref=e173]: Email
+                  - textbox "m@example.com" [ref=e174]
+                - generic [ref=e175]:
+                  - generic [ref=e176]:
+                    - generic [ref=e177]: Password
+                    - link "Forgot your password?" [ref=e178] [cursor=pointer]:
+                      - /url: /forgot-password
+                  - textbox [ref=e179]
+                - button "Login" [ref=e180]
+              - generic [ref=e181]:
+                - text: Don't have an account?
+                - link "Sign up" [ref=e182] [cursor=pointer]:
+                  - /url: /sign-up
+          - generic [ref=e184]:
+            - generic [ref=e185]: File Upload
+            - generic [ref=e186]:
+              - text: Go to block
+              - img [ref=e187]
+          - generic [ref=e195]:
+            - img [ref=e196]
+            - paragraph [ref=e199]: Upload files
+            - paragraph [ref=e200]: Drag and drop or select files to upload
+            - paragraph [ref=e201]: "Maximum file size: 5 MB"
+          - generic [ref=e203]:
+            - generic [ref=e204]: Supabase Products
+            - generic [ref=e205]: Platform
+          - generic [ref=e208]:
+            - generic [ref=e209] [cursor=pointer]:
+              - generic [ref=e210]:
+                - img [ref=e212]
+                - generic [ref=e216]: Vector
+              - heading "Database" [level=3] [ref=e217]
+              - paragraph [ref=e218]: Every project is a full Postgres database with pgvector, pg_graphql, and more.
+            - generic [ref=e219] [cursor=pointer]:
+              - generic [ref=e220]:
+                - img [ref=e222]
+                - generic [ref=e226]: Auth
+              - heading "Authentication" [level=3] [ref=e227]
+              - paragraph [ref=e228]: Built-in auth with Row Level Security, social logins, and multi-factor authentication.
+            - generic [ref=e229] [cursor=pointer]:
+              - generic [ref=e230]:
+                - img [ref=e232]
+                - generic [ref=e235]: S3
+              - heading "Storage" [level=3] [ref=e236]
+              - paragraph [ref=e237]: Store and serve files with built-in CDN, image optimization, and access controls.
+            - generic [ref=e238] [cursor=pointer]:
+              - generic [ref=e239]:
+                - img [ref=e241]
+                - generic [ref=e244]: Deno
+              - heading "Edge Functions" [level=3] [ref=e245]
+              - paragraph [ref=e246]: Run serverless TypeScript functions at the edge, globally distributed in <10ms.
+            - generic [ref=e247] [cursor=pointer]:
+              - generic [ref=e248]:
+                - img [ref=e250]
+                - generic [ref=e255]: WS
+              - heading "Realtime" [level=3] [ref=e256]
+              - paragraph [ref=e257]: Broadcast, presence, and Postgres Changes — build multiplayer experiences.
+            - generic [ref=e258] [cursor=pointer]:
+              - generic [ref=e259]:
+                - img [ref=e261]
+                - generic [ref=e263]: RLS
+              - heading "Security" [level=3] [ref=e264]
+              - paragraph [ref=e265]: Row Level Security, SSL enforcement, network restrictions, and audit logs.
+          - generic [ref=e267]:
+            - generic [ref=e268]: Realtime Chat
+            - generic [ref=e269]:
+              - text: Go to block
+              - img [ref=e270]
+          - generic [ref=e274]:
+            - generic [ref=e275]: Chat Preview A
+            - generic [ref=e276]: Chat Preview B
+          - generic [ref=e278]:
+            - generic [ref=e279]: Infinite Query Hook
+            - generic [ref=e280]:
+              - text: Go to block
+              - img [ref=e281]
+          - generic [ref=e286]: Infinite Query Hook Demo
+          - generic [ref=e288]:
+            - generic [ref=e289]: Dark Mode
+            - generic [ref=e290]: data-theme="dark"
+          - generic [ref=e294]:
+            - img [ref=e296]
+            - paragraph [ref=e299]: Dark mode is fully supported
+            - paragraph [ref=e300]: Toggle between light and dark themes — all HSL CSS variables adapt automatically with smooth transitions.
+            - button "Toggle Theme" [ref=e301]
+          - generic [ref=e304]:
+            - paragraph [ref=e305]: Built with shadcn/ui base-nova · Inter Variable · Supabase HSL Theme
+            - paragraph [ref=e306]: Inspired by radix-ui.com/themes and ui.shadcn.com
+      - generic [ref=e308]:
+        - paragraph [ref=e309]:
+          - text: Built by
+          - link "Supabase" [ref=e310] [cursor=pointer]:
+            - /url: https://twitter.com/supabase
+          - text: . The source code is available on
+          - link "GitHub" [ref=e311] [cursor=pointer]:
+            - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+          - text: .
+        - paragraph [ref=e312]:
+          - text: Site inspired by
+          - link "Radix" [ref=e313] [cursor=pointer]:
+            - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+          - text: ","
+          - link "shadcn/ui" [ref=e314] [cursor=pointer]:
+            - /url: https://ui.shadcn.com
+          - text: .

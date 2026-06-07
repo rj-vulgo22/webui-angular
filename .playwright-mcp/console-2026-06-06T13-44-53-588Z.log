@@ -1,0 +1,13 @@
+[     143ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=ca552f12:20102
+[     187ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-JVJ2RPYH.js?v=ca552f12:17159
+[ 1297880ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=4393f8ac:20102
+[ 1298041ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-JVJ2RPYH.js?v=4393f8ac:17159
+[ 1655857ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=e442be63:20102
+[ 1656035ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-JVJ2RPYH.js?v=e442be63:17159
+[ 2692479ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=df691470:20102
+[ 2692609ms] [WARNING] [Sentry] DSN não configurado. Pulando inicialização. @ http://localhost:4200/main.js:162
+[ 2692664ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-JVJ2RPYH.js?v=df691470:17159
+[ 2698892ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/react-dom_client.js?v=df691470:20102
+[ 2698952ms] [WARNING] [Sentry] DSN não configurado. Pulando inicialização. @ http://localhost:4200/main.js:162
+[ 2698954ms] [INFO] %c[ERROR CONSOLE] Monitoramento de erros ativo color: #22c55e; font-weight: bold; @ http://localhost:4200/main.js:195
+[ 2698963ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/home/mnrzin33/WebUI%20Angular/.angular/cache/22.0.0/webui-angular/vite/deps/chunk-JVJ2RPYH.js?v=df691470:17159

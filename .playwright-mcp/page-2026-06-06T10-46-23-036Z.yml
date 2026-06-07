@@ -1,0 +1,152 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - link "Supabase UI Library" [ref=e18] [cursor=pointer]:
+              - /url: /ui
+              - heading "Supabase UI Library" [level=1] [ref=e19]
+            - button "Search... ⌘ K" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21]:
+                - generic [ref=e22]: Search...
+                - generic:
+                  - generic: ⌘
+                  - text: K
+          - generic [ref=e23]:
+            - generic [ref=e24]: Getting Started
+            - link "Introduction" [ref=e25] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/introduction
+              - text: Introduction
+            - link "Quick Start" [ref=e27] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/quickstart
+              - text: Quick Start
+            - link "FAQ" [ref=e29] [cursor=pointer]:
+              - /url: /ui/docs/getting-started/faq
+              - text: FAQ
+          - generic [ref=e31]:
+            - generic [ref=e32]: Blocks
+            - generic [ref=e33]:
+              - link "Client" [ref=e34] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/client
+                - text: Client
+              - link "Password-Based Auth" [ref=e36] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/password-based-auth
+                - text: Password-Based Auth
+              - link "Social Auth New" [ref=e38] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/social-auth
+                - text: Social Auth
+                - generic [ref=e40]: New
+              - link "Dropzone" [ref=e41] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/dropzone
+                - text: Dropzone
+              - link "Realtime Cursor" [ref=e43] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-cursor
+                - text: Realtime Cursor
+              - link "Realtime Monaco New" [ref=e45] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-monaco
+                - text: Realtime Monaco
+                - generic [ref=e47]: New
+              - link "Realtime Flow New" [ref=e48] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-flow
+                - text: Realtime Flow
+                - generic [ref=e50]: New
+              - link "Current User Avatar" [ref=e51] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/current-user-avatar
+                - text: Current User Avatar
+              - link "Realtime Avatar Stack" [ref=e53] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-avatar-stack
+                - text: Realtime Avatar Stack
+              - link "Realtime Chat" [ref=e55] [cursor=pointer]:
+                - /url: /ui/docs/nextjs/realtime-chat
+                - text: Realtime Chat
+              - link "Infinite Query New" [ref=e57] [cursor=pointer]:
+                - /url: /ui/docs/react/infinite-query
+                - text: Infinite Query
+                - generic [ref=e59]: New
+          - generic [ref=e60]:
+            - generic [ref=e61]: AI Skills
+            - link "Skills New" [ref=e62] [cursor=pointer]:
+              - /url: /ui/docs/ai-editors-rules/skills
+              - text: Skills
+              - generic [ref=e64]: New
+          - generic [ref=e65]:
+            - generic [ref=e66]: Platform
+            - link "Platform Kit" [ref=e67] [cursor=pointer]:
+              - /url: /ui/docs/platform/platform-kit
+              - text: Platform Kit
+      - main [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: Docs
+            - img [ref=e75]
+            - generic [ref=e77]: Introduction
+          - generic [ref=e79]:
+            - heading "Introduction" [level=1] [ref=e80]
+            - paragraph [ref=e81]:
+              - generic [ref=e82]: A flexible, open-source, React-based UI component library built on shadcn/ui, designed to simplify Supabase-powered projects with pre-built Auth, Storage, and Realtime features.
+          - generic [ref=e84]:
+            - paragraph [ref=e85]: Our Supabase UI component library is a set of components built on top of the shadcn/ui registry system. It's designed to make building new or existing Supabase-powered projects faster and easier by providing pre-built solutions for common but challenging features—such as authentication, file uploads, and real-time updates.
+            - paragraph [ref=e86]: "Our Supabase UI library aims to solve these issues with:"
+            - list [ref=e87]:
+              - listitem [ref=e88]:
+                - paragraph [ref=e89]:
+                  - strong [ref=e90]: Extensible components
+                  - text: ": Modify and extend simple primitives as needed."
+              - listitem [ref=e91]:
+                - paragraph [ref=e92]:
+                  - strong [ref=e93]: Composable Components
+                  - text: ": Modular structure that makes components easy to integrate and combine."
+              - listitem [ref=e94]:
+                - paragraph [ref=e95]:
+                  - strong [ref=e96]: Supabase Clients
+                  - text: ": Interact with Supabase however you choose."
+              - listitem [ref=e97]:
+                - paragraph [ref=e98]:
+                  - strong [ref=e99]: Scaffolding for Hard Problems
+                  - text: ": Pre-built solutions for challenging features like sign-in/sign-up flows, file uploads, and real-time data sync."
+              - listitem [ref=e100]:
+                - paragraph [ref=e101]:
+                  - strong [ref=e102]: New or existing projects
+                  - text: ": Designed to work with brand new projects or to fit easily into existing ones."
+            - heading "Link to sectionExtensible components" [level=3] [ref=e103]:
+              - link "Link to section":
+                - /url: "#extensible-components"
+              - text: Extensible components
+            - paragraph [ref=e104]: Our components are designed to be easily extensible. You can modify the code to fit your needs and use it as a starting point for your own components. You can change any of the code to fit your needs and use it as a starting point for your own components. The important part is that the code is designed to make the hard parts easy, and leave the easy parts for you.
+            - heading "Link to sectionComposable components" [level=3] [ref=e105]:
+              - link "Link to section":
+                - /url: "#composable-components"
+              - text: Composable components
+            - paragraph [ref=e106]: Our components are designed to be easily composable. You can combine them to create new components that are tailored to your needs. If you want to change the design or behavior of a component, you can easily do so in your own codebase.
+            - heading "Link to sectionSupabase clients" [level=3] [ref=e107]:
+              - link "Link to section":
+                - /url: "#supabase-clients"
+              - text: Supabase clients
+            - paragraph [ref=e108]: The Supabase clients are the backbone of your apps. They are designed to be easily integrated with your existing Supabase project. We provide both client-side and server-side clients for several major frameworks, and the code is designed to be easily integrated with your existing codebase.
+            - heading "Link to sectionScaffolding for hard problems" [level=3] [ref=e109]:
+              - link "Link to section":
+                - /url: "#scaffolding-for-hard-problems"
+              - text: Scaffolding for hard problems
+            - paragraph [ref=e110]: Setting up something like Auth should be easy, so we've done the hard work for you. Our components are designed to be easily integrated with your new or existing Supabase projects. Installing them drops the files into place so you can get the hard parts out of the way quickly.
+  - contentinfo [ref=e111]:
+    - generic [ref=e112]:
+      - paragraph [ref=e113]:
+        - text: Built by
+        - link "Supabase" [ref=e114] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e115] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e116]:
+        - text: Site inspired by
+        - link "Radix" [ref=e117] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e118] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .

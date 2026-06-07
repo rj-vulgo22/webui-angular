@@ -1,0 +1,34 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - navigation [ref=e10]:
+          - generic [ref=e11]
+          - generic [ref=e23]
+          - generic [ref=e31]
+          - generic [ref=e60]
+          - generic [ref=e65]
+      - main [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]
+          - generic [ref=e79]
+          - generic [ref=e85]
+  - contentinfo [ref=e134]:
+    - generic [ref=e135]:
+      - paragraph [ref=e136]:
+        - text: Built by
+        - link "Supabase" [ref=e137] [cursor=pointer]:
+          - /url: https://twitter.com/supabase
+        - text: . The source code is available on
+        - link "GitHub" [ref=e138] [cursor=pointer]:
+          - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+        - text: .
+      - paragraph [ref=e139]:
+        - text: Site inspired by
+        - link "Radix" [ref=e140] [cursor=pointer]:
+          - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+        - text: ","
+        - link "shadcn/ui" [ref=e141] [cursor=pointer]:
+          - /url: https://ui.shadcn.com
+        - text: .
+  - alert [ref=e150]

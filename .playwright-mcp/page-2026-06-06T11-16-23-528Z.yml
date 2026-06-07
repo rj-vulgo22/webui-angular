@@ -1,0 +1,151 @@
+- main [ref=e5]:
+  - generic [ref=e7]:
+    - complementary [ref=e8]:
+      - navigation [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]:
+            - link [ref=e13] [cursor=pointer]:
+              - /url: /ui
+              - img [ref=e14]
+            - button [ref=e19]:
+              - img [ref=e20]
+          - link "Supabase UI Library" [ref=e26] [cursor=pointer]:
+            - /url: /ui
+            - heading "Supabase UI Library" [level=1] [ref=e27]
+          - button "Search... ⌘ K" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: Search...
+              - generic:
+                - generic: ⌘
+                - text: K
+        - generic [ref=e31]:
+          - generic [ref=e32]: Getting Started
+          - generic [ref=e33]:
+            - link "Introduction" [ref=e34] [cursor=pointer]:
+              - /url: /introduction
+              - generic [ref=e36]: Introduction
+            - link "Quick Start" [ref=e37] [cursor=pointer]:
+              - /url: /quickstart
+              - generic [ref=e39]: Quick Start
+            - link "FAQ" [ref=e40] [cursor=pointer]:
+              - /url: /faq
+              - generic [ref=e42]: FAQ
+        - generic [ref=e43]:
+          - generic [ref=e44]: Blocks
+          - generic [ref=e45]:
+            - link "Client" [ref=e46] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e48]: Client
+            - link "Password-Based Auth" [ref=e49] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e51]: Password-Based Auth
+            - link "Social Auth New" [ref=e52] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e54]: Social Auth
+              - generic [ref=e55]: New
+            - link "Dropzone" [ref=e56] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e58]: Dropzone
+            - link "Realtime Cursor" [ref=e59] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e61]: Realtime Cursor
+            - link "Realtime Monaco New" [ref=e62] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e64]: Realtime Monaco
+              - generic [ref=e65]: New
+            - link "Realtime Flow New" [ref=e66] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e68]: Realtime Flow
+              - generic [ref=e69]: New
+            - link "Current User Avatar" [ref=e70] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e72]: Current User Avatar
+            - link "Realtime Avatar Stack" [ref=e73] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e75]: Realtime Avatar Stack
+            - link "Realtime Chat" [ref=e76] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e78]: Realtime Chat
+            - link "Infinite Query New" [ref=e79] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e81]: Infinite Query
+              - generic [ref=e82]: New
+        - generic [ref=e83]:
+          - generic [ref=e84]: AI Skills
+          - link "Skills New" [ref=e85] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e87]: Skills
+            - generic [ref=e88]: New
+        - generic [ref=e89]:
+          - generic [ref=e90]: Platform
+          - link "Platform Kit" [ref=e91] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e93]: Platform Kit
+    - generic [ref=e95]:
+      - main [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: Docs
+            - img [ref=e100]
+            - generic [ref=e102]: FAQ
+          - generic [ref=e104]:
+            - heading "FAQ" [level=1] [ref=e105]
+            - paragraph [ref=e106]:
+              - generic [ref=e107]: Frequently asked questions
+          - generic [ref=e110]:
+            - heading "How does it work?" [level=3] [ref=e112]:
+              - button "How does it work?" [ref=e113]:
+                - text: How does it work?
+                - img [ref=e114]
+            - heading "Will it overwrite existing files?" [level=3] [ref=e117]:
+              - button "Will it overwrite existing files?" [ref=e118]:
+                - text: Will it overwrite existing files?
+                - img [ref=e119]
+            - heading "I've already started a project, what should I do?" [level=3] [ref=e122]:
+              - button "I've already started a project, what should I do?" [ref=e123]:
+                - text: I've already started a project, what should I do?
+                - img [ref=e124]
+            - heading "I've already installed shadcn/ui, what should I do?" [level=3] [ref=e127]:
+              - button "I've already installed shadcn/ui, what should I do?" [ref=e128]:
+                - text: I've already installed shadcn/ui, what should I do?
+                - img [ref=e129]
+            - heading "I already started with npx create-next-app -e with-supabase what should I do now?" [level=3] [ref=e132]:
+              - button "I already started with npx create-next-app -e with-supabase what should I do now?" [ref=e133]:
+                - paragraph [ref=e134]:
+                  - text: I already started with
+                  - code [ref=e135]: npx create-next-app -e with-supabase
+                  - text: what should I do now?
+                - img [ref=e136]
+            - heading "Do I need to install one of the framework quickstarts before using this library?" [level=3] [ref=e139]:
+              - button "Do I need to install one of the framework quickstarts before using this library?" [ref=e140]:
+                - paragraph [ref=e141]: Do I need to install one of the framework quickstarts before using this library?
+                - img [ref=e142]
+            - heading "I used an AI builder to build an app, what should I do?" [level=3] [ref=e145]:
+              - button "I used an AI builder to build an app, what should I do?" [ref=e146]:
+                - text: I used an AI builder to build an app, what should I do?
+                - img [ref=e147]
+            - heading "Why is this library React-only?" [level=3] [ref=e150]:
+              - button "Why is this library React-only?" [ref=e151]:
+                - text: Why is this library React-only?
+                - img [ref=e152]
+            - heading "Any plans for other, non-React frameworks?" [level=3] [ref=e155]:
+              - button "Any plans for other, non-React frameworks?" [ref=e156]:
+                - text: Any plans for other, non-React frameworks?
+                - img [ref=e157]
+      - generic [ref=e160]:
+        - paragraph [ref=e161]:
+          - text: Built by
+          - link "Supabase" [ref=e162] [cursor=pointer]:
+            - /url: https://twitter.com/supabase
+          - text: . The source code is available on
+          - link "GitHub" [ref=e163] [cursor=pointer]:
+            - /url: https://github.com/supabase/supabase/tree/master/apps/ui-library
+          - text: .
+        - paragraph [ref=e164]:
+          - text: Site inspired by
+          - link "Radix" [ref=e165] [cursor=pointer]:
+            - /url: https://www.radix-ui.com/themes/docs/overview/getting-started
+          - text: ","
+          - link "shadcn/ui" [ref=e166] [cursor=pointer]:
+            - /url: https://ui.shadcn.com
+          - text: .

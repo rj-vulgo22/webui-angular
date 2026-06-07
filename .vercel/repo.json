@@ -1,0 +1,11 @@
+{
+  "remoteName": "origin",
+  "projects": [
+    {
+      "id": "prj_UMD5nJQ19p76NayMt8zEH6iQwqfO",
+      "name": "webui-angular",
+      "directory": ".",
+      "orgId": "team_zrf1qtzkBBb7tg1Cd1lqxdGa"
+    }
+  ]
+}
