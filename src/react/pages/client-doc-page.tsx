@@ -86,14 +86,14 @@ function FileTree() {
       <div className="w-64 py-2 border-r bg-muted/30 overflow-y-auto shrink-0">
         <ul className="text-sm">
           <li>
-            <div className="flex items-center gap-1.5 h-[28px] px-4 text-foreground/60 hover:bg-muted cursor-pointer">
+            <div className="flex items-center gap-1.5 h-[28px] px-4 text-muted-foreground hover:bg-muted cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-muted-foreground rotate-90"><path d="m9 18 6-6-6-6" /></svg>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-muted-foreground"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></svg>
               <span className="truncate text-sm text-foreground/80">lib</span>
             </div>
             <ul>
               <li>
-                <div className="flex items-center gap-1.5 h-[28px] pl-9 text-foreground/60 hover:bg-muted cursor-pointer relative">
+                <div className="flex items-center gap-1.5 h-[28px] pl-9 text-muted-foreground hover:bg-muted cursor-pointer relative">
                   <div className="absolute left-[23px] h-full w-px bg-border" />
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right text-muted-foreground rotate-90"><path d="m9 18 6-6-6-6" /></svg>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-folder-open text-muted-foreground"><path d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2" /></svg>
@@ -110,7 +110,7 @@ function FileTree() {
                     </div>
                   </li>
                   <li>
-                    <div className="flex items-center gap-1.5 h-[28px] pl-[54px] text-foreground/60 hover:bg-muted cursor-pointer relative">
+                    <div className="flex items-center gap-1.5 h-[28px] pl-[54px] text-muted-foreground hover:bg-muted cursor-pointer relative">
                       <div className="absolute left-[23px] h-full w-px bg-border" />
                       <div className="absolute left-[42px] h-full w-px bg-border" />
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file shrink-0"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /></svg>
@@ -118,7 +118,7 @@ function FileTree() {
                     </div>
                   </li>
                   <li>
-                    <div className="flex items-center gap-1.5 h-[28px] pl-[54px] text-foreground/60 hover:bg-muted cursor-pointer relative">
+                    <div className="flex items-center gap-1.5 h-[28px] pl-[54px] text-muted-foreground hover:bg-muted cursor-pointer relative">
                       <div className="absolute left-[23px] h-full w-px bg-border" />
                       <div className="absolute left-[42px] h-full w-px bg-border" />
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file shrink-0"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /><path d="M14 2v4a2 2 0 0 0 2 2h4" /></svg>
@@ -167,13 +167,13 @@ export function ClientDocPage() {
   return (
     <main className="relative lg:gap-10 xl:grid xl:grid-cols-[1fr_200px] px-8 md:px-16 py-20">
       <div className="mx-auto w-full min-w-0 max-w-4xl">
-        <div className="mb-4 flex items-center space-x-1 text-sm text-foreground/60">
+        <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
           <div className="overflow-hidden text-ellipsis whitespace-nowrap">Docs</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-muted-foreground">
             <path d="m9 18 6-6-6-6" />
           </svg>
           <div className="overflow-hidden text-ellipsis whitespace-nowrap">Next.js</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-muted-foreground">
             <path d="m9 18 6-6-6-6" />
           </svg>
           <div className="text-muted-foreground">Supabase Client Libraries</div>
@@ -182,7 +182,7 @@ export function ClientDocPage() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-5">
           <div className="space-y-2">
             <h1 className="scroll-m-20 text-2xl lg:text-4xl tracking-tight">Supabase Client Libraries</h1>
-            <p className="text-base lg:text-lg text-foreground/60">
+            <p className="text-base lg:text-lg text-muted-foreground">
               <span style={{ display: 'inline-block', verticalAlign: 'top', textDecoration: 'inherit', textWrap: 'balance' }}>
                 Supabase client for Next.js
               </span>
@@ -304,13 +304,13 @@ export function ClientDocPage() {
         <div className="sticky top-16 -mt-10 pt-4">
           <div className="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] py-12">
             <div className="space-y-2">
-              <p className="font-medium text-foreground/60">On This Page</p>
+              <p className="font-medium text-muted-foreground">On This Page</p>
               <ul className="m-0 list-none">
                 {sections.map((s) => (
                   <li key={s.id} className="mt-0 pt-2">
                     <a
                       href={'#' + s.id}
-                      className="inline-block no-underline transition-colors hover:text-foreground text-foreground/60"
+                      className="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground"
                     >
                       {s.title}
                     </a>

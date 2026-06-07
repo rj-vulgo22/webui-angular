@@ -198,9 +198,9 @@ export function FaqDocPage() {
   return (
     <main className="relative lg:gap-10 xl:grid xl:grid-cols-[1fr_200px] px-8 md:px-16 py-20">
       <div className="mx-auto w-full min-w-0 max-w-4xl">
-        <div className="mb-4 flex items-center space-x-1 text-sm text-foreground/60">
+        <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
           <div className="overflow-hidden text-ellipsis whitespace-nowrap">Docs</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-muted-foreground">
             <path d="m9 18 6-6-6-6" />
           </svg>
           <div className="text-muted-foreground">FAQ</div>
@@ -209,7 +209,7 @@ export function FaqDocPage() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-5">
           <div className="space-y-2">
             <h1 className="scroll-m-20 text-2xl lg:text-4xl tracking-tight">FAQ</h1>
-            <p className="text-base lg:text-lg text-foreground/60">
+            <p className="text-base lg:text-lg text-muted-foreground">
               <span style={{ display: 'inline-block', verticalAlign: 'top', textDecoration: 'inherit', textWrap: 'balance' }}>
                 Frequently asked questions
               </span>

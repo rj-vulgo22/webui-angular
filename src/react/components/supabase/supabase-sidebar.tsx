@@ -143,6 +143,7 @@ export function SupabaseSidebar() {
       <div className="fixed top-0 left-0 right-0 z-50 bg-background justify-between flex items-center px-8 py-3 border-b">
         <button
           type="button"
+          aria-label="Open navigation menu"
           onClick={() => setMobileMenuOpen(true)}
           className="md:hidden relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border text-foreground bg-transparent border-border hover:border-foreground/30 focus-visible:outline-ring text-xs px-2.5 py-1 h-[26px]"
         >

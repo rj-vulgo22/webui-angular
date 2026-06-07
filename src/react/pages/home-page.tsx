@@ -35,7 +35,7 @@ export function HomePage() {
                     <h1 className="text-4xl text-foreground mb-3 font-medium tracking-tight">
                       UI Blocks for Supabase Projects
                     </h1>
-                    <h2 className="text-lg text-foreground/60 mb-4">
+                    <h2 className="text-lg text-muted-foreground mb-4">
                       A collection of React components and blocks built on the shadcn/ui library
                       that connect your front-end to your Supabase back-end via a single command.
                     </h2>
@@ -58,9 +58,9 @@ export function HomePage() {
                     <div className="flex min-h-[350px] w-full justify-center p-10 items-center bg-muted/30">
                       <div className="w-full max-w-sm border-2 border-dashed border-border rounded-lg p-8 text-center bg-card">
                         <div className="flex flex-col items-center gap-y-2">
-                          <Upload size={20} className="text-foreground/60" />
+                          <Upload size={20} className="text-muted-foreground" />
                           <p className="text-sm">Upload files</p>
-                          <p className="text-xs text-foreground/60">Drag and drop or <span className="underline cursor-pointer transition hover:text-foreground">select files</span> to upload</p>
+                          <p className="text-xs text-muted-foreground">Drag and drop or <span className="underline cursor-pointer transition hover:text-foreground">select files</span> to upload</p>
                           <p className="text-xs text-muted-foreground">Maximum file size: 5 MB</p>
                         </div>
                       </div>
@@ -81,11 +81,11 @@ export function HomePage() {
                     return (
                       <div key={product.title} className="group relative rounded-lg border bg-card p-6 hover:bg-muted/50 transition-colors cursor-pointer">
                         <div className="flex items-start justify-between mb-4">
-                          <div className="p-2 rounded-md bg-muted"><Icon className="h-5 w-5 text-foreground/60" /></div>
+                          <div className="p-2 rounded-md bg-muted"><Icon className="h-5 w-5 text-muted-foreground" /></div>
                           <Badge variant="outline" className="font-mono text-[10px]">{product.badge}</Badge>
                         </div>
                         <h3 className="font-medium mb-2">{product.title}</h3>
-                        <p className="text-sm text-foreground/60 leading-relaxed">{product.description}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{product.description}</p>
                       </div>
                     )
                   })}

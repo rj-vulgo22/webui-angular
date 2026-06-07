@@ -82,9 +82,9 @@ export function RealtimeCursorDocPage() {
   return (
     <main className="relative lg:gap-10 xl:grid xl:grid-cols-[1fr_200px] px-8 md:px-16 py-20">
       <div className="mx-auto w-full min-w-0 max-w-4xl">
-        <div className="mb-4 flex items-center space-x-1 text-sm text-foreground/60">
+        <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
           <div className="overflow-hidden text-ellipsis whitespace-nowrap">Docs</div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-foreground/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4 text-muted-foreground">
             <path d="m9 18 6-6-6-6" />
           </svg>
           <div className="text-muted-foreground">Realtime Cursor</div>
@@ -93,7 +93,7 @@ export function RealtimeCursorDocPage() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-5">
           <div className="space-y-2">
             <h1 className="scroll-m-20 text-2xl lg:text-4xl tracking-tight">Realtime Cursor</h1>
-            <p className="text-base lg:text-lg text-foreground/60">
+            <p className="text-base lg:text-lg text-muted-foreground">
               <span style={{ display: 'inline-block', verticalAlign: 'top', textDecoration: 'inherit', textWrap: 'balance' }}>
                 Real-time cursor sharing for collaborative applications
               </span>
@@ -232,13 +232,13 @@ export function RealtimeCursorDocPage() {
         <div className="sticky top-16 -mt-10 pt-4">
           <div className="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] py-12">
             <div className="space-y-2">
-              <p className="font-medium text-foreground/60">On This Page</p>
+              <p className="font-medium text-muted-foreground">On This Page</p>
               <ul className="m-0 list-none">
                 {sections.map((s) => (
                   <li key={s.id} className="mt-0 pt-2">
                     <a
                       href={'#' + s.id}
-                      className="inline-block no-underline transition-colors hover:text-foreground text-foreground/60"
+                      className="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground"
                     >
                       {s.title}
                     </a>

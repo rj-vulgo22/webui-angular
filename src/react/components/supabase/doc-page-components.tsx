@@ -61,7 +61,7 @@ export function FileTreeItem({ node, depth, activePath }: { node: TreeNode; dept
     return (
       <li>
         <div
-          className="flex items-center gap-1.5 h-[28px] text-foreground/60 hover:bg-muted cursor-pointer"
+          className="flex items-center gap-1.5 h-[28px] text-muted-foreground hover:bg-muted cursor-pointer"
           style={{ paddingLeft: `${paddingLeft}px` }}
           onClick={() => setOpen(!open)}
         >
@@ -83,7 +83,7 @@ export function FileTreeItem({ node, depth, activePath }: { node: TreeNode; dept
   return (
     <li>
       <div
-        className={'flex items-center gap-1.5 h-[28px] cursor-pointer relative ' + (isActive ? 'bg-muted text-foreground' : 'text-foreground/60 hover:bg-muted')}
+        className={'flex items-center gap-1.5 h-[28px] cursor-pointer relative ' + (isActive ? 'bg-muted text-foreground' : 'text-muted-foreground hover:bg-muted')}
         style={{ paddingLeft: `${paddingLeft}px` }}
       >
         {isActive && <div className="absolute left-0 h-full w-0.5 bg-foreground" />}
