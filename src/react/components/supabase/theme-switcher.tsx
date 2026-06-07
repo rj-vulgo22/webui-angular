@@ -23,6 +23,7 @@ export function ThemeSwitcher() {
   return (
     <button
       type="button"
+      aria-label="Toggle theme"
       onClick={toggle}
       className="inline-flex items-center justify-center rounded-md h-9 w-9 hover:bg-muted transition-colors"
     >
