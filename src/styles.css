@@ -61,6 +61,11 @@
   --color-overlay: hsl(var(--bg-overlay));
   --color-control: hsl(var(--bg-control));
   --color-selection: hsl(var(--bg-selection));
+  --color-200: hsl(var(--bg-200));
+  --color-strong: hsl(var(--border-strong));
+  --color-foreground-lighter: hsl(var(--foreground-lighter));
+  --color-foreground-light: hsl(var(--foreground-light));
+  --color-foreground-muted: hsl(var(--foreground-muted));
 }
 
 @layer base {
