@@ -42,6 +42,7 @@ const InfiniteQueryDocPage = lazy(() => import('./infinite-query-doc-page').then
 const SkillsDocPage = lazy(() => import('./skills-doc-page').then(m => ({ default: m.SkillsDocPage })))
 const PlatformKitDocPage = lazy(() => import('./platform-kit-doc-page').then(m => ({ default: m.PlatformKitDocPage })))
 const IntroductionDocPage = lazy(() => import('./introduction-doc-page').then(m => ({ default: m.IntroductionDocPage })))
+const AtomComponentsDocPage = lazy(() => import('./atom-components-doc-page').then(m => ({ default: m.AtomComponentsDocPage })))
 
 function PageFallback() {
   return (
@@ -119,6 +120,8 @@ function PageRouter() {
             return <SkillsDocPage />
           case '/platform-kit':
             return <PlatformKitDocPage />
+          case '/components/introduction':
+            return <AtomComponentsDocPage />
           default:
             return <IntroductionDocPage />
         }

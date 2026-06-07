@@ -53,6 +53,12 @@ export const navItems: NavItem[] = [
       { title: 'Platform Kit', href: '/platform-kit' },
     ],
   },
+  {
+    title: 'Atom Components',
+    items: [
+      { title: 'Introduction', href: '/components/introduction' },
+    ],
+  },
 ]
 
 export const NavLink = memo(function NavLink({
