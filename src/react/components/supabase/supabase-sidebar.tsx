@@ -164,12 +164,12 @@ export function SupabaseSidebar() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50 bg-background justify-between flex items-center px-8 py-3 border-b">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-background justify-between flex items-center px-8 py-3 border-b lg:hidden">
         <button
           type="button"
           aria-label="Open navigation menu"
           onClick={() => setMobileMenuOpen(true)}
-          className="md:hidden relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border text-foreground bg-transparent border-strong hover:border-foreground-muted focus-visible:outline-border-strong text-xs px-2.5 py-1 h-[26px]"
+          className="relative justify-center cursor-pointer inline-flex items-center space-x-2 text-center font-regular ease-out duration-200 rounded-md outline-hidden transition-all outline-0 focus-visible:outline-4 focus-visible:outline-offset-1 border text-foreground bg-transparent border-strong hover:border-foreground-muted focus-visible:outline-border-strong text-xs px-2.5 py-1 h-[26px]"
         >
           <span className="inline-flex items-center justify-center shrink-0 [&_svg]:h-[14px] [&_svg]:w-[14px] text-muted-foreground">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu">
@@ -185,14 +185,14 @@ export function SupabaseSidebar() {
       </div>
 
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black/50 md:hidden" onClick={closeMobile} />
+        <div className="fixed inset-0 z-40 bg-black/50 lg:hidden" onClick={closeMobile} />
       )}
 
       <aside className={[
         'fixed z-30 top-0 h-screen w-full max-w-[260px] shrink-0 bg-200 border-r border-muted/50 transition-transform',
-        'md:sticky md:block md:max-w-none',
+        'lg:sticky lg:block lg:max-w-none',
         mobileMenuOpen ? 'translate-x-0' : '-translate-x-full',
-        'md:translate-x-0',
+        'lg:translate-x-0',
       ].join(' ')}>
         <div className="h-full overflow-y-auto [scrollbar-width:none]">
           <SidebarContent onNavigate={closeMobile} onClose={closeMobile} onSearch={() => setCommandOpen(true)} />

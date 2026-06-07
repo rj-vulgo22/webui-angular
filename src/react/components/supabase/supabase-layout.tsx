@@ -9,10 +9,10 @@ interface SupabaseLayoutProps {
 
 export function SupabaseLayout({ children }: SupabaseLayoutProps) {
   return (
-    <div className="pt-10">
+    <div className="pt-10 lg:pt-0">
       <main className="flex-1 max-w-site mx-auto w-full p-0">
         <div className="border-b">
-          <div className="flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] lg:grid-cols-[240px_minmax(0,1fr)]">
+          <div className="flex-1 items-start lg:grid lg:grid-cols-[240px_minmax(0,1fr)]">
             <SupabaseSidebar />
             <div vaul-drawer-wrapper="">
               <div className="relative flex min-h-screen flex-col bg-background">
